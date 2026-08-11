@@ -86,12 +86,7 @@ button, input, textarea { font: inherit; }
 .hero-facts dt { color: white; font-size: 24px; font-weight: 850; }
 .hero-facts dd { margin: 4px 0 0; color: #94a8c2; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
 .hero-media { position: relative; min-height: 510px; overflow: hidden; box-shadow: var(--shadow); isolation: isolate; }
-.hero-media img { object-fit: cover; transform: scale(1.015); transition: transform .55s ease; }
-.hero-media:hover img { transform: scale(1.05); }
-.hero-media-shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(180deg, rgba(3,17,41,.03) 40%, rgba(3,17,41,.82) 100%); }
-.play-button { position: absolute; z-index: 2; inset: 0; margin: auto; width: 74px; height: 74px; display: grid; place-items: center; padding-left: 5px; border-radius: 50%; background: white; color: var(--blue-600); font-size: 20px; box-shadow: 0 12px 35px rgba(0,0,0,.25); }
-.media-caption { position: absolute; z-index: 2; left: 31px; right: 31px; bottom: 28px; display: grid; gap: 6px; font-size: 17px; font-weight: 750; }
-.media-caption small { color: var(--accent); font-size: 10px; letter-spacing: .15em; }
+.hero-media video { position: absolute; inset: 0; width: 100%; height: 100%; display: block; background: #000; object-fit: cover; }
 
 .section-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; margin-bottom: 52px; }
 .section-heading h2, .publication-heading h2, .facilities-layout h2 { margin-bottom: 0; color: var(--navy-900); font-size: clamp(38px, 4vw, 56px); line-height: 1.08; letter-spacing: -.045em; }

@@ -54,27 +54,18 @@ export default function Home() {
             </dl>
           </div>
 
-          <a
-            className="hero-media"
-            href="https://www.youtube.com/watch?v=gk2TC96P5zc"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Watch the RCI Lab research overview video on YouTube"
-          >
-            <Image
-              src="/research-overview.jpg"
-              alt="RCI Lab robot research demonstration"
-              fill
-              priority
-              sizes="(max-width: 900px) 100vw, 52vw"
-            />
-            <span className="hero-media-shade" />
-            <span className="play-button" aria-hidden="true">▶</span>
-            <span className="media-caption">
-              <small>RCI LAB IN MOTION</small>
-              Watch our latest experiments
-            </span>
-          </a>
+          <div className="hero-media">
+            <video
+              aria-label="RCI Lab research overview video"
+              controls
+              playsInline
+              poster="/research-overview.jpg"
+              preload="metadata"
+            >
+              <source src="/rci-lab-overview.mp4" type="video/mp4" />
+              Your browser does not support embedded video.
+            </video>
+          </div>
         </div>
       </section>
 
