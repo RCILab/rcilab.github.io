@@ -779,7 +779,7 @@ export const publications: Publication[] = [
     authors: "김상현, 박범영, 박재흥†",
   },
   {
-    year: "2010",
+    year: "2011",
     type: "Domestic Journal",
     venue: "대한기계학회 논문집 A",
     title: "햅틱 복강경 수술 시뮬레이터에서의 근사적 마찰 및 중력 보상",
