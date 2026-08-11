@@ -2,9 +2,20 @@
 
 import { useState } from "react";
 import type { Patent, Publication } from "../data";
+import { AuthorNames } from "../components/AuthorNames";
 
 type PublicationKind = "Journal" | "Conference" | "Patent";
 type PublicationScope = "International" | "Domestic";
+type PatentStatus = Patent["status"];
+
+function yearGroup(year: string) {
+  const numericYear = Number.parseInt(year, 10);
+  return Number.isNaN(numericYear) || numericYear > 2023 ? year : "~2023";
+}
+
+function yearAnchor(year: string) {
+  return year === "~2023" ? "year-through-2023" : `year-${year}`;
+}
 
 function matchesSelection(
   paper: Publication,
@@ -23,7 +34,7 @@ function PublicationEntry({ paper, showYear = false }: { paper: Publication; sho
       </div>
       <p className="publication-meta">{paper.venue}</p>
       <h3>{paper.title}</h3>
-      {paper.authors && <p className="publication-authors">{paper.authors}</p>}
+      {paper.authors && <p className="publication-authors"><AuthorNames names={paper.authors} /></p>}
       {paper.links && (
         <div className="paper-links">
           {paper.links.map((link) => (
@@ -66,15 +77,18 @@ export function PublicationTabs({
 }) {
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");
   const [activeScope, setActiveScope] = useState<PublicationScope>("International");
+  const [activePatentStatus, setActivePatentStatus] = useState<PatentStatus>("Application");
   const activeInProgress = inProgressPublications.filter((paper) =>
     matchesSelection(paper, activeKind, activeScope),
   );
   const activePublications = publications.filter((paper) =>
     activeKind !== "Patent" && matchesSelection(paper, activeKind, activeScope),
   );
-  const activePatents = activeKind === "Patent" ? patents : [];
+  const activePatents = activeKind === "Patent"
+    ? patents.filter((patent) => patent.status === activePatentStatus)
+    : [];
   const years = [...new Set(
-    (activeKind === "Patent" ? activePatents : activePublications).map((item) => item.year),
+    (activeKind === "Patent" ? activePatents : activePublications).map((item) => yearGroup(item.year)),
   )];
   const hasPublications = activeKind === "Patent"
     ? activePatents.length > 0
@@ -115,13 +129,30 @@ export function PublicationTabs({
             ))}
           </div>
         )}
+        {activeKind === "Patent" && (
+          <div className="publication-scope-tabs patent-status-tabs" role="tablist" aria-label="Patent status">
+            {(["Application", "Registration", "Program Copyright"] as const).map((status) => (
+              <button
+                className={activePatentStatus === status ? "active" : undefined}
+                type="button"
+                role="tab"
+                aria-selected={activePatentStatus === status}
+                aria-controls="publication-panel"
+                key={status}
+                onClick={() => setActivePatentStatus(status)}
+              >
+                {status}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="publication-page" id="publication-panel" role="tabpanel">
         <aside>
           <p className="eyebrow">INDEX</p>
           {activeKind !== "Patent" && activeInProgress.length > 0 && <a href="#in-progress">In Progress</a>}
-          {years.map((year) => <a href={`#year-${year}`} key={year}>{year}</a>)}
+          {years.map((year) => <a href={`#${yearAnchor(year)}`} key={year}>{year}</a>)}
           {activeKind !== "Patent" && (
             <p className="publication-key">
               <span><sup>*</sup> Co-first authors</span>
@@ -130,7 +161,7 @@ export function PublicationTabs({
           )}
         </aside>
 
-        <div className="publication-years" key={`${activeScope}-${activeKind}`}>
+        <div className="publication-years" key={`${activeScope}-${activeKind}-${activePatentStatus}`}>
           {!hasPublications && (
             <p className="publication-empty">
               No {activeKind === "Patent" ? "patents" : `${activeScope.toLowerCase()} ${activeKind.toLowerCase()} publications`} are listed yet.
@@ -147,14 +178,14 @@ export function PublicationTabs({
             </section>
           )}
           {years.map((year) => (
-            <section id={`year-${year}`} key={year}>
+            <section id={yearAnchor(year)} key={year}>
               <h2>{year}</h2>
               <div>
                 {activeKind === "Patent"
-                  ? activePatents.filter((patent) => patent.year === year).map((patent) => (
+                  ? activePatents.filter((patent) => yearGroup(patent.year) === year).map((patent) => (
                     <PatentEntry patent={patent} key={`${patent.status}-${patent.number ?? patent.title}`} />
                   ))
-                  : activePublications.filter((paper) => paper.year === year).map((paper) => (
+                  : activePublications.filter((paper) => yearGroup(paper.year) === year).map((paper) => (
                     <PublicationEntry paper={paper} key={paper.title} />
                   ))}
               </div>

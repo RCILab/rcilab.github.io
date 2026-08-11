@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { HeroVideo } from "./components/HeroVideo";
 import { MutedYouTubeEmbed } from "./components/MutedYouTubeEmbed";
+import { AuthorNames } from "./components/AuthorNames";
 import { facilities, graduateStudents, newsItems, publications, researchInterns } from "./data";
 
 type HomeResearchFeature = {
@@ -182,7 +183,7 @@ export default function Home() {
                 <div>
                   <p className="publication-meta">{paper.venue} · {paper.year}</p>
                   <h3>{paper.title}</h3>
-                  <p className="publication-authors">{paper.authors}</p>
+                  <p className="publication-authors"><AuthorNames names={paper.authors} /></p>
                 </div>
               </article>
             ))}

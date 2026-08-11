@@ -116,6 +116,7 @@ button, input, textarea { font: inherit; }
 .publication-meta { margin-bottom: 8px; color: var(--blue-600); font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .publication-list h3 { margin-bottom: 10px; color: var(--navy-900); font-size: 20px; line-height: 1.45; }
 .publication-authors { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.publication-authors sup { color: var(--blue-600); font-size: 0.72em; font-weight: 800; line-height: 0; }
 
 .section-heading-row { display: flex; justify-content: space-between; gap: 40px; }
 .section-heading-row .text-link { align-self: end; }
@@ -213,6 +214,7 @@ button, input, textarea { font: inherit; }
 .publication-type-tabs button:hover { color: var(--blue-600); }
 .publication-type-tabs button.active { background: var(--navy-900); color: white; }
 .publication-scope-tabs { display: grid; grid-template-columns: repeat(2, minmax(115px, 1fr)); border-bottom: 1px solid var(--line); }
+.publication-scope-tabs.patent-status-tabs { grid-template-columns: repeat(3, minmax(105px, 1fr)); }
 .publication-scope-tabs button { padding: 15px 16px 13px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 .publication-scope-tabs button:hover { color: var(--blue-600); }
 .publication-scope-tabs button.active { border-bottom-color: var(--blue-600); color: var(--blue-600); }
@@ -273,6 +275,20 @@ button, input, textarea { font: inherit; }
 .application-email { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 25px 0 0; padding: 16px 18px; background: var(--blue-600); color: white !important; font-size: 12px !important; }
 .application-email strong { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
 .application-email span { font-weight: 800; }
+.join-preparation { padding-top: 0; }
+.join-preparation-heading { display: grid; grid-template-columns: minmax(280px, .75fr) 1.25fr; gap: 25px 90px; align-items: end; margin-bottom: 48px; padding-top: 65px; border-top: 1px solid var(--line); }
+.join-preparation-heading .eyebrow { grid-column: 1 / -1; }
+.join-preparation-heading h2 { margin: 0; color: var(--navy-900); font-size: clamp(34px, 4vw, 52px); line-height: 1.08; letter-spacing: -.045em; }
+.join-preparation-heading > p:last-child { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.join-preparation-heading strong { color: var(--blue-600); }
+.preparation-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 45px 60px; }
+.preparation-groups > section > h3 { margin: 0 0 15px; padding-bottom: 12px; border-bottom: 2px solid var(--navy-900); color: var(--navy-900); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+.preparation-groups article { padding: 19px 2px 21px; border-bottom: 1px solid var(--line); }
+.preparation-groups article > div { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.preparation-groups h4 { margin: 0; color: var(--navy-900); font-size: 17px; line-height: 1.45; }
+.preparation-groups article span { flex: none; padding: 5px 8px; border-radius: 100px; background: var(--blue-100); color: var(--blue-600); font-size: 9px; font-weight: 900; letter-spacing: .05em; text-transform: uppercase; }
+.preparation-groups article p { margin: 10px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.preparation-groups article a { color: var(--blue-600); font-weight: 750; }
 
 .site-footer { padding: 70px 0 22px; background: var(--navy-950); color: white; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr .55fr .85fr; gap: 70px; padding-bottom: 58px; }
@@ -319,6 +335,8 @@ button, input, textarea { font: inherit; }
   .archive-toolbar { align-items: flex-start; flex-direction: column; }
   .archive-year-heading { grid-template-columns: 90px 1fr auto; }
   .archive-year .news-page-list article { grid-template-columns: 35px 75px 1fr; }
+  .join-preparation-heading, .preparation-groups { grid-template-columns: 1fr; }
+  .join-preparation-heading { gap: 20px; }
 }
 
 @media (max-width: 620px) {

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { PageIntro } from "../components/PageIntro";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = { title: "Join Us" };
 
 export default function ContactPage() {
   return (
     <>
       <PageIntro
-        eyebrow="CONTACT"
-        title="Visit, collaborate, or join us."
-        description="RCI Lab is based in the Department of Mechanical Engineering at Kyung Hee University Global Campus in Yongin."
+        eyebrow="JOIN US"
+        title="Build intelligent robots with us."
+        description="Explore open positions, prepare the essential foundations, and find RCI Lab at Kyung Hee University Global Campus in Yongin."
       />
       <section className="section contact-section">
         <div className="shell contact-grid">
@@ -44,6 +44,69 @@ export default function ContactPage() {
             </dl>
             <p className="application-email"><strong>Application email</strong><span>kim87 at khu.ac.kr</span></p>
           </aside>
+        </div>
+      </section>
+
+      <section className="section join-preparation">
+        <div className="shell">
+          <div className="join-preparation-heading">
+            <p className="eyebrow">BEFORE YOU JOIN</p>
+            <h2>Recommended foundations</h2>
+            <p>
+              You do not need to have completed all of the following before applying. If some
+              topics are new to you, that is fine—we expect you to pick up the core ideas once
+              you join the lab. Topics marked <strong>Must-Know</strong> are the essential
+              foundations we expect you to be comfortable with before joining.
+            </p>
+          </div>
+
+          <div className="preparation-groups">
+            <section>
+              <h3>Mathematics</h3>
+              <article>
+                <div><h4>Linear Algebra</h4><span>Must-Know</span></div>
+                <p><a href="https://youtu.be/QVKj3LADCnA" target="_blank" rel="noreferrer">Video lectures ↗</a></p>
+              </article>
+            </section>
+
+            <section>
+              <h3>Learning</h3>
+              <article>
+                <div><h4>Machine Learning Basics</h4><span>Must-Know</span></div>
+                <p>
+                  Murphy, <a href="https://probml.github.io/pml-book/book1.html" target="_blank" rel="noreferrer"><em>Probabilistic Machine Learning: An Introduction</em> ↗</a>
+                  <br />Stanford CS229, Andrew Ng (<a href="https://youtu.be/jGwO_UgTS7I" target="_blank" rel="noreferrer">lecture series ↗</a>)
+                </p>
+              </article>
+              <article>
+                <div><h4>Deep Reinforcement Learning</h4></div>
+                <p>Berkeley CS285 (<a href="https://youtu.be/SupFHGbytvA" target="_blank" rel="noreferrer">lecture series ↗</a>)</p>
+              </article>
+            </section>
+
+            <section>
+              <h3>Robotics</h3>
+              <article>
+                <div><h4>Modern Robotics: Mechanics, Planning, and Control</h4><span>Must-Know</span></div>
+                <p>
+                  <a href="https://hades.mech.northwestern.edu/images/7/7f/MR.pdf" target="_blank" rel="noreferrer">Textbook (PDF) ↗</a>
+                  <br /><a href="https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx" target="_blank" rel="noreferrer">Video lectures ↗</a>
+                </p>
+              </article>
+              <article>
+                <div><h4>Advanced Robotics</h4></div>
+                <p>MIT Underactuated Robotics (<a href="https://youtu.be/uyyBT-MHhLE" target="_blank" rel="noreferrer">lecture series ↗</a>)</p>
+              </article>
+            </section>
+
+            <section>
+              <h3>Optimization</h3>
+              <article>
+                <div><h4>Convex Optimization</h4></div>
+                <p>Stanford EE364A (<a href="https://youtu.be/kV1ru-Inzl4" target="_blank" rel="noreferrer">lecture series ↗</a>)</p>
+              </article>
+            </section>
+          </div>
         </div>
       </section>
     </>
