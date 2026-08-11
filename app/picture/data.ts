@@ -10,6 +10,8 @@ export const pictureYears: PictureYear[] = [
       { src: "/pictures/2026/03.jpg", width: 1280, height: 960 },
       { src: "/pictures/2026/04.jpg", width: 1280, height: 949 },
       { src: "/pictures/2026/05.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2026/06.jpg", width: 1600, height: 1200 },
+      { src: "/pictures/2026/07.jpg", width: 1600, height: 1200 },
     ],
   },
   {
@@ -46,6 +48,19 @@ export const pictureYears: PictureYear[] = [
       { src: "/pictures/2025/29.jpg", width: 1280, height: 861 },
       { src: "/pictures/2025/30.jpg", width: 1280, height: 861 },
       { src: "/pictures/2025/31.jpg", width: 1280, height: 868 },
+    ],
+  },
+  {
+    year: "2024",
+    photos: [
+      { src: "/pictures/2024/01.jpg", width: 1280, height: 961 },
+      { src: "/pictures/2024/02.jpg", width: 1280, height: 960 },
+    ],
+  },
+  {
+    year: "2023",
+    photos: [
+      { src: "/pictures/2023/01.jpg", width: 1280, height: 718 },
     ],
   },
 ];

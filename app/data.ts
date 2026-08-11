@@ -326,7 +326,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.01",
     category: "Lab",
     title: "RCI Lab gathered to celebrate the end of 2025.",
-    href: "/picture/#year-2026",
+    href: "/picture/",
   },
   {
     date: "2026.01",
