@@ -18,6 +18,8 @@ export function SiteFooter() {
           <Link href="/research">Research</Link>
           <Link href="/publications">Publications</Link>
           <Link href="/grants">Grants</Link>
+          <Link href="/news">News</Link>
+          <Link href="/picture">Pictures</Link>
         </div>
         <div>
           <p className="footer-label">Contact</p>
