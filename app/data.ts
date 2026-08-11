@@ -503,6 +503,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "Engineering Science and Technology, an International Journal",
     title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
+    authors: "Dongjo Kim, Minhyeong Kang, Hojin Lee, Nakyoung Lee, Stephen Baek, Sanghyun Kim†, Sanga Lee†, Jeongsu Lee†",
     note: "In Revision",
     jcr: "12.1%",
   },
@@ -511,6 +512,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "International Journal of Control, Automation, and Systems",
     title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints",
+    authors: "Seulchan Lee, Sanghyun Kim†",
     note: "In Revision",
     links: [
       { label: "Project", href: "https://rcilab.github.io/mcmppi/" },
