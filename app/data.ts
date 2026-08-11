@@ -430,7 +430,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Nonlinear Dynamics",
     title: "Whole-body Control of Redundant Hybrid Cable-Driven Robot with Manipulator: Hierarchical Quadratic Programming Approach",
-    authors: "Suhwan Park, Leesai Park, Seulchan Lee, Sanghyun Kim",
+    authors: "Suhwan Park*, Leesai Park*, Seulchan Lee*, Sanghyun Kim†",
   },
   {
     year: "2023",
