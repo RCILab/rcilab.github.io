@@ -14,9 +14,10 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="footer-label">Explore</p>
-          <Link href="/research">Research</Link>
           <Link href="/people">People</Link>
+          <Link href="/research">Research</Link>
           <Link href="/publications">Publications</Link>
+          <Link href="/grants">Grants</Link>
         </div>
         <div>
           <p className="footer-label">Contact</p>

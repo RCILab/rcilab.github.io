@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
-  { href: "/research", label: "Research" },
   { href: "/people", label: "People" },
+  { href: "/research", label: "Research" },
   { href: "/publications", label: "Publications" },
+  { href: "/grants", label: "Grants" },
   { href: "/news", label: "News" },
-  { href: "/contact", label: "Contact" },
 ];
 
 function NavigationLinks() {
@@ -44,7 +44,7 @@ export function SiteHeader() {
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <NavigationLinks />
-          <Link className="nav-cta" href="/contact#join">
+          <Link className="nav-cta" href="/contact">
             Join us
           </Link>
         </nav>
@@ -52,7 +52,7 @@ export function SiteHeader() {
           <summary aria-label="Open navigation">Menu</summary>
           <nav aria-label="Mobile navigation">
             <NavigationLinks />
-            <Link href="/contact#join">Join us</Link>
+            <Link href="/contact">Join us</Link>
           </nav>
         </details>
       </div>
