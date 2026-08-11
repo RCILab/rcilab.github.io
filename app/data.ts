@@ -180,7 +180,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.08",
     category: "Publication",
     title: "Our paper by Thanh Nguyen Truong has been accepted to Information Sciences.",
-    detail: "Thanh Nguyen Truong, Sanghyun Kim, “High-Performance Fixed-Time Active Fault-Tolerant Control of Robotic Manipulators via Sparse Physics-Informed Dynamics Learning,” Information Sciences, 2026.",
+    detail: "Thanh Nguyen Truong, Sanghyun Kim†, “High-Performance Fixed-Time Active Fault-Tolerant Control of Robotic Manipulators via Sparse Physics-Informed Dynamics Learning,” Information Sciences, 2026.",
   },
   {
     date: "2026.07",
@@ -217,7 +217,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.07",
     category: "Award",
     title: "Our paper by Daum Park and Bohyeong Pak received the Best Paper Award from the Dynamics, Control and Robotics Division of the Korean Society of Mechanical Engineers.",
-    detail: "박다움, 박보형, 김상현, “시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획,” 대한기계학회 2026년 춘계학술대회, 2026.",
+    detail: "박다움, 박보형, 김상현†, “시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획,” 대한기계학회 2026년 춘계학술대회, 2026.",
   },
   {
     date: "2026.07",
@@ -247,7 +247,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.05",
     category: "Publication",
     title: "One paper has been accepted to the Journal of Korea Robotics Society.",
-    detail: "이슬찬, 김상현, “VAE-MPPI: 양팔 로봇 조작을 위한 폐쇄 연쇄 제약 궤적 최적화,” 로봇학회 논문지, 2026.",
+    detail: "이슬찬, 김상현†, “VAE-MPPI: 양팔 로봇 조작을 위한 폐쇄 연쇄 제약 궤적 최적화,” 로봇학회 논문지, 2026.",
   },
   {
     date: "2026.05",
@@ -556,7 +556,7 @@ export const publications: Publication[] = [
     type: "Domestic Journal",
     venue: "로봇학회 논문지",
     title: "VAE-MPPI: 양팔 로봇 조작을 위한 폐쇄 연쇄 제약 궤적 최적화",
-    authors: "이슬찬, 김상현",
+    authors: "이슬찬, 김상현†",
   },
   {
     year: "2026",
@@ -1187,7 +1187,7 @@ export const awards: Award[] = [
     year: "2026",
     title: "우수논문상",
     org: "대한기계학회 2026년 춘계학술대회",
-    detail: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획 (박다움, 박보형, 김상현)",
+    detail: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획 (박다움, 박보형, 김상현†)",
   },
   {
     year: "2026",
