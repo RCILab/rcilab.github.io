@@ -32,7 +32,7 @@ export default function PeoplePage() {
               control, human–robot interaction, and Physical AI.
             </p>
             <div className="profile-links">
-              <a href="mailto:kim87@khu.ac.kr">Email ↗</a>
+              <span className="profile-email">kim87 at khu.ac.kr</span>
               <a href="https://scholar.google.com" target="_blank" rel="noreferrer">Google Scholar ↗</a>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function PeoplePage() {
                   <h3>{member.name}</h3>
                   <p>{member.program} {member.joined && <span>· {member.joined}</span>}</p>
                   <strong>{member.focus}</strong>
-                  <a href={`mailto:${member.email}`}>{member.email}</a>
+                  <span className="member-email">{member.email}</span>
                 </div>
               </article>
             ))}
@@ -71,7 +71,7 @@ export default function PeoplePage() {
             {researchInterns.map((member) => (
               <article className="member-card" key={member.name}>
                 <div className="member-avatar" aria-hidden="true">{initials(member.name)}</div>
-                <div><h3>{member.name}</h3><p>{member.program}</p><strong>{member.focus}</strong><a href={`mailto:${member.email}`}>{member.email}</a></div>
+                <div><h3>{member.name}</h3><p>{member.program}</p><strong>{member.focus}</strong><span className="member-email">{member.email}</span></div>
               </article>
             ))}
           </div>

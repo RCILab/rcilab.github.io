@@ -20,7 +20,7 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="footer-label">Contact</p>
-          <a href="mailto:kim87@khu.ac.kr">kim87@khu.ac.kr</a>
+          <span className="footer-email">kim87 at khu.ac.kr</span>
           <p>Room 7004, Woojungwon<br />Kyung Hee University Global Campus</p>
           <p>+82 31-201-2436</p>
         </div>

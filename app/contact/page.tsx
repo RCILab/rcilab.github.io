@@ -18,7 +18,7 @@ export default function ContactPage() {
             <h2>Robot Control and Intelligence Laboratory</h2>
             <dl>
               <div><dt>Professor</dt><dd>Prof. Sanghyun Kim</dd></div>
-              <div><dt>Email</dt><dd><a href="mailto:kim87@khu.ac.kr">kim87@khu.ac.kr</a></dd></div>
+              <div><dt>Email</dt><dd><span className="obfuscated-email">kim87 at khu.ac.kr</span></dd></div>
               <div><dt>Phone</dt><dd><a href="tel:+82312012436">+82 31-201-2436</a></dd></div>
               <div><dt>Address</dt><dd>Room 7004, Woojungwon<br />Kyung Hee University Global Campus<br />1732 Deogyeong-daero, Giheung-gu<br />Yongin-si, Gyeonggi-do, Republic of Korea</dd></div>
             </dl>
@@ -39,9 +39,9 @@ export default function ContactPage() {
             <dl>
               <div><dt>Eligibility</dt><dd>Undergraduate students in their third year, second semester or above</dd></div>
               <div><dt>Areas</dt><dd>Control, planning, robot learning, humanoids, manipulation, navigation</dd></div>
-              <div><dt>Contact</dt><dd>Send your CV and research interests to kim87@khu.ac.kr</dd></div>
+              <div><dt>Contact</dt><dd>Send your CV and research interests to kim87 at khu.ac.kr</dd></div>
             </dl>
-            <a className="button button-primary" href="mailto:kim87@khu.ac.kr?subject=RCI%20Lab%20Application">Email your application</a>
+            <p className="application-email"><strong>Application email</strong><span>kim87 at khu.ac.kr</span></p>
           </aside>
         </div>
       </section>
