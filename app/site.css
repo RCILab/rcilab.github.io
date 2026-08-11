@@ -46,7 +46,7 @@ button, input, textarea { font: inherit; }
 .text-link:hover span, .text-link:focus-visible span { transform: translateX(4px); }
 
 .university-bar { background: var(--navy-950); color: #b9c9df; font-size: 11px; letter-spacing: .03em; }
-.university-inner { height: 34px; display: flex; align-items: center; justify-content: space-between; }
+.university-inner { height: 34px; display: flex; align-items: center; justify-content: flex-start; gap: 24px; }
 .university-inner a { color: white; font-weight: 700; transition: color .2s ease; }
 .university-inner a:hover, .university-inner a:focus-visible { color: var(--accent); }
 .site-header { position: sticky; z-index: 50; top: 0; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
