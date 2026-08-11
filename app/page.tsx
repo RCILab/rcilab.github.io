@@ -142,7 +142,7 @@ export default function Home() {
             <Link className="text-link" href="/news">All news <span>→</span></Link>
           </div>
           <div className="news-list">
-            {newsItems.slice(0, 5).map((item) => (
+            {newsItems.slice(0, 10).map((item) => (
               <article key={`${item.date}-${item.title}`}>
                 <time>{item.date}</time>
                 <span className={`news-tag tag-${item.category.toLowerCase()}`}>{item.category}</span>
