@@ -35,7 +35,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Optimal Control",
     subtitle: "Real-time decisions under constraints",
     topics: ["MPPI", "DDP", "Trajectory optimization"],
-    image: "/research-optimal.jpg",
+    image: "/research-prmppi.png",
     youtubeId: "nkt-hxeWGN4",
   },
   {
