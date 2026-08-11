@@ -37,6 +37,7 @@ export default function PeoplePage() {
             <div><dt>2020–2023</dt><dd><strong>Korea Institute of Machinery &amp; Materials</strong><br />Senior Researcher</dd></div>
             <div><dt>2020</dt><dd><strong>University of Edinburgh</strong><br />Research Associate</dd></div>
             <div><dt>2012–2020</dt><dd><strong>Seoul National University</strong><br />Ph.D.</dd></div>
+            <div><dt>2005–2012</dt><dd><strong>Seoul National University</strong><br />B.S.</dd></div>
           </dl>
         </div>
       </section>
