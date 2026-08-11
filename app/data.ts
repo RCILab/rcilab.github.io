@@ -416,7 +416,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems",
     title: "CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance",
-    authors: "Leesai Park, Keunwoo Jang*, Sanghyun Kim*",
+    authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
   },
   {
     year: "2024",
