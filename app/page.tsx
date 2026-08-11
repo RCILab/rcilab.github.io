@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { HeroVideo } from "./components/HeroVideo";
 import { facilities, newsItems, publications, researchAreas, researchInterns } from "./data";
 
 export default function Home() {
@@ -55,16 +56,7 @@ export default function Home() {
           </div>
 
           <div className="hero-media">
-            <video
-              aria-label="RCI Lab research overview video"
-              controls
-              playsInline
-              poster="/research-overview.jpg"
-              preload="metadata"
-            >
-              <source src="/rci-lab-overview.mp4" type="video/mp4" />
-              Your browser does not support embedded video.
-            </video>
+            <HeroVideo />
           </div>
         </div>
       </section>
