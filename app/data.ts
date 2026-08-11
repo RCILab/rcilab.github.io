@@ -210,7 +210,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.07",
     category: "Publication",
     title: "Our paper by Jiho Hong and Eunae Kang has been accepted to Engineering Applications of Artificial Intelligence.",
-    detail: "Jiho Hong, Eunae Kang, Sanghyun Kim, Young-Sik Shin, “Instance-Enriched Semantic Maps for Visual Language Navigation,” Engineering Applications of Artificial Intelligence, 2026.",
+    detail: "Jiho Hong*, Eunae Kang*, Sanghyun Kim†, Young-Sik Shin†, “Instance-Enriched Semantic Maps for Visual Language Navigation,” Engineering Applications of Artificial Intelligence, 2026.",
     href: "https://rcilab.github.io/iesm_vln/",
   },
   {
