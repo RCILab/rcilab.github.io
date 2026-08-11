@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rcilab.khu.ac.kr/sitemap.xml
+Sitemap: https://rcilab.github.io/sitemap.xml

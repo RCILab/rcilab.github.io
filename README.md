@@ -24,4 +24,4 @@ The static website is generated in `out/` and deployed to GitHub Pages by GitHub
 3. In **Settings → Pages**, select **GitHub Actions** as the source.
 4. The included workflow builds and deploys the static export.
 
-The `CNAME` file keeps `rcilab.khu.ac.kr` as the custom domain. Configure the university DNS host as a CNAME to `rcilab.github.io` after validating the GitHub Pages deployment.
+The site is initially published at `https://rcilab.github.io`. After validation, add `public/CNAME` with `rcilab.khu.ac.kr` and update the university DNS record to complete the custom-domain cutover.

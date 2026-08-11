@@ -4,7 +4,7 @@ import { SiteHeader } from "./components/SiteHeader";
 import "./site.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rcilab.khu.ac.kr"),
+  metadataBase: new URL("https://rcilab.github.io"),
   title: {
     default: "RCI Lab | Robot Control and Intelligence Laboratory",
     template: "%s | RCI Lab",
