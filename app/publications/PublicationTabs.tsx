@@ -92,7 +92,11 @@ export function PublicationTabs({
     : [];
   const years = [...new Set(
     (activeKind === "Patent" ? activePatents : activePublications).map((item) => yearGroup(item.year)),
-  )];
+  )].sort((a, b) => {
+    if (a === "~2023") return 1;
+    if (b === "~2023") return -1;
+    return Number.parseInt(b, 10) - Number.parseInt(a, 10);
+  });
   const hasPublications = activeKind === "Patent"
     ? activePatents.length > 0
     : activeInProgress.length > 0 || activePublications.length > 0;
@@ -134,7 +138,7 @@ export function PublicationTabs({
         )}
         {activeKind === "Patent" && (
           <div className="publication-scope-tabs patent-status-tabs" role="tablist" aria-label="Patent status">
-            {(["Application", "Registration", "Program Copyright"] as const).map((status) => (
+            {(["Application", "Registration", "Program"] as const).map((status) => (
               <button
                 className={activePatentStatus === status ? "active" : undefined}
                 type="button"

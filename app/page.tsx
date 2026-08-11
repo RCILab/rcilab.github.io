@@ -24,7 +24,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
   },
   {
     number: "02",
-    title: "Wholebody Control",
+    title: "Whole-body Control",
     subtitle: "Dynamic coordination for complex robots",
     topics: ["Whole-body control", "Hierarchical QP", "Mobile manipulation"],
     youtubeId: "5Xwo2iPRB4Q",

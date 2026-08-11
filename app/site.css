@@ -393,3 +393,8 @@ button, input, textarea { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+/* Picture gallery */
+.picture-grid { columns: 3 300px; column-gap: 20px; }
+.picture-grid figure { margin: 0 0 20px; break-inside: avoid; border: 1px solid var(--line); background: var(--cloud); }
+.picture-grid img { display: block; width: 100%; height: auto; }

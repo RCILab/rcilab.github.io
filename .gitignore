@@ -45,3 +45,7 @@ yarn-error.log*
 /node-portable.zip
 /.corepack/
 /preview-assets/
+
+# local-only source material and publish helpers
+/reference/
+/.publish-rcilab/

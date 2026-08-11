@@ -39,7 +39,7 @@ export type Publication = {
 
 export type Patent = {
   year: string;
-  status: "Application" | "Registration" | "Program Copyright";
+  status: "Application" | "Registration" | "Program";
   title: string;
   inventors: string;
   number?: string;
@@ -191,7 +191,7 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.07",
     category: "Grant",
-    title: "RCI Lab won a grant from KairosLab.",
+    title: "RCI Lab won a grant from KailosLab.",
     detail: "과제명: 화학 실험 자동화를 위한 VLM 기반 제어 기술 개발 · 과제형태: 산학협력 · 지원기관: 카이로스랩 · 수행기간: 2026",
   },
   {
@@ -293,7 +293,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.02",
     category: "Patent",
     title: "RCI Lab registered a domestic patent.",
-    detail: "김상현, 강민형, 양준열, “라이다 기반 모바일 로봇의 도킹 시스템 및 도킹방법,” 대한민국 특허 10-2924819, 2026.02.04.",
+    detail: "김상현, 양준열, 강민형, “라이다 기반 모바일 로봇의 도킹 시스템 및 도킹방법,” 대한민국 특허 10-2924819, 2026.02.04.",
   },
   {
     date: "2026.02",
@@ -326,7 +326,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.01",
     category: "Lab",
     title: "RCI Lab gathered to celebrate the end of 2025.",
-    href: "https://rcilab.khu.ac.kr/picture/2026",
+    href: "/picture/#year-2026",
   },
   {
     date: "2026.01",
@@ -361,11 +361,11 @@ export const researchInterns: Member[] = [
 ];
 
 export const alumni = [
-  { name: "Seunghyun Lee", degree: "M.S., 2023-2", affiliation: "FunctionBay" },
-  { name: "Hakjun Kim", degree: "M.S., 2023-2", affiliation: "Doosan Robotics" },
-  { name: "Joonyeol Yang", degree: "M.S., 2023-2", affiliation: "HL Robotics" },
-  { name: "Jiwon Yoon", degree: "M.S., 2024-2", affiliation: "Geobot" },
-  { name: "Eunae Kang", degree: "M.S., 2024-2", affiliation: "Blue Robin" },
+  { name: "Seunghyun Lee", degree: "M.S.", joined: "2023-2", affiliation: "FunctionBay" },
+  { name: "Hakjun Kim", degree: "M.S.", joined: "2023-2", affiliation: "Doosan Robotics" },
+  { name: "Joonyeol Yang", degree: "M.S.", joined: "2023-2", affiliation: "HL Robotics" },
+  { name: "Jiwon Yoon", degree: "M.S.", joined: "2024-2", affiliation: "Magenta Robotics" },
+  { name: "Eunae Kang", degree: "M.S.", joined: "2024-2", affiliation: "Blue Robin" },
 ];
 
 export const inProgressPublications: Publication[] = [
@@ -489,7 +489,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
     note: "Under Review",
-    links: [{ label: "Project", href: "https://anonymous.4open.science/w/GRAFT-0B84/" }],
+    links: [{ label: "Project", href: "https://rcilab.github.io/graft/" }],
   },
   {
     year: "2026",
@@ -570,6 +570,7 @@ export const publications: Publication[] = [
     venue: "Mathematics",
     title: "Hybrid A*-guided Model Predictive Path Integral Control for Robust Navigation in Rough Terrains",
     authors: "Joonyeol Yang*, Minhyeong Kang*, Seulchan Lee, Sanghyun Kim†",
+    jcr: "6.0%",
   },
   {
     year: "2025",
@@ -583,7 +584,7 @@ export const publications: Publication[] = [
     type: "Domestic Journal",
     venue: "Transactions of the Korean Society of Mechanical Engineers A",
     title: "험지 환경에서의 자율주행 로봇 경로 계획 성능 벤치마크 및 고찰",
-    authors: "양준열, 이강민, 정은빈, 방혜원, 조용진, 강인성, 김상현",
+    authors: "양준열, 이강민, 정은빈, 방혜원, 조용진, 강인성, 김상현†",
   },
   {
     year: "2025",
@@ -591,13 +592,6 @@ export const publications: Publication[] = [
     venue: "Transactions of the Korean Society of Mechanical Engineers A",
     title: "모델 예측 경로 적분을 활용한 하이브리드 케이블 구동 로봇의 전신 제어기 개발",
     authors: "강민형*, 박이새*, 장근우, 박범영†, 김상현†",
-  },
-  {
-    year: "2025",
-    type: "International Conference",
-    venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems",
-    title: "CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance",
-    authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
   },
   {
     year: "2024",
@@ -621,6 +615,7 @@ export const publications: Publication[] = [
     venue: "IEEE Transactions on Robotics",
     title: "Online Multi-Contact Receding Horizon Planning via Value Function Approximation",
     authors: "Jiayi Wang†, Sanghyun Kim, Teguh Santoso Lembono, Wenqian Du, Jaehyun Shim, Saeid Samadi, Ke Wang, Vladimir Ivan, Sylvain Calinon, Sethu Vijayakumar, Steve Tonneau",
+    jcr: "9.4%",
   },
   {
     year: "2024",
@@ -711,8 +706,8 @@ export const publications: Publication[] = [
     year: "2018",
     type: "Domestic Journal",
     venue: "Journal of Korea Robotics Society",
-    title: "A Unified Framework for Overcoming Motion Constraints of Robots Using Task Transition Algorithm",
-    authors: "Keunwoo Jang, Sanghyun Kim, Suhan Park, Jaeheung Park",
+    title: "작업 전이 알고리즘을 이용한 로봇의 동작 제약 극복을 위한 통합 프레임워크",
+    authors: "장근우, 김상현, 박수한, 박재흥†",
     note: "Best Journal Paper Award",
   },
   {
@@ -726,22 +721,22 @@ export const publications: Publication[] = [
     year: "2017",
     type: "Domestic Journal",
     venue: "Robot and Human",
-    title: "HRI Research Trends: Focusing on Robot User Interfaces for Task Execution",
-    authors: "Junhyung Kim, Sanghyun Kim, Jaeheung Park",
+    title: "HRI 연구 동향 - 작업 수행을 위한 로봇 사용자 인터페이스를 중심으로",
+    authors: "김준형, 김상현, 박재흥†",
   },
   {
     year: "2017",
     type: "Domestic Journal",
     venue: "Journal of Korea Robotics Society",
-    title: "Singularity Avoidance Algorithms for Controlling Robot Manipulator: A Comparative Study",
-    authors: "Sanghyun Kim, Jaeheung Park",
+    title: "로봇 매니퓰레이터 제어를 위한 특이점 회피 알고리즘의 비교 연구",
+    authors: "김상현, 박재흥†",
   },
   {
     year: "2016",
     type: "Domestic Journal",
     venue: "Journal of Institute of Control, Robotics and Systems",
-    title: "Development of Tele-Operation Interface and Stable Navigation Strategy for Humanoid Robot Driving",
-    authors: "Seho Shin, Minsung Kim, Joonwoo Ahn, Sanghyun Kim, Jaeheung Park",
+    title: "휴머노이드 로봇 주행을 위한 원격 조종 인터페이스 및 안정적인 주행 전략 개발",
+    authors: "신세호, 김민성, 안준우, 김상현, 박재흥†",
   },
   {
     year: "2015",
@@ -754,15 +749,15 @@ export const publications: Publication[] = [
     year: "2015",
     type: "Domestic Journal",
     venue: "Robot and Human",
-    title: "DRC Finals 2015: Analysis of Participating Teams’ Results",
-    authors: "Sanghyun Kim, Beomyeong Park, Jaeheung Park",
+    title: "DRC Finals 2015 - 참가팀들의 결과분석",
+    authors: "김상현, 박범영, 박재흥†",
   },
   {
     year: "2010",
     type: "Domestic Journal",
     venue: "Transactions of the Korean Society of Mechanical Engineers A",
-    title: "Approximate Friction and Gravity Compensation in Haptic Laparoscopic Surgery Simulator",
-    authors: "Sanghyun Kim, Chang-Gyu Lee, Ji-Suk Kim, Jeha Ryu",
+    title: "햅틱 복강경 수술 시뮬레이터에서의 근사적 마찰 및 중력 보상",
+    authors: "김상현, 이창규, 김지숙, 류제하†",
   },
 
   {
@@ -807,7 +802,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers 2026 Spring Conference",
     title: "화물 카트 결합형 전방향 로봇의 기구학적 정렬 및 통합 제어기 설계",
-    authors: "손재락, 김상현, 심재훈",
+    authors: "손재락, 김상현†, 심재훈†",
   },
   {
     year: "2026",
@@ -848,6 +843,13 @@ export const publications: Publication[] = [
   {
     year: "2025",
     type: "International Conference",
+    venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    title: "CSC-MPPI: A Novel Constrained MPPI Framework with DBSCAN for Reliable Obstacle Avoidance",
+    authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
+  },
+  {
+    year: "2025",
+    type: "International Conference",
     venue: "3rd Emerging Technologies in Mechanical Engineering",
     title: "Tool-Aware Task and Motion Planning with Dynamic Tool Changing for Automated Chemistry",
     authors: "Hyunho Cho*, Bohyeong Pak*, Sanghyun Kim†",
@@ -871,7 +873,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers 2025 Spring Conference",
     title: "행동 트리 및 인공지능 모델 연계를 통한 자율 작업 시퀀스 구현",
-    authors: "이승현, 김상현",
+    authors: "이승현, 김상현†",
   },
   {
     year: "2025",
@@ -885,7 +887,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "Korean Society for Aeronautical and Space Sciences 2025 Spring Conference",
     title: "거친 지형 강인한 주행을 위한 Hybrid A* 기반 모델 예측 경로 적분 제어",
-    authors: "강민형*, 이슬찬*, 양준열, 김상현",
+    authors: "강민형*, 이슬찬*, 양준열, 김상현†",
   },
   {
     year: "2025",
@@ -899,7 +901,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "20th Korea Robotics Society Annual Conference",
     title: "증강현실 기기를 이용한 음성 명령 기반 실시간 객체 세그멘테이션",
-    authors: "강은애, 신영식, 김상현",
+    authors: "강은애, 신영식, 김상현†",
   },
   {
     year: "2024",
@@ -928,7 +930,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers 2024 Fall Conference",
     title: "시각-언어 내비게이션을 위한 개방 어휘 기반의 의미론적 맵핑",
-    authors: "홍지호*, 강은애*, 김상현, 신영식",
+    authors: "홍지호*, 강은애*, 김상현†, 신영식†",
   },
   {
     year: "2024",
@@ -942,28 +944,28 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "Institute of Control, Robotics and Systems Conference",
     title: "달 탐사 시뮬레이션에서의 Model Predictive Path Integral 기반 모바일 로봇 2.5D 자율 주행 제어",
-    authors: "양준열, 김상현",
+    authors: "양준열, 김상현†",
   },
   {
     year: "2024",
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers Dynamics, Control and Robotics Division 2024 Spring Conference",
     title: "모바일 매니퓰레이터의 AR 디스플레이 인터페이스 설계",
-    authors: "조현호, 김상현",
+    authors: "조현호, 김상현†",
   },
   {
     year: "2024",
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers Dynamics, Control and Robotics Division 2024 Spring Conference",
     title: "ICP 알고리즘을 활용한 QR 마커 기반 도킹 시스템 향상",
-    authors: "강민형, 양준열, 김상현",
+    authors: "강민형, 양준열, 김상현†",
   },
   {
     year: "2024",
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers Dynamics, Control and Robotics Division 2024 Spring Conference",
     title: "달 탐사 시뮬레이션 기반 모바일 로봇의 2.5D 자율 주행 기법",
-    authors: "양준열, 김상현",
+    authors: "양준열, 김상현†",
   },
   {
     year: "2023",
@@ -997,8 +999,8 @@ export const publications: Publication[] = [
     year: "2020",
     type: "Domestic Conference",
     venue: "15th Korea Robotics Society Annual Conference",
-    title: "Inverse Kinematics Minimizing Joint Torque with Given Target Wrench",
-    authors: "Suhan Park, Keunwoo Jang, Seungyeon Kim, Sanghyun Kim, Jaeheung Park",
+    title: "목표 렌치가 주어진 상황에서 관절 토크를 최소화하는 역기구학",
+    authors: "박수한, 장근우, 김승연, 김상현, 박재흥†",
   },
   {
     year: "2019",
@@ -1012,15 +1014,15 @@ export const publications: Publication[] = [
     year: "2019",
     type: "Domestic Conference",
     venue: "14th Korea Robotics Society Annual Conference",
-    title: "Self-Collision Avoidance Algorithm for Robot Manipulator Using Continuous Task Transition Algorithm",
-    authors: "Keunwoo Jang, Sanghyun Kim, Suhan Park, Sang Yup Lee, Jaeheung Park",
+    title: "연속 작업 전이 알고리즘을 이용한 로봇 매니퓰레이터의 자기 충돌 회피 알고리즘",
+    authors: "장근우, 김상현, 박수한, 이상엽, 박재흥†",
   },
   {
     year: "2019",
     type: "Domestic Conference",
     venue: "14th Korea Robotics Society Annual Conference",
-    title: "A Comparative Study of Tracking Control with Closed Loop Inverse Kinematics Algorithm",
-    authors: "Sang Yup Lee, Suhan Park, Keunwoo Jang, Sanghyun Kim, Seungyeon Kim, Jaeheung Park",
+    title: "폐루프 역기구학 알고리즘을 이용한 추종 제어의 비교 연구",
+    authors: "이상엽, 박수한, 장근우, 김상현, 김승연, 박재흥†",
   },
   {
     year: "2018",
@@ -1047,8 +1049,8 @@ export const publications: Publication[] = [
     year: "2017",
     type: "Domestic Conference",
     venue: "Korean Society for Precision Engineering 2017 Fall Conference",
-    title: "Joint Limit Avoidance of Non-Holonomic Mobile Manipulator Using Weighting Matrix in Generalized Pseudo-Inverse",
-    authors: "Keunwoo Jang, Sanghyun Kim, Suhwan Park, Jaeheung Park",
+    title: "일반화된 의사역행렬의 가중 행렬을 이용한 비홀로노믹 모바일 매니퓰레이터의 관절 한계 회피",
+    authors: "장근우, 김상현, 박수한, 박재흥†",
   },
   {
     year: "2016",
@@ -1068,8 +1070,8 @@ export const publications: Publication[] = [
     year: "2015",
     type: "Domestic Conference",
     venue: "Conference on Information and Control Systems",
-    title: "Avatar Motion Generation by Null-Space Mapping Based on Minimum Number of Markers",
-    authors: "Mingon Kim, Romain Destenay, Sanghyun Kim, Jounghuem Kwon, Ki-Won Yeom, Jaeheung Park, Bum-Jae You",
+    title: "최소 개수의 마커 기반 영공간 사상을 이용한 아바타 동작 생성",
+    authors: "김민곤, Romain Destenay, 김상현, 권정흠, 염기원, 박재흥, 유범재†",
   },
   {
     year: "2014",
@@ -1082,15 +1084,15 @@ export const publications: Publication[] = [
     year: "2014",
     type: "Domestic Conference",
     venue: "9th Korea Robotics Society Annual Conference",
-    title: "Extracting Postural Synergies Using Grasping Taxonomy",
-    authors: "Sanghyun Kim, Mingon Kim, Jaeheung Park",
+    title: "파지 분류 체계를 이용한 자세 시너지 추출",
+    authors: "김상현, 김민곤, 박재흥†",
   },
   {
     year: "2014",
     type: "Domestic Conference",
     venue: "9th Korea Robotics Society Annual Conference",
-    title: "Estimation of Hand Posture and Grasping Force Using Surface EMG",
-    authors: "Jimin Lee, Mingon Kim, Sanghyun Kim, Jaeheung Park",
+    title: "표면 근전도를 이용한 손 자세 및 파지력 추정",
+    authors: "이지민, 김민곤, 김상현, 박재흥†",
   },
   {
     year: "2010",
@@ -1103,15 +1105,15 @@ export const publications: Publication[] = [
     year: "2010",
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers Conference",
-    title: "Trocar Friction Modelling for Friction and Gravity Compensation",
-    authors: "Sanghyun Kim, Chang-Gyu Lee, Ji-Suk Kim, Jeha Ryu",
+    title: "마찰 및 중력 보상을 위한 트로카 마찰 모델링",
+    authors: "김상현, 이창규, 김지숙, 류제하†",
   },
   {
     year: "2010",
     type: "Domestic Conference",
     venue: "Korean Society of Mechanical Engineers Conference",
-    title: "Friction and Gravity Compensation in Haptic Laparoscopic Surgery Simulator",
-    authors: "Sanghyun Kim, Chang-Gyu Lee, Ji-Suk Kim, Jeha Ryu",
+    title: "햅틱 복강경 수술 시뮬레이터에서의 마찰 및 중력 보상",
+    authors: "김상현, 이창규, 김지숙, 류제하†",
   },
 ];
 
@@ -1121,16 +1123,16 @@ export const patents: Patent[] = [
   { year: "2026", status: "Application", inventors: "김상현, 강은애, 홍지호, 신영식", title: "인스턴스 수준 시맨틱 맵 기반 자연어 내비게이션 장치 및 방법", number: "10-2026-0075610" },
   { year: "2026", status: "Application", inventors: "김상현, 조현호, 박보형", title: "화학 실험 자율 수행 장치 및 방법", number: "10-2026-0025745" },
   { year: "2026", status: "Registration", inventors: "김상현, 양준열, 강민형", title: "라이다 기반 모바일 로봇의 도킹 시스템 및 도킹 방법", number: "10-2924819", jurisdiction: "Korea" },
+  { year: "2026", status: "Program", inventors: "김상현, 정태현, 송은혜, 설우진, 서영빈, 이승윤", title: "방사능 지도 작성을 위한 자율 주행 시뮬레이션 프로그램" },
   { year: "2025", status: "Application", inventors: "김상현, 김정윤, 김학준", title: "데이터 기반 마찰 모델을 이용한 디지털 트윈 시뮬레이션 정합향상시스템 및 정합향상방법", number: "10-2025-018032" },
   { year: "2025", status: "Application", inventors: "김상현, 장근우, 박이새", title: "샘플 보정 및 밀도기반 클러스터링을 활용한 장애물 회피 경로 생성 장치 및 방법", number: "10-2025-0119564" },
   { year: "2024", status: "Application", inventors: "김상현, 이슬찬, 박이새, 박수환", title: "매니퓰레이터를 결합한 하이브리드 케이블 구동 로봇의 전신 제어시스템 및 제어방법", number: "10-2024-0090023" },
-  { year: "2024", status: "Program Copyright", inventors: "김상현, 양준열", title: "달 탐사용 자율 주행 시뮬레이션 프로그램", number: "C-2024-026248" },
+  { year: "2024", status: "Program", inventors: "김상현, 양준열", title: "달 탐사용 자율 주행 시뮬레이션 프로그램", number: "C-2024-026248" },
   { year: "2023", status: "Registration", inventors: "고두열, 신영식, 김창현, 김정중, 이종민, 한형석, 박도영, 임재원, 하창완, 박진성, 안병태, 정성호, 김상현, 김예린", title: "이동로봇용 궤도륜 및 이를 포함하는 이동로봇", number: "10-2603028", jurisdiction: "Korea" },
   { year: "2022", status: "Registration", inventors: "고두열, 김정중, 박진성, 신영식, 김상현, 이종민, 한형석, 박도영, 김창현, 임재원, 하창완, 안병태, 정성호", title: "모듈 로봇 및 모듈 로봇의 제어 방법", number: "10-2459965", jurisdiction: "Korea" },
   { year: "2019", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "US 20190029919A1 · CN 108697572A · EU 3409258A1", jurisdiction: "United States · China · European Union" },
   { year: "2016", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "10-2016-0172286", jurisdiction: "Korea" },
   { year: "2016", status: "Registration", inventors: "김상현, 박재흥, 김민곤, 이지민, 권정흠, 유범재", title: "파지자세 및 파지력을 추정하는 장치", number: "10-2016-0075150", jurisdiction: "Korea" },
-  { year: "2026", status: "Program Copyright", inventors: "김상현, 정태현, 송은혜, 설우진, 서영빈, 이승윤", title: "방사능 지도 작성을 위한 자율 주행 시뮬레이션 프로그램" },
 ];
 
 export const facilities = [

@@ -1,0 +1,51 @@
+export type Photo = { src: string; width: number; height: number };
+export type PictureYear = { year: string; photos: Photo[] };
+
+export const pictureYears: PictureYear[] = [
+  {
+    year: "2026",
+    photos: [
+      { src: "/pictures/2026/01.jpg", width: 1280, height: 1711 },
+      { src: "/pictures/2026/02.jpg", width: 1280, height: 1107 },
+      { src: "/pictures/2026/03.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2026/04.jpg", width: 1280, height: 949 },
+      { src: "/pictures/2026/05.jpg", width: 1280, height: 960 },
+    ],
+  },
+  {
+    year: "2025",
+    photos: [
+      { src: "/pictures/2025/01.jpg", width: 1280, height: 1916 },
+      { src: "/pictures/2025/02.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/03.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/04.jpg", width: 1280, height: 1707 },
+      { src: "/pictures/2025/05.jpg", width: 1280, height: 961 },
+      { src: "/pictures/2025/06.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/07.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/08.jpg", width: 1280, height: 652 },
+      { src: "/pictures/2025/09.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/10.jpg", width: 1280, height: 1707 },
+      { src: "/pictures/2025/11.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/12.jpg", width: 1280, height: 960 },
+      { src: "/pictures/2025/13.jpg", width: 1280, height: 1007 },
+      { src: "/pictures/2025/14.gif", width: 180, height: 320 },
+      { src: "/pictures/2025/15.jpg", width: 1280, height: 881 },
+      { src: "/pictures/2025/16.jpg", width: 1280, height: 693 },
+      { src: "/pictures/2025/17.jpg", width: 1280, height: 1280 },
+      { src: "/pictures/2025/18.jpg", width: 1280, height: 804 },
+      { src: "/pictures/2025/19.jpg", width: 1280, height: 803 },
+      { src: "/pictures/2025/20.jpg", width: 1280, height: 768 },
+      { src: "/pictures/2025/21.jpg", width: 1280, height: 1551 },
+      { src: "/pictures/2025/22.jpg", width: 1080, height: 1309 },
+      { src: "/pictures/2025/23.jpg", width: 1280, height: 923 },
+      { src: "/pictures/2025/24.jpg", width: 1256, height: 818 },
+      { src: "/pictures/2025/25.jpg", width: 1280, height: 833 },
+      { src: "/pictures/2025/26.jpg", width: 1280, height: 1707 },
+      { src: "/pictures/2025/27.jpg", width: 1280, height: 864 },
+      { src: "/pictures/2025/28.jpg", width: 1280, height: 864 },
+      { src: "/pictures/2025/29.jpg", width: 1280, height: 861 },
+      { src: "/pictures/2025/30.jpg", width: 1280, height: 861 },
+      { src: "/pictures/2025/31.jpg", width: 1280, height: 868 },
+    ],
+  },
+];

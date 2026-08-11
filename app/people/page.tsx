@@ -85,7 +85,7 @@ export default function PeoplePage() {
           <div className="people-heading"><p className="eyebrow">ALUMNI</p><h2>Where they are now</h2></div>
           <div className="alumni-list">
             {alumni.map((person) => (
-              <article key={person.name}><h3>{person.name}</h3><p>{person.degree}</p><span>{person.affiliation}</span></article>
+              <article key={person.name}><h3>{person.name}</h3><p>{person.degree} · Joined {person.joined}</p><span>{person.affiliation}</span></article>
             ))}
           </div>
         </div>

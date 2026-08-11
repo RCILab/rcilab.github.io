@@ -24,7 +24,7 @@ export const archiveNewsByYear: ArchiveYear[] = [
       { date: "2025.09", category: "Grant", title: "RCI Lab joined KIRIA’s humanoid robot demonstration program." },
       { date: "2025.09", category: "Grant", title: "RCI Lab began a quadruped autonomous-navigation project with PonyLink." },
       { date: "2025.09", category: "Lab", title: "RCI Lab signed an autonomous-mobility research MOU with PonyLink and Inha University." },
-      { date: "2025.08", category: "Service", title: "Prof. Sanghyun Kim was appointed an Associate Editor for ICRA 2025." },
+      { date: "2025.08", category: "Service", title: "Prof. Sanghyun Kim was appointed an Associate Editor for ICRA 2026." },
       { date: "2025.08", category: "Grant", title: "RCI Lab began a mobile humanoid control project with T-ROBOTICS." },
       { date: "2025.08", category: "Lab", title: "RCI Lab celebrated its first M.S. graduates: Hakjun Kim, Joonyeol Yang, and Seunghyun Lee." },
       { date: "2025.07", category: "Grant", title: "RCI Lab began developing an LLM-based task generator for autonomous experiments with KailosLab." },

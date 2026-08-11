@@ -7,6 +7,7 @@ const navigation = [
   { href: "/publications", label: "Publications" },
   { href: "/grants", label: "Grants" },
   { href: "/news", label: "News" },
+  { href: "/picture", label: "Pictures" },
 ];
 
 function NavigationLinks() {
