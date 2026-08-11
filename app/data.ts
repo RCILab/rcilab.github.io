@@ -357,9 +357,9 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Transactions on Automation Science and Engineering",
-    title: "Title Withheld (Motion Planning)",
+    title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
     note: "Under Review",
-    links: [{ label: "Project", href: "https://rcilab.github.io/graph_topp/" }],
+    links: [{ label: "Project", href: "https://anonymous.4open.science/w/GRAFT-0B84/" }],
   },
   {
     year: "2026",
