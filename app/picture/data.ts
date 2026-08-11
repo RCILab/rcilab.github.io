@@ -30,7 +30,6 @@ export const pictureYears: PictureYear[] = [
       { src: "/pictures/2025/11.jpg", width: 1280, height: 960 },
       { src: "/pictures/2025/12.jpg", width: 1280, height: 960 },
       { src: "/pictures/2025/13.jpg", width: 1280, height: 1007 },
-      { src: "/pictures/2025/14.gif", width: 180, height: 320 },
       { src: "/pictures/2025/15.jpg", width: 1280, height: 881 },
       { src: "/pictures/2025/16.jpg", width: 1280, height: 693 },
       { src: "/pictures/2025/17.jpg", width: 1280, height: 1280 },

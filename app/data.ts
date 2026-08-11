@@ -795,7 +795,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "제어로봇시스템학회 학술대회",
     title: "Nav2 전방향 주행 제어기의 미세 수렴 한계 분석과 기구학 기반 수렴 제어기의 성능 검증",
-    authors: "손재락, 심재훈, 김상현",
+    authors: "손재락, 심재훈, 김상현†",
   },
   {
     year: "2026",
@@ -809,14 +809,14 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "대한기계학회 2026년 춘계학술대회",
     title: "Quad Drive 기반 AGV의 배치 구조별 역기구학 해석 및 주행 제어 로직 구현",
-    authors: "조민재, 박다움, 김상현",
+    authors: "조민재, 박다움, 김상현†",
   },
   {
     year: "2026",
     type: "Domestic Conference",
     venue: "대한기계학회 2026년 춘계학술대회",
     title: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획",
-    authors: "박다움, 박보형, 김상현",
+    authors: "박다움, 박보형, 김상현†",
     note: "Best Paper Award",
   },
   {
@@ -824,7 +824,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "대한기계학회 2026년 춘계학술대회",
     title: "파라미터 인지 신경망을 이용한 로봇 말단 부착 객체의 시스템 식별",
-    authors: "박수환, 김상현",
+    authors: "박수환, 김상현†",
   },
   {
     year: "2026",
@@ -838,7 +838,7 @@ export const publications: Publication[] = [
     type: "Domestic Conference",
     venue: "제21회 한국로봇종합학술대회",
     title: "모델 예측 경로적분법을 활용한 GPU 병렬 물리 시뮬레이션 기반 실시간 물체-환경 상호작용 제어",
-    authors: "박이새, 김상현",
+    authors: "박이새, 김상현†",
   },
   {
     year: "2025",
@@ -1133,6 +1133,57 @@ export const patents: Patent[] = [
   { year: "2019", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "US 20190029919A1 · CN 108697572A · EU 3409258A1", jurisdiction: "United States · China · European Union" },
   { year: "2016", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "10-2016-0172286", jurisdiction: "Korea" },
   { year: "2016", status: "Registration", inventors: "김상현, 박재흥, 김민곤, 이지민, 권정흠, 유범재", title: "파지자세 및 파지력을 추정하는 장치", number: "10-2016-0075150", jurisdiction: "Korea" },
+];
+
+export type Award = {
+  year: string;
+  title: string;
+  org: string;
+  detail?: string;
+};
+
+export const awards: Award[] = [
+  {
+    year: "2026",
+    title: "우수논문상",
+    org: "대한기계학회 2026년 춘계학술대회",
+    detail: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획 (박다움, 박보형, 김상현)",
+  },
+  {
+    year: "2026",
+    title: "우수상",
+    org: "휴머노이드 실증 챌린지 (한국로봇산업진흥원)",
+  },
+  {
+    year: "2025",
+    title: "산업통상자원부 장관상",
+    org: "2025 산학 프로젝트 챌린지",
+  },
+  {
+    year: "2024",
+    title: "Best Poster Award",
+    org: "11th Asian Conference on Multibody Dynamics (ACMD 2024)",
+  },
+  {
+    year: "2023",
+    title: "Best Paper Award (2nd Place)",
+    org: "Intelligent Service Robotics",
+  },
+  {
+    year: "2022",
+    title: "대한민국 과학 분야 우수성과 100선",
+    org: "과학기술정보통신부",
+  },
+  {
+    year: "2019",
+    title: "Best Conference Paper Award",
+    org: "IEEE International Conference on Advanced Robotics and Mechatronics",
+  },
+  {
+    year: "2018",
+    title: "Best Journal Paper Award",
+    org: "로봇학회 논문지",
+  },
 ];
 
 export const facilities = [

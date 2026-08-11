@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { PageIntro } from "../components/PageIntro";
 import { alumni, graduateStudents, researchInterns } from "../data";
 
@@ -31,6 +32,7 @@ export default function PeoplePage() {
               <span className="profile-email">kim87 at khu.ac.kr</span>
               <a href="https://scholar.google.com/citations?user=OAMAACIAAAAJ&hl=ko&oi=sra" target="_blank" rel="noreferrer">Google Scholar ↗</a>
               <a href="/sanghyun-kim-cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
+              <Link href="/awards">Awards ↗</Link>
             </div>
           </div>
           <dl className="professor-history">

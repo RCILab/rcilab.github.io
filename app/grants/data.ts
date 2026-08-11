@@ -19,7 +19,7 @@ export const grants: Grant[] = [
   { year: "2026", period: "2026", category: "Government", agency: "한국기계연구원", title: "이동형 휴머노이드 동작제어 SW", program: "연구용역", ongoing: true },
   { year: "2026", period: "2026–2030", category: "Government", agency: "농촌진흥청", title: "과수 농작업 행동특성 모방 학습형 제어기술 개발 및 농업로봇 기술 표준화 연구", program: "지능형농업로봇핵심기반기술개발 R&D · 공동연구책임자", ongoing: true },
   { year: "2026", period: "2026–2030", category: "Government", agency: "한국연구재단", title: "생성형 정책과 모델 예측 제어의 하이브리드 Physical AI 프레임워크: 매니퓰레이터의 모션 제어에서 휴머노이드의 전신 제어까지", program: "우수연구–신진연구(유형B) · 연구책임자", ongoing: true },
-  { year: "2026", period: "2026–2027", category: "Government", agency: "한국연구재단", title: "초고령사회 플랫폼 기반 사람중심의 고령서비스-테크 문제해결형 혁신인재 양성사업", program: "4단계 BK21 사업 · 참여연구자", ongoing: true },
+  { year: "2026", period: "2026–2027", category: "Government", agency: "교육부", title: "초고령사회 플랫폼 기반 사람중심의 고령서비스-테크 문제해결형 혁신인재 양성사업", program: "4단계 BK21 사업 · 참여연구자", ongoing: true },
   { year: "2025", period: "2025–2026", category: "Government", agency: "경기 RISE 센터", title: "자율 주행 차량의 야지 주행 알고리즘의 SW 개발", program: "지산학 협업 연구개발 · 연구책임자" },
   { year: "2025", period: "2025–2028", category: "Government", agency: "산업통상자원부", title: "초소형 근접 3차원 측정 센서를 장착한 고정밀 조작 작업용 고자유도 경량 휴머노이드 로봇 손 개발", program: "로봇핵심기술개발 · 공동연구책임자", ongoing: true },
   { year: "2025", period: "2025", category: "Government", agency: "한국로봇산업진흥원", title: "AI 이족 보행 휴머노이드의 초기 실증 및 상용화 가능성 연구", program: "휴머노이드로봇 실증 지원사업" },
