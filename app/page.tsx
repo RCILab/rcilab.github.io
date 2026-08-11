@@ -60,7 +60,9 @@ const homeResearchFeatures: HomeResearchFeature[] = [
 ];
 
 export default function Home() {
-  const featuredPublications = publications.slice(0, 3);
+  const featuredPublications = publications
+    .filter((paper) => paper.type.endsWith("Journal"))
+    .slice(0, 3);
 
   return (
     <>
