@@ -31,7 +31,7 @@ export type Publication = {
   type: "International Journal" | "Domestic Journal" | "International Conference";
   venue: string;
   title: string;
-  authors: string;
+  authors?: string;
   note?: string;
   links?: { label: string; href: string }[];
 };
@@ -236,6 +236,133 @@ export const alumni = [
   { name: "Joonyeol Yang", degree: "M.S., 2023-2", affiliation: "HL Robotics" },
   { name: "Jiwon Yoon", degree: "M.S., 2024-2", affiliation: "Geobot" },
   { name: "Eunae Kang", degree: "M.S., 2024-2", affiliation: "Blue Robin" },
+];
+
+export const inProgressPublications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Transactions on Robotics",
+    title: "Title Withheld (Multi-Robot)",
+    note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "Robotics and Computer-Integrated Manufacturing",
+    title: "Implicit-Field-Conditioned Trajectory Planning Neural Operators for Real-Time Manipulator Motion Planning",
+    note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "Aerospace Science and Technology",
+    title: "From Orbital DEMs to Onboard Decisions: Belief-Triggered Replanning for Long-Range Lunar Rover Traverses",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (MPPI with HQP)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (Vision with KIST)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (Radiation with Inha University)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (MBD)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (Force-Level MPPI)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (Force-Level UMI with UCF and Ewha University)",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation (ICRA)",
+    title: "Title Withheld (Social Navigation)",
+    note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (Constrained MPPI)",
+    note: "Under Review",
+    links: [
+      { label: "Project", href: "https://rcilab.github.io/prmppi/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
+    ],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (VLA-RL)",
+    note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.github.io/FIRe/" }],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "International Journal of Control, Automation, and Systems",
+    title: "Bilinear by Default: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (DP-Guided MPPI)",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Access",
+    title: "LLM-Guided Tool-Aware Task and Motion Planning for Chemistry Lab Automation",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Transactions on Automation Science and Engineering",
+    title: "Title Withheld (Motion Planning)",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "ISA Transactions",
+    title: "Title Withheld (MPPI Review)",
+    note: "Under Review",
+  },
 ];
 
 export const publications: Publication[] = [
