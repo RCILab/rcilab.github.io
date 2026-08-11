@@ -437,7 +437,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
     title: "Motion Planning of Mobile Manipulator for Navigation Including Door Traversal",
-    authors: "Keunwoo Jang, Sanghyun Kim*, Jaeheung Park*",
+    authors: "Keunwoo Jang, Sanghyun Kim†, Jaeheung Park†",
   },
   {
     year: "2023",
