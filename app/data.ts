@@ -245,7 +245,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Multi-Robot)",
     note: "In Preparation",
-    links: [{ label: "Web", href: "https://rcilab.github.io/clear/" }],
+    links: [{ label: "Project", href: "https://rcilab.github.io/clear/" }],
   },
   {
     year: "2026",
