@@ -4,7 +4,8 @@ export type ResearchArea = {
   subtitle: string;
   description: string;
   topics: string[];
-  videoId: string;
+  videoId?: string;
+  href?: string;
   image: string;
 };
 
@@ -114,6 +115,36 @@ export const researchAreas: ResearchArea[] = [
     topics: ["Dual-arm", "Multi-arm", "Coordination"],
     videoId: "VuQjmxVQWIk",
     image: "/research-multirobot.jpg",
+  },
+  {
+    number: "09",
+    title: "Constrained Motion Planning",
+    subtitle: "Feasible planning on constraint manifolds",
+    description:
+      "We develop geometry-aware sampling-based planners that satisfy equality and inequality constraints while efficiently exploring complex feasible motion spaces.",
+    topics: ["Riemannian metrics", "Constraint manifolds", "RRT"],
+    videoId: "bnW1Kop4qRw",
+    image: "/research-constrained-motion.jpg",
+  },
+  {
+    number: "10",
+    title: "Visual Language Action",
+    subtitle: "Language-conditioned contact-rich manipulation",
+    description:
+      "We combine vision-language-action policies with force-informed residual learning to make contact-rich manipulation more adaptive and robust.",
+    topics: ["Vision-language-action", "Residual RL", "Contact-rich manipulation"],
+    videoId: "5N-yzaBzCzg",
+    image: "/research-vla.jpg",
+  },
+  {
+    number: "11",
+    title: "Visual Language Navigation",
+    subtitle: "Instance-enriched semantic navigation",
+    description:
+      "We build instance-enriched semantic maps that connect open-vocabulary perception, room understanding, and object attributes for language-guided navigation.",
+    topics: ["Open-vocabulary mapping", "Semantic navigation", "Embodied AI"],
+    href: "https://rcilab.github.io/iesm_vln/",
+    image: "/vln.jpg",
   },
 ];
 

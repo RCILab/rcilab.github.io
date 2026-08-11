@@ -6,6 +6,8 @@ import { facilities, researchAreas } from "../data";
 export const metadata: Metadata = { title: "Research" };
 
 export default function ResearchPage() {
+  const totalThemes = String(researchAreas.length).padStart(2, "0");
+
   return (
     <>
       <PageIntro
@@ -17,12 +19,17 @@ export default function ResearchPage() {
         <div className="shell research-catalog">
           {researchAreas.map((area) => (
             <article className="research-row" key={area.number}>
-              <a className="research-row-media" href={`https://www.youtube.com/watch?v=${area.videoId}`} target="_blank" rel="noreferrer">
-                <Image src={area.image} alt={`${area.title} research video thumbnail`} fill sizes="(max-width: 800px) 100vw, 44vw" />
-                <span className="watch-chip">Watch experiment ↗</span>
+              <a
+                className="research-row-media"
+                href={area.videoId ? `https://www.youtube.com/watch?v=${area.videoId}` : area.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image src={area.image} alt={`${area.title} research preview`} fill sizes="(max-width: 800px) 100vw, 44vw" />
+                <span className="watch-chip">{area.videoId ? "Watch experiment ↗" : "Explore project ↗"}</span>
               </a>
               <div className="research-row-copy">
-                <p className="research-number">{area.number} / 08</p>
+                <p className="research-number">{area.number} / {totalThemes}</p>
                 <h2>{area.title}</h2>
                 <h3>{area.subtitle}</h3>
                 <p>{area.description}</p>
