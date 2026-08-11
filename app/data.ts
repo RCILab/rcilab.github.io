@@ -402,7 +402,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Mathematics",
     title: "Hybrid A*-guided Model Predictive Path Integral Control for Robust Navigation in Rough Terrains",
-    authors: "Joonyeol Yang*, Minhyeong Kang*, Seulchan Lee, Sanghyun Kim",
+    authors: "Joonyeol Yang*, Minhyeong Kang*, Seulchan Lee, Sanghyun Kim†",
   },
   {
     year: "2025",
