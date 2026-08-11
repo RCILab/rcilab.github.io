@@ -22,7 +22,7 @@ export default function ContactPage() {
               <div><dt>Phone</dt><dd><a href="tel:+82312012436">+82 31-201-2436</a></dd></div>
               <div><dt>Address</dt><dd>Room 7004, Woojungwon<br />Kyung Hee University Global Campus<br />1732 Deogyeong-daero, Giheung-gu<br />Yongin-si, Gyeonggi-do, Republic of Korea</dd></div>
             </dl>
-            <a className="text-link" href="https://maps.google.com/?q=Kyung+Hee+University+Global+Campus" target="_blank" rel="noreferrer">Open in Google Maps <span>↗</span></a>
+            <a className="text-link" href="https://www.google.com/maps/place/%EA%B2%BD%ED%9D%AC%EB%8C%80%ED%95%99%EA%B5%90+%EA%B5%AD%EC%A0%9C%EC%BA%A0%ED%8D%BC%EC%8A%A4+%EC%9A%B0%EC%A0%95%EC%9B%90/" target="_blank" rel="noreferrer">Open in Google Maps <span>↗</span></a>
           </div>
 
           <aside className="join-card" id="join">
