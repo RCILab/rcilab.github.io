@@ -4,11 +4,14 @@ import { useState } from "react";
 import type { Publication } from "../data";
 
 type PublicationKind = "Journal" | "Conference";
+type PublicationScope = "International" | "Domestic";
 
-function matchesKind(paper: Publication, kind: PublicationKind) {
-  return kind === "Conference"
-    ? paper.type === "International Conference"
-    : paper.type !== "International Conference";
+function matchesSelection(
+  paper: Publication,
+  kind: PublicationKind,
+  scope: PublicationScope,
+) {
+  return paper.type === `${scope} ${kind}`;
 }
 
 function PublicationEntry({ paper, showYear = false }: { paper: Publication; showYear?: boolean }) {
@@ -42,26 +45,49 @@ export function PublicationTabs({
   publications: Publication[];
 }) {
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");
-  const activeInProgress = inProgressPublications.filter((paper) => matchesKind(paper, activeKind));
-  const activePublications = publications.filter((paper) => matchesKind(paper, activeKind));
+  const [activeScope, setActiveScope] = useState<PublicationScope>("International");
+  const activeInProgress = inProgressPublications.filter((paper) =>
+    matchesSelection(paper, activeKind, activeScope),
+  );
+  const activePublications = publications.filter((paper) =>
+    matchesSelection(paper, activeKind, activeScope),
+  );
   const years = [...new Set(activePublications.map((paper) => paper.year))];
+  const hasPublications = activeInProgress.length > 0 || activePublications.length > 0;
 
   return (
     <div className="shell">
-      <div className="publication-type-tabs" role="tablist" aria-label="Publication type">
-        {(["Journal", "Conference"] as const).map((kind) => (
-          <button
-            className={activeKind === kind ? "active" : undefined}
-            type="button"
-            role="tab"
-            aria-selected={activeKind === kind}
-            aria-controls="publication-panel"
-            key={kind}
-            onClick={() => setActiveKind(kind)}
-          >
-            {kind}
-          </button>
-        ))}
+      <div className="publication-filter-bar">
+        <div className="publication-type-tabs" role="tablist" aria-label="Publication format">
+          {(["Journal", "Conference"] as const).map((kind) => (
+            <button
+              className={activeKind === kind ? "active" : undefined}
+              type="button"
+              role="tab"
+              aria-selected={activeKind === kind}
+              aria-controls="publication-panel"
+              key={kind}
+              onClick={() => setActiveKind(kind)}
+            >
+              {kind}
+            </button>
+          ))}
+        </div>
+        <div className="publication-scope-tabs" role="tablist" aria-label="Publication scope">
+          {(["International", "Domestic"] as const).map((scope) => (
+            <button
+              className={activeScope === scope ? "active" : undefined}
+              type="button"
+              role="tab"
+              aria-selected={activeScope === scope}
+              aria-controls="publication-panel"
+              key={scope}
+              onClick={() => setActiveScope(scope)}
+            >
+              {scope}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="publication-page" id="publication-panel" role="tabpanel">
@@ -75,7 +101,12 @@ export function PublicationTabs({
           </p>
         </aside>
 
-        <div className="publication-years" key={activeKind}>
+        <div className="publication-years" key={`${activeScope}-${activeKind}`}>
+          {!hasPublications && (
+            <p className="publication-empty">
+              No {activeScope.toLowerCase()} {activeKind.toLowerCase()} publications are listed yet.
+            </p>
+          )}
           {activeInProgress.length > 0 && (
             <section id="in-progress">
               <h2>In Progress</h2>

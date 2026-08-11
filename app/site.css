@@ -206,11 +206,16 @@ button, input, textarea { font: inherit; }
 .alumni-list p { color: #9db0c9; font-size: 11px; }
 .alumni-list span { display: block; margin-top: 35px; color: var(--accent); font-size: 11px; font-weight: 750; }
 
-.publication-type-tabs { display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); width: min(100%, 520px); margin: 0 0 55px 255px; border: 1px solid var(--line); }
+.publication-filter-bar { display: flex; gap: 20px; align-items: stretch; margin: 0 0 55px 255px; }
+.publication-type-tabs { display: grid; grid-template-columns: repeat(2, minmax(150px, 1fr)); width: min(100%, 420px); border: 1px solid var(--line); }
 .publication-type-tabs button { padding: 15px 28px; border: 0; background: white; color: var(--navy-900); font-size: 12px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 .publication-type-tabs button + button { border-left: 1px solid var(--line); }
 .publication-type-tabs button:hover { color: var(--blue-600); }
 .publication-type-tabs button.active { background: var(--navy-900); color: white; }
+.publication-scope-tabs { display: grid; grid-template-columns: repeat(2, minmax(115px, 1fr)); border-bottom: 1px solid var(--line); }
+.publication-scope-tabs button { padding: 15px 16px 13px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.publication-scope-tabs button:hover { color: var(--blue-600); }
+.publication-scope-tabs button.active { border-bottom-color: var(--blue-600); color: var(--blue-600); }
 .publication-page { display: grid; grid-template-columns: 180px 1fr; gap: 75px; align-items: start; }
 .publication-page > aside { position: sticky; top: 145px; display: grid; gap: 4px; }
 .publication-page > aside a { padding: 9px 0; color: var(--navy-900); font-size: 21px; font-weight: 800; }
@@ -220,6 +225,7 @@ button, input, textarea { font: inherit; }
 .publication-years > section { scroll-margin-top: 130px; }
 .publication-years > section > h2 { margin-bottom: 22px; color: var(--blue-600); font-size: 38px; }
 .publication-years > section > div { border-top: 1px solid var(--navy-900); }
+.publication-empty { margin: 0; padding: 35px 3px; border-top: 1px solid var(--navy-900); border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 .publication-entry { padding: 29px 3px 31px; border-bottom: 1px solid var(--line); }
 .publication-entry-top { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 8px; }
 .publication-entry-top span { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
@@ -301,7 +307,8 @@ button, input, textarea { font: inherit; }
   .research-row { grid-template-columns: 1fr; gap: 30px; }
   .research-row:nth-child(even) .research-row-media { order: initial; }
   .facility-grid { grid-template-columns: repeat(2, 1fr); }
-  .publication-type-tabs { width: 100%; margin: 0 0 40px; }
+  .publication-filter-bar { flex-direction: column; gap: 18px; margin: 0 0 40px; }
+  .publication-type-tabs, .publication-scope-tabs { width: 100%; }
   .publication-page { grid-template-columns: 1fr; gap: 40px; }
   .publication-page > aside { position: static; display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
   .publication-page > aside .eyebrow, .publication-key { width: 100%; }

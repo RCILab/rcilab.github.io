@@ -28,7 +28,7 @@ export type Member = {
 
 export type Publication = {
   year: string;
-  type: "International Journal" | "Domestic Journal" | "International Conference";
+  type: "International Journal" | "Domestic Journal" | "International Conference" | "Domestic Conference";
   venue: string;
   title: string;
   authors?: string;
