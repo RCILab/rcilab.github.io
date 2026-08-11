@@ -26,9 +26,11 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="university-bar">
         <div className="shell university-inner">
-          <span>Kyung Hee University · Department of Mechanical Engineering</span>
-          <a href="https://eng.khu.ac.kr" target="_blank" rel="noreferrer">
-            KHU Mechanical Engineering ↗
+          <a href="https://www.khu.ac.kr" target="_blank" rel="noreferrer">
+            Kyung Hee University ↗
+          </a>
+          <a href="https://me.khu.ac.kr" target="_blank" rel="noreferrer">
+            Department of Mechanical Engineering ↗
           </a>
         </div>
       </div>

@@ -47,7 +47,8 @@ button, input, textarea { font: inherit; }
 
 .university-bar { background: var(--navy-950); color: #b9c9df; font-size: 11px; letter-spacing: .03em; }
 .university-inner { height: 34px; display: flex; align-items: center; justify-content: space-between; }
-.university-inner a { color: white; }
+.university-inner a { color: white; font-weight: 700; transition: color .2s ease; }
+.university-inner a:hover, .university-inner a:focus-visible { color: var(--accent); }
 .site-header { position: sticky; z-index: 50; top: 0; background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
 .header-inner { height: 80px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 13px; }
@@ -300,7 +301,8 @@ button, input, textarea { font: inherit; }
 
 @media (max-width: 620px) {
   .shell { width: min(calc(100% - 30px), var(--shell)); }
-  .university-inner a { display: none; }
+  .university-inner { gap: 14px; font-size: 9px; }
+  .university-inner a { display: block; white-space: nowrap; }
   .brand small { display: none; }
   .header-inner { height: 70px; }
   .brand img { width: 42px; height: 46px; }
