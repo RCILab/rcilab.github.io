@@ -409,7 +409,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Journal of Mechanical Science and Technology",
     title: "Enhanced Online Parameter Estimation of Unknown Objects via Sparse Identification of Unmodeled Dynamics",
-    authors: "Hakjun Kim, Sanghyun Kim*, J. Park*",
+    authors: "Hakjun Kim, Sanghyun Kim†, J. Park†",
   },
   {
     year: "2025",
