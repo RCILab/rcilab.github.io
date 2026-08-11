@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import type { Publication } from "../data";
+import type { Patent, Publication } from "../data";
 
-type PublicationKind = "Journal" | "Conference";
+type PublicationKind = "Journal" | "Conference" | "Patent";
 type PublicationScope = "International" | "Domestic";
 
 function matchesSelection(
@@ -37,12 +37,32 @@ function PublicationEntry({ paper, showYear = false }: { paper: Publication; sho
   );
 }
 
+function PatentEntry({ patent }: { patent: Patent }) {
+  return (
+    <article className="publication-entry patent-entry">
+      <div className="publication-entry-top">
+        <span>Patent</span>
+        <strong>{patent.status}</strong>
+      </div>
+      {(patent.number || patent.jurisdiction) && (
+        <p className="publication-meta">
+          {[patent.number, patent.jurisdiction].filter(Boolean).join(" · ")}
+        </p>
+      )}
+      <h3>{patent.title}</h3>
+      <p className="publication-authors">{patent.inventors}</p>
+    </article>
+  );
+}
+
 export function PublicationTabs({
   inProgressPublications,
   publications,
+  patents,
 }: {
   inProgressPublications: Publication[];
   publications: Publication[];
+  patents: Patent[];
 }) {
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");
   const [activeScope, setActiveScope] = useState<PublicationScope>("International");
@@ -50,16 +70,21 @@ export function PublicationTabs({
     matchesSelection(paper, activeKind, activeScope),
   );
   const activePublications = publications.filter((paper) =>
-    matchesSelection(paper, activeKind, activeScope),
+    activeKind !== "Patent" && matchesSelection(paper, activeKind, activeScope),
   );
-  const years = [...new Set(activePublications.map((paper) => paper.year))];
-  const hasPublications = activeInProgress.length > 0 || activePublications.length > 0;
+  const activePatents = activeKind === "Patent" ? patents : [];
+  const years = [...new Set(
+    (activeKind === "Patent" ? activePatents : activePublications).map((item) => item.year),
+  )];
+  const hasPublications = activeKind === "Patent"
+    ? activePatents.length > 0
+    : activeInProgress.length > 0 || activePublications.length > 0;
 
   return (
     <div className="shell">
       <div className="publication-filter-bar">
         <div className="publication-type-tabs" role="tablist" aria-label="Publication format">
-          {(["Journal", "Conference"] as const).map((kind) => (
+          {(["Journal", "Conference", "Patent"] as const).map((kind) => (
             <button
               className={activeKind === kind ? "active" : undefined}
               type="button"
@@ -73,41 +98,45 @@ export function PublicationTabs({
             </button>
           ))}
         </div>
-        <div className="publication-scope-tabs" role="tablist" aria-label="Publication scope">
-          {(["International", "Domestic"] as const).map((scope) => (
-            <button
-              className={activeScope === scope ? "active" : undefined}
-              type="button"
-              role="tab"
-              aria-selected={activeScope === scope}
-              aria-controls="publication-panel"
-              key={scope}
-              onClick={() => setActiveScope(scope)}
-            >
-              {scope}
-            </button>
-          ))}
-        </div>
+        {activeKind !== "Patent" && (
+          <div className="publication-scope-tabs" role="tablist" aria-label="Publication scope">
+            {(["International", "Domestic"] as const).map((scope) => (
+              <button
+                className={activeScope === scope ? "active" : undefined}
+                type="button"
+                role="tab"
+                aria-selected={activeScope === scope}
+                aria-controls="publication-panel"
+                key={scope}
+                onClick={() => setActiveScope(scope)}
+              >
+                {scope}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       <div className="publication-page" id="publication-panel" role="tabpanel">
         <aside>
           <p className="eyebrow">INDEX</p>
-          {activeInProgress.length > 0 && <a href="#in-progress">In Progress</a>}
+          {activeKind !== "Patent" && activeInProgress.length > 0 && <a href="#in-progress">In Progress</a>}
           {years.map((year) => <a href={`#year-${year}`} key={year}>{year}</a>)}
-          <p className="publication-key">
-            <span><sup>*</sup> Co-first authors</span>
-            <span><sup>†</sup> Corresponding authors</span>
-          </p>
+          {activeKind !== "Patent" && (
+            <p className="publication-key">
+              <span><sup>*</sup> Co-first authors</span>
+              <span><sup>†</sup> Corresponding authors</span>
+            </p>
+          )}
         </aside>
 
         <div className="publication-years" key={`${activeScope}-${activeKind}`}>
           {!hasPublications && (
             <p className="publication-empty">
-              No {activeScope.toLowerCase()} {activeKind.toLowerCase()} publications are listed yet.
+              No {activeKind === "Patent" ? "patents" : `${activeScope.toLowerCase()} ${activeKind.toLowerCase()} publications`} are listed yet.
             </p>
           )}
-          {activeInProgress.length > 0 && (
+          {activeKind !== "Patent" && activeInProgress.length > 0 && (
             <section id="in-progress">
               <h2>In Progress</h2>
               <div>
@@ -121,9 +150,13 @@ export function PublicationTabs({
             <section id={`year-${year}`} key={year}>
               <h2>{year}</h2>
               <div>
-                {activePublications.filter((paper) => paper.year === year).map((paper) => (
-                  <PublicationEntry paper={paper} key={paper.title} />
-                ))}
+                {activeKind === "Patent"
+                  ? activePatents.filter((patent) => patent.year === year).map((patent) => (
+                    <PatentEntry patent={patent} key={`${patent.status}-${patent.number ?? patent.title}`} />
+                  ))
+                  : activePublications.filter((paper) => paper.year === year).map((paper) => (
+                    <PublicationEntry paper={paper} key={paper.title} />
+                  ))}
               </div>
             </section>
           ))}
