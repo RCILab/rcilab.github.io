@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { facilities, newsItems, publications, researchAreas } from "./data";
+import { facilities, newsItems, publications, researchAreas, researchInterns } from "./data";
 
 export default function Home() {
   const featuredPublications = publications.slice(0, 3);
@@ -44,8 +44,8 @@ export default function Home() {
                 <dd>Established</dd>
               </div>
               <div>
-                <dt>8</dt>
-                <dd>Research themes</dd>
+                <dt>{researchInterns.length}</dt>
+                <dd>Research interns</dd>
               </div>
               <div>
                 <dt>17</dt>
