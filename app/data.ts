@@ -340,8 +340,9 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (DP-Guided MPPI)",
+    title: "GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Mean Estimation",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.github.io/grace/" }],
   },
   {
     year: "2026",
@@ -349,6 +350,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Access",
     title: "LLM-Guided Tool-Aware Task and Motion Planning for Chemistry Lab Automation",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.github.io/auto_chem/" }],
   },
   {
     year: "2026",
@@ -356,6 +358,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Title Withheld (Motion Planning)",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.github.io/graph_topp/" }],
   },
   {
     year: "2026",
