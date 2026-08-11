@@ -33,6 +33,7 @@ export type Publication = {
   title: string;
   authors?: string;
   note?: string;
+  jcr?: string;
   links?: { label: string; href: string }[];
 };
 
@@ -503,6 +504,7 @@ export const inProgressPublications: Publication[] = [
     venue: "Engineering Science and Technology, an International Journal",
     title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
     note: "In Revision",
+    jcr: "12.1%",
   },
   {
     year: "2026",
@@ -521,6 +523,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Transactions on Robotics",
     title: "RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds",
     note: "In Revision",
+    jcr: "9.4%",
     links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
   },
 ];
@@ -533,6 +536,7 @@ export const publications: Publication[] = [
     title: "High-Performance Fixed-Time Active Fault-Tolerant Control of Robotic Manipulators via Sparse Physics-Informed Dynamics Learning",
     authors: "Thanh Nguyen Truong, Sanghyun Kim†",
     note: "Accepted",
+    jcr: "18.2%",
   },
   {
     year: "2026",
@@ -540,6 +544,7 @@ export const publications: Publication[] = [
     venue: "Engineering Applications of Artificial Intelligence",
     title: "Instance-Enriched Semantic Maps for Visual Language Navigation",
     authors: "Jiho Hong*, Eunae Kang*, Sanghyun Kim†, Young-Sik Shin†",
+    jcr: "3.1%",
     links: [
       { label: "Project", href: "https://rcilab.github.io/iesm_vln/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2607.12630" },
@@ -571,7 +576,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Journal of Mechanical Science and Technology",
     title: "Enhanced Online Parameter Estimation of Unknown Objects via Sparse Identification of Unmodeled Dynamics",
-    authors: "Jinseong Park, Sanghyun Kim†, Jaeheung Park†",
+    authors: "Hakjun Kim, Sanghyun Kim†, Jinseong Park†",
   },
   {
     year: "2025",
@@ -600,6 +605,7 @@ export const publications: Publication[] = [
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Object-Aware Impedance Control for Human-Robot Collaborative Task with Online Object Parameter Estimation",
     authors: "Jinseong Park, Yong-Sik Shin†, Sanghyun Kim†",
+    jcr: "16.1%",
   },
   {
     year: "2024",
@@ -607,27 +613,28 @@ export const publications: Publication[] = [
     venue: "Nonlinear Dynamics",
     title: "Whole-body Control of Redundant Hybrid Cable-Driven Robot with Manipulator: Hierarchical Quadratic Programming Approach",
     authors: "Suhwan Park*, Leesai Park*, Seulchan Lee*, Sanghyun Kim†",
+    jcr: "7.9%",
   },
   {
     year: "2024",
     type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Online Multi-Contact Receding Horizon Planning via Value Function Approximation",
-    authors: "Jiayi Wang, Sanghyun Kim, Teguh Santoso Lembono, Wenqian Du, Jaehyun Shim, Saeid Samadi, Ke Wang, Vladimir Ivan, Sylvain Calinon, Sethu Vijayakumar, Steve Tonneau",
+    authors: "Jiayi Wang†, Sanghyun Kim, Teguh Santoso Lembono, Wenqian Du, Jaehyun Shim, Saeid Samadi, Ke Wang, Vladimir Ivan, Sylvain Calinon, Sethu Vijayakumar, Steve Tonneau",
   },
   {
     year: "2024",
     type: "International Journal",
     venue: "Sensors",
     title: "Comparative Analysis of Integrated Filtering Method Using UWB Localization in Indoor Environments",
-    authors: "Rahul Ranjan, Donggyu Shin, Yoonsik Jung, Sanghyun Kim, Jong-Hwan Yun, Chang-Hyun Kim, Seungjae Lee, Joongeup Kye",
+    authors: "Rahul Ranjan, Donggyu Shin, Yoonsik Jung, Sanghyun Kim, Jong-Hwan Yun, Chang-Hyun Kim, Seungjae Lee, Joongeup Kye†",
   },
   {
     year: "2024",
     type: "International Journal",
     venue: "Applied Sciences",
     title: "The Development of Software to Automate the Laser Welding of a Liquefied Natural Gas Cargo Tank Using a Mobile Manipulator",
-    authors: "Taeyong Choi, Jongwoo Park, Jeongae Bak, Dongil Park, Hyunuk Seo, Sanghyun Kim",
+    authors: "Taeyong Choi†, Jongwoo Park, Jeongae Bak, Dongil Park, Hyunuk Seo, Sanghyun Kim",
   },
   {
     year: "2023",
@@ -670,7 +677,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Access",
     title: "A Whole-Body Control Framework Based on the Operational Space Formulation Under Inequality Constraints via Task-Oriented Optimisation",
-    authors: "Yisoo Lee, Sanghyun Kim, Jaeheung Park, Nikos Tsagarakis, Jinho Lee†",
+    authors: "Yisoo Lee, Sanghyun Kim, Jaeheung Park, Nikos Tsagarakis, Jinoh Lee†",
   },
   {
     year: "2021",
@@ -763,21 +770,21 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Symposium on Safety, Security, and Rescue Robotics",
     title: "Seek, Don’t Avoid: Radiation-Guided Exploration for Early Contamination Discovery",
-    authors: "Miryeong Park, Taehyung Jung, Sanghyun Kim, Younggun Cho",
+    authors: "Miryeong Park, Taehyung Jung, Sanghyun Kim†, Younggun Cho†",
   },
   {
     year: "2026",
     type: "International Conference",
     venue: "26th International Conference on Control, Automation, and Systems",
     title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Equality Constraints",
-    authors: "Seulchan Lee, Sanghyun Kim",
+    authors: "Seulchan Lee, Sanghyun Kim†",
   },
   {
     year: "2026",
     type: "International Conference",
     venue: "IEEE 22nd International Conference on Automation Science and Engineering",
     title: "GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Estimation",
-    authors: "Leesai Park, Jiho Hong, Sanghyun Kim",
+    authors: "Leesai Park, Jiho Hong, Sanghyun Kim†",
     note: "Work in Progress",
   },
   {
@@ -785,7 +792,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Wrench-Feasible Whole-Body Planning via Time-Layered DAG Optimization for Omnidirectional Aerial Manipulation",
-    authors: "Daum Park, Bohyeong Pak, Sanghyun Kim",
+    authors: "Daum Park, Bohyeong Pak, Sanghyun Kim†",
     note: "Late-Breaking Result",
   },
   {
@@ -843,14 +850,14 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "3rd Emerging Technologies in Mechanical Engineering",
     title: "Tool-Aware Task and Motion Planning with Dynamic Tool Changing for Automated Chemistry",
-    authors: "Hyunho Cho, Bohyeong Pak, Sanghyun Kim",
+    authors: "Hyunho Cho*, Bohyeong Pak*, Sanghyun Kim†",
   },
   {
     year: "2025",
     type: "International Conference",
     venue: "International Conference on Space Robotics",
     title: "CUTE-Planner: Confidence-Aware Uneven Terrain Exploration Planner",
-    authors: "Miryeong Park, Dongjin Cho, Sanghyun Kim, Younggun Cho",
+    authors: "Miryeong Park, Dongjin Cho, Sanghyun Kim, Younggun Cho†",
   },
   {
     year: "2025",
@@ -899,14 +906,14 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "11th Asian Conference on Multibody Dynamics",
     title: "Inverse Kinematics Solution to Mobile Manipulator Considering Stability Constraint and Force Manipulability",
-    authors: "Seulchan Lee, Sanghyun Kim, Keunwoo Jang",
+    authors: "Seulchan Lee, Sanghyun Kim†, Keunwoo Jang†",
   },
   {
     year: "2024",
     type: "International Conference",
     venue: "11th Asian Conference on Multibody Dynamics",
     title: "Enhanced Online Parameter Estimation of Unknown Objects via Sparse Identification of Unmodeled Dynamics",
-    authors: "Jinseong Park, Sanghyun Kim†, Jaeheung Park†",
+    authors: "Hakjun Kim, Sanghyun Kim†, Jinseong Park†",
     note: "Best Poster Award",
   },
   {
@@ -914,7 +921,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "21st International Conference on Ubiquitous Robots",
     title: "Nonlinear Identification of Unknown Object Dynamics for Human-Robot Collaborative Tasks",
-    authors: "Hakjun Kim, Sanghyun Kim, Jaeheung Park",
+    authors: "Hakjun Kim, Sanghyun Kim†, Jinseong Park†",
   },
   {
     year: "2024",
@@ -963,28 +970,28 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "23rd International Conference on Control, Automation and Systems",
     title: "Improving Indoor Positioning Systems with UWB and Filtering Techniques: A Comparative Analysis",
-    authors: "Rahul Ranjan, Yoonsik Jung, Donggyu Shin, Sanghyun Kim, Chang-Hyun Kim, Seungjae Lee, Joongeup Kye",
+    authors: "Rahul Ranjan, Yoonsik Jung, Donggyu Shin, Sanghyun Kim, Chang-Hyun Kim, Seungjae Lee, Joongeup Kye†",
   },
   {
     year: "2023",
     type: "International Conference",
     venue: "18th International Conference on Intelligent Autonomous Systems",
     title: "Efficient Traversability Mapping Based on Single Camera and 3D LiDAR",
-    authors: "Chanmin Youn, Wonkeun Youn, Sanghyun Kim, Jinseong Park, Young-Sik Shin",
+    authors: "Chanmin Youn, Wonkeun Youn, Sanghyun Kim, Jinseong Park, Young-Sik Shin†",
   },
   {
     year: "2022",
     type: "International Conference",
     venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems",
     title: "Learning to Guide Online Multi-Contact Receding Horizon Planning",
-    authors: "Jiayi Wang, Teguh Santoso Lembono, Sanghyun Kim, Sylvain Calinon, Sethu Vijayakumar, Steve Tonneau",
+    authors: "Jiayi Wang†, Teguh Santoso Lembono, Sanghyun Kim, Sylvain Calinon, Sethu Vijayakumar, Steve Tonneau",
   },
   {
     year: "2021",
     type: "International Conference",
     venue: "IEEE-RAS International Conference on Humanoid Robots",
     title: "Multi-Fidelity Receding Horizon Planning for Multi-Contact Locomotion",
-    authors: "Jiayi Wang, Sanghyun Kim, Sethu Vijayakumar, Steve Tonneau",
+    authors: "Jiayi Wang†, Sanghyun Kim, Sethu Vijayakumar, Steve Tonneau",
   },
   {
     year: "2020",
@@ -998,7 +1005,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Advanced Robotics and Mechatronics",
     title: "Whole-Body Control for Nonholonomic Mobile Manipulator Using Hierarchical Quadratic Programming and Continuous Task Transition",
-    authors: "Sanghyun Kim, Keunwoo Jang, Suhan Park, Yisoo Lee, Sang Yup Lee, Jaeheung Park",
+    authors: "Sanghyun Kim, Keunwoo Jang, Suhan Park, Yisoo Lee, Sang Yup Lee, Jaeheung Park†",
     note: "Best Conference Paper Award",
   },
   {
@@ -1020,21 +1027,21 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "15th International Conference on Ubiquitous Robots",
     title: "Real-Time Inverse Kinematics Technique for Controlling Redundant Avatar Arm",
-    authors: "Sanghyun Kim, Jeeseop Kim, Jaeheung Park",
+    authors: "Sanghyun Kim, Jeeseop Kim, Jaeheung Park†",
   },
   {
     year: "2018",
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Disturbance Observer-Based Linear Feedback Controller for Compliant Motion of Humanoid Robot",
-    authors: "Mingon Kim, Jung Hoon Kim, Sanghyun Kim, Jaehoon Sim, Jaeheung Park",
+    authors: "Mingon Kim, Jung Hoon Kim, Sanghyun Kim, Jaehoon Sim, Jaeheung Park†",
   },
   {
     year: "2017",
     type: "International Conference",
     venue: "International Symposium on Experimental Robotics",
     title: "Application of Robot Manipulator for Cardiopulmonary Resuscitation",
-    authors: "Jaesug Jung, Jeeseop Kim, Sanghyun Kim, Woon Yong Kwon, Sang Hoon Na, Kyoung Su Kim, Gil Joon Suh, Byeong Wook Yoo, Jin Woo Choi, Jung Chan Lee, Jaeheung Park",
+    authors: "Jaesug Jung, Jeeseop Kim, Sanghyun Kim, Woon Yong Kwon, Sang Hoon Na, Kyoung Su Kim, Gil Joon Suh, Byeong Wook Yoo, Jin Woo Choi, Jung Chan Lee, Jaeheung Park†",
   },
   {
     year: "2017",
@@ -1048,14 +1055,14 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "13th International Conference on Ubiquitous Robots and Ambient Intelligence",
     title: "Human Motion Imitation for Humanoid by Recurrent Neural Network",
-    authors: "Mingon Kim, Sanghyun Kim, Jaeheung Park",
+    authors: "Mingon Kim, Sanghyun Kim, Jaeheung Park†",
   },
   {
     year: "2015",
     type: "International Conference",
     venue: "IEEE-RAS International Conference on Humanoid Robots",
     title: "Approach of Team SNU to the DARPA Robotics Challenge Finals",
-    authors: "Sanghyun Kim, Mingon Kim, Jimin Lee, Soonwook Hwang, Joonbo Chae, Beomyeong Park, Hyunbum Cho, Jaehoon Sim, Jaesug Jung, Hosang Lee, Seho Shin, Minsung Kim, Nojun Kwak, Yongjin Lee, Sangkuk Lee, Myunggi Lee, Sangyup Yi, Kyong-Sok K. C. Chang, Jaeheung Park",
+    authors: "Sanghyun Kim, Mingon Kim, Jimin Lee, Soonwook Hwang, Joonbo Chae, Beomyeong Park, Hyunbum Cho, Jaehoon Sim, Jaesug Jung, Hosang Lee, Seho Shin, Minsung Kim, Nojun Kwak, Yongjin Lee, Sangkuk Lee, Myunggi Lee, Sangyup Yi, Kyong-Sok K. C. Chang, Jaeheung Park†",
   },
   {
     year: "2015",
@@ -1069,7 +1076,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE-RAS International Conference on Humanoid Robots",
     title: "Aesthetic Design and Development of Humanoid Legged Robot",
-    authors: "Mathew Schwartz, Soonwook Hwang, Yisoo Lee, Jongseok Won, Sanghyun Kim, Jaeheung Park",
+    authors: "Mathew Schwartz, Soonwook Hwang, Yisoo Lee, Jongseok Won, Sanghyun Kim, Jaeheung Park†",
   },
   {
     year: "2014",
@@ -1090,7 +1097,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "6th Asian Conference on Computer Aided Surgery",
     title: "Data-Driven Haptic Rendering of Friction Between Surgical Device and Trocar for Laparoscopic Surgery Simulator",
-    authors: "Sanghyun Kim, Chang-Gyu Lee, Jeha Ryu",
+    authors: "Sanghyun Kim, Chang-Gyu Lee, Jeha Ryu†",
   },
   {
     year: "2010",

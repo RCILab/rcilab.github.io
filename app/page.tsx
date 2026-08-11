@@ -181,7 +181,10 @@ export default function Home() {
               <article key={paper.title}>
                 <span className="publication-index">0{index + 1}</span>
                 <div>
-                  <p className="publication-meta">{paper.venue} · {paper.year}</p>
+                  <p className="publication-meta">
+                    {paper.venue} · {paper.year}
+                    {paper.jcr && <span className="jcr-badge">JCR Top {paper.jcr}</span>}
+                  </p>
                   <h3>{paper.title}</h3>
                   {paper.authors && (
                     <p className="publication-authors"><AuthorNames names={paper.authors} /></p>
