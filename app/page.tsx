@@ -61,7 +61,8 @@ const homeResearchFeatures: HomeResearchFeature[] = [
 
 export default function Home() {
   const featuredPublications = publications
-    .filter((paper) => paper.type.endsWith("Journal"))
+    .filter((paper) => paper.type.startsWith("International"))
+    .sort((a, b) => Number.parseInt(b.year, 10) - Number.parseInt(a.year, 10))
     .slice(0, 3);
 
   return (
