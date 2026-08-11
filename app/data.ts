@@ -728,7 +728,7 @@ export const publications: Publication[] = [
     year: "2017",
     type: "Domestic Journal",
     venue: "Journal of Korea Robotics Society",
-    title: "로봇 매니퓰레이터 제어를 위한 특이점 회피 알고리즘의 비교 연구",
+    title: "로봇 메니퓰레이터의 제어를 위한 특이점 회피 알고리즘의 비교 연구",
     authors: "김상현, 박재흥†",
   },
   {
