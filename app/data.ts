@@ -289,7 +289,7 @@ export const facilities = [
   "Robros IGRIS-C full-size humanoid",
   "Scout mobile manipulator with Franka arm",
   "Hunter, Limo, TurtleBot 3/4 mobile robots",
-  "Go2-W quadruped robot",
+  "Go2, Go2-W, and A2 quadruped robots",
   "FR5, Piper, and SO-ARM100 manipulators",
   "Nokov Pluto motion-capture system",
   "HoloLens 2, Apple Vision Pro, and Meta Quest 3",
