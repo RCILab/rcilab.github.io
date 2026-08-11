@@ -333,8 +333,9 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "International Journal of Control, Automation, and Systems",
-    title: "Bilinear by Default: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
+    title: "Linear or Bilinear: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.github.io/koopman-mppi/" }],
   },
   {
     year: "2026",
