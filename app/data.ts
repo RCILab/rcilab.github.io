@@ -444,7 +444,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Access",
     title: "Dual-Arm Path-Planning Algorithm for Wiring Harness Assembly Using Redundantly Actuated Robotic Systems",
-    authors: "J. Kim, J-G Kim, J. Park, B-K Han, Sanghyun Kim*, D. Park*",
+    authors: "J. Kim, J-G Kim, J. Park, B-K Han, Sanghyun Kim†, D. Park†",
   },
 ];
 
