@@ -571,7 +571,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Journal of Mechanical Science and Technology",
     title: "Enhanced Online Parameter Estimation of Unknown Objects via Sparse Identification of Unmodeled Dynamics",
-    authors: "Hakjun Kim, Sanghyun Kim†, Jaeheung Park†",
+    authors: "Jinseong Park, Sanghyun Kim†, Jaeheung Park†",
   },
   {
     year: "2025",
@@ -906,7 +906,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "11th Asian Conference on Multibody Dynamics",
     title: "Enhanced Online Parameter Estimation of Unknown Objects via Sparse Identification of Unmodeled Dynamics",
-    authors: "Hakjun Kim, Sanghyun Kim†, Jaeheung Park†",
+    authors: "Jinseong Park, Sanghyun Kim†, Jaeheung Park†",
     note: "Best Poster Award",
   },
   {
