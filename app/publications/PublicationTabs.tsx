@@ -113,7 +113,11 @@ export function PublicationTabs({
               aria-selected={activeKind === kind}
               aria-controls="publication-panel"
               key={kind}
-              onClick={() => setActiveKind(kind)}
+              onClick={() => {
+                setActiveKind(kind);
+                setActiveScope("International");
+                setActivePatentStatus("Application");
+              }}
             >
               {kind}
             </button>
