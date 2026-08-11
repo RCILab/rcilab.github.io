@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rcilab.khu.ac.kr/sitemap.xml
