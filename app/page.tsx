@@ -183,7 +183,9 @@ export default function Home() {
                 <div>
                   <p className="publication-meta">{paper.venue} · {paper.year}</p>
                   <h3>{paper.title}</h3>
-                  <p className="publication-authors"><AuthorNames names={paper.authors} /></p>
+                  {paper.authors && (
+                    <p className="publication-authors"><AuthorNames names={paper.authors} /></p>
+                  )}
                 </div>
               </article>
             ))}
