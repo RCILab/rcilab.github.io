@@ -19,7 +19,10 @@ export default function PublicationsPage() {
           <aside>
             <p className="eyebrow">INDEX</p>
             {years.map((year) => <a href={`#year-${year}`} key={year}>{year}</a>)}
-            <p className="publication-key">* co-first or corresponding authorship as indicated in the original record.</p>
+            <p className="publication-key">
+              <span><sup>*</sup> Co-authors</span>
+              <span><sup>†</sup> Corresponding author</span>
+            </p>
           </aside>
           <div className="publication-years">
             {years.map((year) => (

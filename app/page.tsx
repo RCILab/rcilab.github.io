@@ -169,6 +169,10 @@ export default function Home() {
               Research across robot control, motion planning, navigation, and learning-enabled
               robotic systems.
             </p>
+            <p className="publication-author-key">
+              <span><sup>*</sup> Co-authors</span>
+              <span><sup>†</sup> Corresponding author</span>
+            </p>
             <Link className="text-link" href="/publications">Browse publications <span>→</span></Link>
           </div>
           <div className="publication-list">
