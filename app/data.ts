@@ -377,6 +377,32 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (MPPI Review)",
     note: "Under Review",
   },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "Engineering Science and Technology, an International Journal",
+    title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
+    note: "In Revision",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "International Journal of Control, Automation, and Systems",
+    title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints",
+    note: "In Revision",
+    links: [
+      { label: "Project", href: "https://rcilab.github.io/mcmppi/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2605.24813" },
+    ],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Transactions on Robotics",
+    title: "RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds",
+    note: "In Revision",
+    links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
+  },
 ];
 
 export const publications: Publication[] = [
