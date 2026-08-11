@@ -535,8 +535,8 @@ export const publications: Publication[] = [
     venue: "Information Sciences",
     title: "High-Performance Fixed-Time Active Fault-Tolerant Control of Robotic Manipulators via Sparse Physics-Informed Dynamics Learning",
     authors: "Thanh Nguyen Truong, Sanghyun Kim†",
-    note: "Accepted",
     jcr: "18.2%",
+    links: [{ label: "DOI", href: "https://doi.org/10.1016/j.ins.2026.124001" }],
   },
   {
     year: "2026",
