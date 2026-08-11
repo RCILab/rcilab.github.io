@@ -34,7 +34,8 @@ export default function ContactPage() {
             </p>
             <p lang="ko">
               RCI Lab에서는 로봇 제어와 Physical AI 연구에 함께할 학부연구생 및
-              석·박사통합과정 학생을 모집합니다.
+              석·박사통합과정 학생을 모집합니다. 특히 수학적 사고력과 프로그래밍 역량을
+              바탕으로 실제 로봇의 문제를 함께 풀어갈 지원자를 찾고 있습니다.
             </p>
             <dl>
               <div><dt>Eligibility</dt><dd>Undergraduate students in their third year, second semester or above</dd></div>
