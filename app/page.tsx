@@ -1,7 +1,62 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HeroVideo } from "./components/HeroVideo";
-import { facilities, graduateStudents, newsItems, publications, researchAreas, researchInterns } from "./data";
+import { MutedYouTubeEmbed } from "./components/MutedYouTubeEmbed";
+import { facilities, graduateStudents, newsItems, publications, researchInterns } from "./data";
+
+type HomeResearchFeature = {
+  number: string;
+  title: string;
+  subtitle: string;
+  topics: string[];
+  youtubeId?: string;
+  image?: string;
+};
+
+const homeResearchFeatures: HomeResearchFeature[] = [
+  {
+    number: "01",
+    title: "Humanoid Control",
+    subtitle: "Locomotion and loco-manipulation",
+    topics: ["Locomotion", "Whole-body motion", "Physical AI"],
+    youtubeId: "E4ZXpKlxoBE",
+  },
+  {
+    number: "02",
+    title: "Wholebody Control",
+    subtitle: "Dynamic coordination for complex robots",
+    topics: ["Whole-body control", "Hierarchical QP", "Mobile manipulation"],
+    youtubeId: "5Xwo2iPRB4Q",
+  },
+  {
+    number: "03",
+    title: "Optimal Control",
+    subtitle: "Real-time decisions under constraints",
+    topics: ["MPPI", "DDP", "Trajectory optimization"],
+    youtubeId: "nkt-hxeWGN4",
+  },
+  {
+    number: "04",
+    title: "Constrained Motion Planning",
+    subtitle: "Planning on complex constraint manifolds",
+    topics: ["Motion planning", "Closed-chain", "RRT"],
+    youtubeId: "bnW1Kop4qRw",
+  },
+  {
+    number: "05",
+    title: "Visual Language Action",
+    subtitle: "Language-guided robot behavior",
+    topics: ["VLA", "Robot learning", "Manipulation"],
+    youtubeId: "5N-yzaBzCzg",
+  },
+  {
+    number: "06",
+    title: "Visual Language Navigation",
+    subtitle: "Semantic maps for embodied navigation",
+    topics: ["VLN", "Semantic mapping", "Embodied AI"],
+    image: "/vln.jpg",
+  },
+];
 
 export default function Home() {
   const featuredPublications = publications.slice(0, 3);
@@ -74,19 +129,26 @@ export default function Home() {
             </p>
           </div>
           <div className="research-feature-grid">
-            {researchAreas.slice(0, 4).map((area) => (
-              <article className="research-feature" key={area.number}>
-                <a href={`https://www.youtube.com/watch?v=${area.videoId}`} target="_blank" rel="noreferrer">
-                  <div className="research-feature-media">
-                    <Image src={area.image} alt="" fill sizes="(max-width: 700px) 100vw, 50vw" />
-                    <span>{area.number}</span>
-                  </div>
-                </a>
+            {homeResearchFeatures.map((feature) => (
+              <article className="research-feature" key={feature.number}>
+                <div className="research-feature-media">
+                  {feature.youtubeId ? (
+                    <MutedYouTubeEmbed title={feature.title} videoId={feature.youtubeId} />
+                  ) : (
+                    <Image
+                      src={feature.image ?? "/vln.jpg"}
+                      alt="Instance-enriched semantic mapping for visual language navigation"
+                      fill
+                      sizes="(max-width: 700px) 100vw, 50vw"
+                    />
+                  )}
+                  <span>{feature.number}</span>
+                </div>
                 <div className="research-feature-copy">
-                  <p>{area.subtitle}</p>
-                  <h3>{area.title}</h3>
+                  <p>{feature.subtitle}</p>
+                  <h3>{feature.title}</h3>
                   <ul>
-                    {area.topics.map((topic) => <li key={topic}>{topic}</li>)}
+                    {feature.topics.map((topic) => <li key={topic}>{topic}</li>)}
                   </ul>
                 </div>
               </article>
