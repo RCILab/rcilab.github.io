@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HeroVideo } from "./components/HeroVideo";
 import { MutedYouTubeEmbed } from "./components/MutedYouTubeEmbed";
 import { AuthorNames } from "./components/AuthorNames";
-import { facilities, graduateStudents, newsItems, publications, researchInterns } from "./data";
+import { graduateStudents, newsItems, publications, researchInterns } from "./data";
 
 type HomeResearchFeature = {
   number: string;
@@ -224,23 +224,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section facilities-home">
-        <div className="shell facilities-layout">
-          <div>
-            <p className="eyebrow">BUILT TO EXPERIMENT</p>
-            <h2>A diverse robotics testbed.</h2>
-            <p className="section-copy">
-              RCI Lab validates ideas on full-size humanoids, mobile manipulators, multi-robot
-              platforms, extended-reality interfaces, and high-performance compute systems.
-            </p>
-          </div>
-          <ul className="facility-list">
-            {facilities.slice(0, 6).map((facility, index) => (
-              <li key={facility}><span>{String(index + 1).padStart(2, "0")}</span>{facility}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
     </>
   );
 }
