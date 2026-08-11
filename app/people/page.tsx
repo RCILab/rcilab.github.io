@@ -30,6 +30,7 @@ export default function PeoplePage() {
             <div className="profile-links">
               <span className="profile-email">kim87 at khu.ac.kr</span>
               <a href="https://scholar.google.com/citations?user=OAMAACIAAAAJ&hl=ko&oi=sra" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+              <a href="/sanghyun-kim-cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
             </div>
           </div>
           <dl className="professor-history">
