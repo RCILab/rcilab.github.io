@@ -66,7 +66,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">WHAT WE DO</p>
-              <h2>Control for the real world.</h2>
+              <h2>Control Everything.<br />In the Real World.</h2>
             </div>
             <p>
               From optimal control to Physical AI, our work connects rigorous methods with
