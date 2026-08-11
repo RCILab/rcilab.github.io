@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HeroVideo } from "./components/HeroVideo";
-import { MutedYouTubeEmbed } from "./components/MutedYouTubeEmbed";
 import { AuthorNames } from "./components/AuthorNames";
 import { graduateStudents, newsItems, publications, researchInterns } from "./data";
 
@@ -10,8 +9,8 @@ type HomeResearchFeature = {
   title: string;
   subtitle: string;
   topics: string[];
+  image: string;
   youtubeId?: string;
-  image?: string;
 };
 
 const homeResearchFeatures: HomeResearchFeature[] = [
@@ -20,6 +19,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Humanoid Control",
     subtitle: "Locomotion and loco-manipulation",
     topics: ["Locomotion", "Whole-body motion", "Physical AI"],
+    image: "/research-humanoid.jpg",
     youtubeId: "E4ZXpKlxoBE",
   },
   {
@@ -27,6 +27,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Whole-body Control",
     subtitle: "Dynamic coordination for complex robots",
     topics: ["Whole-body control", "Hierarchical QP", "Mobile manipulation"],
+    image: "/research-wholebody.jpg",
     youtubeId: "5Xwo2iPRB4Q",
   },
   {
@@ -34,6 +35,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Optimal Control",
     subtitle: "Real-time decisions under constraints",
     topics: ["MPPI", "DDP", "Trajectory optimization"],
+    image: "/research-optimal.jpg",
     youtubeId: "NM2Q5UQGleM",
   },
   {
@@ -41,6 +43,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Constrained Motion Planning",
     subtitle: "Planning on complex constraint manifolds",
     topics: ["Motion planning", "Closed-chain", "RRT"],
+    image: "/research-constrained-motion.jpg",
     youtubeId: "bnW1Kop4qRw",
   },
   {
@@ -48,6 +51,7 @@ const homeResearchFeatures: HomeResearchFeature[] = [
     title: "Visual Language Action",
     subtitle: "Language-guided robot behavior",
     topics: ["VLA", "Robot learning", "Manipulation"],
+    image: "/research-vla.jpg",
     youtubeId: "5N-yzaBzCzg",
   },
   {
@@ -135,19 +139,33 @@ export default function Home() {
           <div className="research-feature-grid">
             {homeResearchFeatures.map((feature) => (
               <article className="research-feature" key={feature.number}>
-                <div className="research-feature-media">
-                  {feature.youtubeId ? (
-                    <MutedYouTubeEmbed title={feature.title} videoId={feature.youtubeId} />
-                  ) : (
+                {feature.youtubeId ? (
+                  <a
+                    className="research-feature-media"
+                    href={`https://www.youtube.com/watch?v=${feature.youtubeId}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
-                      src={feature.image ?? "/vln.jpg"}
-                      alt="Instance-enriched semantic mapping for visual language navigation"
+                      src={feature.image}
+                      alt={`${feature.title} research preview`}
                       fill
                       sizes="(max-width: 700px) 100vw, 50vw"
                     />
-                  )}
-                  <span>{feature.number}</span>
-                </div>
+                    <span className="watch-chip">Watch experiment ↗</span>
+                    <span className="research-feature-number">{feature.number}</span>
+                  </a>
+                ) : (
+                  <div className="research-feature-media">
+                    <Image
+                      src={feature.image}
+                      alt={`${feature.title} research preview`}
+                      fill
+                      sizes="(max-width: 700px) 100vw, 50vw"
+                    />
+                    <span className="research-feature-number">{feature.number}</span>
+                  </div>
+                )}
                 <div className="research-feature-copy">
                   <p>{feature.subtitle}</p>
                   <h3>{feature.title}</h3>
