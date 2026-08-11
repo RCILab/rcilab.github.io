@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageIntro } from "../components/PageIntro";
 import { newsItems } from "../data";
 
@@ -27,7 +28,7 @@ export default function NewsPage() {
             </article>
           ))}
           <p className="archive-note">
-            Earlier news remains available on the <a href="https://rcilab.khu.ac.kr/archive" target="_blank" rel="noreferrer">legacy RCI Lab archive ↗</a> during migration.
+            Looking for earlier updates? Browse the <Link href="/news/archive">RCI Lab news archive →</Link> for news from 2023–2025.
           </p>
         </div>
       </section>
