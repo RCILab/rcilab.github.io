@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HeroVideo } from "./components/HeroVideo";
-import { facilities, newsItems, publications, researchAreas, researchInterns } from "./data";
+import { facilities, graduateStudents, newsItems, publications, researchAreas, researchInterns } from "./data";
 
 export default function Home() {
   const featuredPublications = publications.slice(0, 3);
@@ -45,12 +45,12 @@ export default function Home() {
                 <dd>Established</dd>
               </div>
               <div>
-                <dt>{researchInterns.length}</dt>
-                <dd>Research interns</dd>
+                <dt>{graduateStudents.length}</dt>
+                <dd>Graduate researchers</dd>
               </div>
               <div>
-                <dt>17</dt>
-                <dd>Graduate researchers</dd>
+                <dt>{researchInterns.length}</dt>
+                <dd>Research interns</dd>
               </div>
             </dl>
           </div>
