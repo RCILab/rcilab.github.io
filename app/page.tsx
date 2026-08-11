@@ -166,16 +166,6 @@ export default function Home() {
           </ul>
         </div>
       </section>
-
-      <section className="join-banner">
-        <div className="shell join-banner-inner">
-          <div>
-            <p className="eyebrow">JOIN RCI LAB</p>
-            <h2>Build the next generation of intelligent robots with us.</h2>
-          </div>
-          <Link className="button button-light" href="/contact#join">View open positions</Link>
-        </div>
-      </section>
     </>
   );
 }
