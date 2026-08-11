@@ -250,7 +250,7 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Transactions on Automation Science and Engineering",
+    venue: "Robotics and Computer-Integrated Manufacturing",
     title: "Amortized Homotopy-Diverse Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
     note: "In Preparation",
   },
