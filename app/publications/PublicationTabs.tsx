@@ -96,8 +96,8 @@ export function PublicationTabs({
           {activeInProgress.length > 0 && <a href="#in-progress">In Progress</a>}
           {years.map((year) => <a href={`#year-${year}`} key={year}>{year}</a>)}
           <p className="publication-key">
-            <span><sup>*</sup> Co-authors</span>
-            <span><sup>†</sup> Corresponding author</span>
+            <span><sup>*</sup> Co-first authors</span>
+            <span><sup>†</sup> Corresponding authors</span>
           </p>
         </aside>
 

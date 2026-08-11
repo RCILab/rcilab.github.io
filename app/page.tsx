@@ -170,8 +170,8 @@ export default function Home() {
               robotic systems.
             </p>
             <p className="publication-author-key">
-              <span><sup>*</sup> Co-authors</span>
-              <span><sup>†</sup> Corresponding author</span>
+              <span><sup>*</sup> Co-first authors</span>
+              <span><sup>†</sup> Corresponding authors</span>
             </p>
             <Link className="text-link" href="/publications">Browse publications <span>→</span></Link>
           </div>

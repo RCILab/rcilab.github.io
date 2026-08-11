@@ -376,7 +376,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Information Sciences",
     title: "High-Performance Fixed-Time Active Fault-Tolerant Control of Robotic Manipulators via Sparse Physics-Informed Dynamics Learning",
-    authors: "Thanh Nguyen Truong, Sanghyun Kim",
+    authors: "Thanh Nguyen Truong, Sanghyun Kim†",
     note: "Accepted",
   },
   {
@@ -384,7 +384,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "Engineering Applications of Artificial Intelligence",
     title: "Instance-Enriched Semantic Maps for Visual Language Navigation",
-    authors: "Jiho Hong*, Eunae Kang*, Sanghyun Kim**, Y. Shin**",
+    authors: "Jiho Hong*, Eunae Kang*, Sanghyun Kim†, Y. Shin†",
     links: [
       { label: "Project", href: "https://rcilab.github.io/iesm_vln/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2607.12630" },
