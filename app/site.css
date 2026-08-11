@@ -184,9 +184,10 @@ button, input, textarea { font: inherit; }
 .people-heading h2 { margin: 0; color: var(--navy-900); font-size: 34px; letter-spacing: -.035em; }
 .people-heading > span { color: var(--muted); font-size: 12px; }
 .member-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.member-card { min-height: 185px; display: grid; grid-template-columns: 58px 1fr; gap: 18px; padding: 23px; background: white; border: 1px solid var(--line); transition: transform .2s ease, box-shadow .2s ease; }
+.member-card { min-height: 185px; display: grid; grid-template-columns: 92px 1fr; gap: 20px; padding: 23px; background: white; border: 1px solid var(--line); transition: transform .2s ease, box-shadow .2s ease; }
 .member-card:hover { transform: translateY(-3px); box-shadow: 0 13px 35px rgba(8,32,74,.08); }
-.member-avatar { width: 58px; height: 58px; display: grid; place-items: center; background: var(--navy-900); color: var(--accent); font-size: 15px; font-weight: 850; letter-spacing: .04em; }
+.member-photo { position: relative; width: 92px; aspect-ratio: 4 / 5; overflow: hidden; background: var(--cloud); }
+.member-photo img { object-fit: cover; object-position: center 22%; }
 .member-card h3 { margin-bottom: 5px; color: var(--navy-900); font-size: 18px; }
 .member-card p { margin-bottom: 15px; color: var(--muted); font-size: 11px; }
 .member-card strong { min-height: 35px; display: block; margin-bottom: 15px; color: var(--blue-600); font-size: 11px; line-height: 1.5; }

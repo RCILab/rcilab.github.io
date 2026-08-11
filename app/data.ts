@@ -23,6 +23,7 @@ export type Member = {
   joined?: string;
   focus: string;
   email: string;
+  image: string;
 };
 
 export type Publication = {
@@ -205,28 +206,28 @@ export const newsItems: NewsItem[] = [
 ];
 
 export const graduateStudents: Member[] = [
-  { name: "Suhwan Park", program: "Integrated M.S./Ph.D.", joined: "2024-1", focus: "Optimal Control", email: "tnghks0605 at khu.ac.kr" },
-  { name: "Minhyeong Kang", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Multi-Robot Collaboration", email: "kingtyphoon at khu.ac.kr" },
-  { name: "Leesai Park", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Optimal Control", email: "leesai2000 at khu.ac.kr" },
-  { name: "Seulchan Lee", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Human-Robot Interaction", email: "lee081847 at khu.ac.kr" },
-  { name: "Daum Park", program: "Integrated M.S./Ph.D.", joined: "2025-2", focus: "Task and Motion Planning", email: "theaumpark at gmail.com" },
-  { name: "Kangmin Lee", program: "Integrated M.S./Ph.D.", joined: "2026-1", focus: "Autonomous Mobile Robots, Optimal Control", email: "khukmin99 at khu.ac.kr" },
-  { name: "Jinhwan Lim", program: "Integrated M.S./Ph.D.", joined: "2026-2", focus: "Robot Manipulation", email: "limjinhwan77 at khu.ac.kr" },
-  { name: "Hyungjun You", program: "Integrated M.S./Ph.D.", joined: "2026-2", focus: "AI-based Control, Humanoid Robots", email: "shaun1 at khu.ac.kr" },
-  { name: "Jiho Hong", program: "M.S.", joined: "2025-1", focus: "Imitation Learning", email: "jihojihyuk at khu.ac.kr" },
-  { name: "Jaerak Son", program: "M.S.", joined: "2025-1", focus: "Digital Twin, Multi-Robot Systems", email: "sjr9017 at gmail.com" },
-  { name: "Eunbin Jung", program: "M.S.", joined: "2025-2", focus: "Mobile Manipulators, HRI", email: "enbang0209 at gmail.com" },
-  { name: "Hyunho Cho", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "chohh7391 at gmail.com" },
-  { name: "Bohyeong Pak", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "bhe1004 at khu.ac.kr" },
-  { name: "Sung San Park", program: "M.S.", joined: "2026-1", focus: "Vision-Language Navigation", email: "san2642 at khu.ac.kr" },
-  { name: "Chanjin Park", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "chanjin4099 at khu.ac.kr" },
-  { name: "Taehyun Jung", program: "M.S.", joined: "2026-1", focus: "Digital Twin-based Control", email: "jth8090 at khu.ac.kr" },
-  { name: "Minjae Jo", program: "M.S.", joined: "2026-1", focus: "Dual-Arm Manipulation", email: "alswo0300 at khu.ac.kr" },
+  { name: "Suhwan Park", program: "Integrated M.S./Ph.D.", joined: "2024-1", focus: "Optimal Control", email: "tnghks0605 at khu.ac.kr", image: "/members/suhwan-park.png" },
+  { name: "Minhyeong Kang", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Multi-Robot Collaboration", email: "kingtyphoon at khu.ac.kr", image: "/members/minhyeong-kang.jpg" },
+  { name: "Leesai Park", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Optimal Control", email: "leesai2000 at khu.ac.kr", image: "/members/leesai-park.png" },
+  { name: "Seulchan Lee", program: "Integrated M.S./Ph.D.", joined: "2025-1", focus: "Human-Robot Interaction", email: "lee081847 at khu.ac.kr", image: "/members/seulchan-lee.jpg" },
+  { name: "Daum Park", program: "Integrated M.S./Ph.D.", joined: "2025-2", focus: "Task and Motion Planning", email: "theaumpark at gmail.com", image: "/members/daum-park.png" },
+  { name: "Kangmin Lee", program: "Integrated M.S./Ph.D.", joined: "2026-1", focus: "Autonomous Mobile Robots, Optimal Control", email: "khukmin99 at khu.ac.kr", image: "/members/kangmin-lee.png" },
+  { name: "Jinhwan Lim", program: "Integrated M.S./Ph.D.", joined: "2026-2", focus: "Robot Manipulation", email: "limjinhwan77 at khu.ac.kr", image: "/members/jinhwan-lim.jpg" },
+  { name: "Hyungjun You", program: "Integrated M.S./Ph.D.", joined: "2026-2", focus: "AI-based Control, Humanoid Robots", email: "shaun1 at khu.ac.kr", image: "/members/hyungjun-you.jpg" },
+  { name: "Jiho Hong", program: "M.S.", joined: "2025-1", focus: "Imitation Learning", email: "jihojihyuk at khu.ac.kr", image: "/members/jiho-hong.png" },
+  { name: "Jaerak Son", program: "M.S.", joined: "2025-1", focus: "Digital Twin, Multi-Robot Systems", email: "sjr9017 at gmail.com", image: "/members/jaerak-son.png" },
+  { name: "Eunbin Jung", program: "M.S.", joined: "2025-2", focus: "Mobile Manipulators, HRI", email: "enbang0209 at gmail.com", image: "/members/eunbin-jung.png" },
+  { name: "Hyunho Cho", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "chohh7391 at gmail.com", image: "/members/hyunho-cho.jpg" },
+  { name: "Bohyeong Pak", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "bhe1004 at khu.ac.kr", image: "/members/bohyeong-pak.png" },
+  { name: "Sung San Park", program: "M.S.", joined: "2026-1", focus: "Vision-Language Navigation", email: "san2642 at khu.ac.kr", image: "/members/sung-san-park.jpg" },
+  { name: "Chanjin Park", program: "M.S.", joined: "2026-1", focus: "AI-based Control", email: "chanjin4099 at khu.ac.kr", image: "/members/chanjin-park.jpg" },
+  { name: "Taehyun Jung", program: "M.S.", joined: "2026-1", focus: "Digital Twin-based Control", email: "jth8090 at khu.ac.kr", image: "/members/taehyun-jung.jpg" },
+  { name: "Minjae Jo", program: "M.S.", joined: "2026-1", focus: "Dual-Arm Manipulation", email: "alswo0300 at khu.ac.kr", image: "/members/minjae-jo.jpg" },
 ];
 
 export const researchInterns: Member[] = [
-  { name: "Jiyong Park", program: "Research Intern", focus: "AI-based Control", email: "qkrwldyd0919 at khu.ac.kr" },
-  { name: "Jihwan Lee", program: "Research Intern", focus: "AI-based Control, Humanoid Robots", email: "dlwlghks02 at khu.ac.kr" },
+  { name: "Jiyong Park", program: "Research Intern", focus: "AI-based Control", email: "qkrwldyd0919 at khu.ac.kr", image: "/members/jiyong-park.jpg" },
+  { name: "Jihwan Lee", program: "Research Intern", focus: "AI-based Control, Humanoid Robots", email: "dlwlghks02 at khu.ac.kr", image: "/members/jihwan-lee.jpg" },
 ];
 
 export const alumni = [

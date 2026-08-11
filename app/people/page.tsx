@@ -5,10 +5,6 @@ import { alumni, graduateStudents, researchInterns } from "../data";
 
 export const metadata: Metadata = { title: "People" };
 
-function initials(name: string) {
-  return name.split(" ").map((part) => part[0]).join("").slice(0, 2);
-}
-
 export default function PeoplePage() {
   return (
     <>
@@ -51,7 +47,9 @@ export default function PeoplePage() {
           <div className="member-grid">
             {graduateStudents.map((member) => (
               <article className="member-card" key={member.name}>
-                <div className="member-avatar" aria-hidden="true">{initials(member.name)}</div>
+                <div className="member-photo">
+                  <Image src={member.image} alt={member.name} fill sizes="92px" />
+                </div>
                 <div>
                   <h3>{member.name}</h3>
                   <p>{member.program} {member.joined && <span>· {member.joined}</span>}</p>
@@ -70,7 +68,9 @@ export default function PeoplePage() {
           <div className="member-grid compact-member-grid">
             {researchInterns.map((member) => (
               <article className="member-card" key={member.name}>
-                <div className="member-avatar" aria-hidden="true">{initials(member.name)}</div>
+                <div className="member-photo">
+                  <Image src={member.image} alt={member.name} fill sizes="92px" />
+                </div>
                 <div><h3>{member.name}</h3><p>{member.program}</p><strong>{member.focus}</strong><span className="member-email">{member.email}</span></div>
               </article>
             ))}
