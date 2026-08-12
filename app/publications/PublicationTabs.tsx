@@ -58,9 +58,14 @@ function PatentEntry({ patent }: { patent: Patent }) {
         <span>Patent</span>
         <strong>{patent.status}</strong>
       </div>
-      {(patent.number || patent.jurisdiction) && (
+      {(patent.number || patent.jurisdiction || patent.filed || patent.registered) && (
         <p className="publication-meta">
-          {[patent.number, patent.jurisdiction].filter(Boolean).join(" · ")}
+          {[
+            patent.number,
+            patent.jurisdiction,
+            patent.filed && `출원 ${patent.filed}`,
+            patent.registered && `등록 ${patent.registered}`,
+          ].filter(Boolean).join(" · ")}
         </p>
       )}
       <h3>{patent.title}</h3>

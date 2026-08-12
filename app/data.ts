@@ -44,6 +44,8 @@ export type Patent = {
   inventors: string;
   number?: string;
   jurisdiction?: string;
+  filed?: string;
+  registered?: string;
 };
 
 export const researchAreas: ResearchArea[] = [
@@ -1160,21 +1162,21 @@ export const publications: Publication[] = [
 ];
 
 export const patents: Patent[] = [
-  { year: "2026", status: "Application", inventors: "김상현, 이슬찬", title: "제약 조건 보정을 이용한 로봇 시스템 제어 장치 및 방법", number: "10-2026-0132773" },
-  { year: "2026", status: "Application", inventors: "김상현, 강민형", title: "리만 배리어 메트릭 기반 모션 플래닝 시스템 및 방법", number: "10-2026-0113538" },
-  { year: "2026", status: "Application", inventors: "김상현, 강은애, 홍지호, 신영식", title: "인스턴스 수준 시맨틱 맵 기반 자연어 내비게이션 장치 및 방법", number: "10-2026-0075610" },
-  { year: "2026", status: "Application", inventors: "김상현, 조현호, 박보형", title: "화학 실험 자율 수행 장치 및 방법", number: "10-2026-0025745" },
-  { year: "2026", status: "Registration", inventors: "김상현, 양준열, 강민형", title: "라이다 기반 모바일 로봇의 도킹 시스템 및 도킹 방법", number: "10-2924819", jurisdiction: "Korea" },
-  { year: "2026", status: "Program", inventors: "김상현, 정태현, 송은혜, 설우진, 서영빈, 이승윤", title: "방사능 지도 작성을 위한 자율 주행 시뮬레이션 프로그램" },
-  { year: "2025", status: "Application", inventors: "김상현, 김정윤, 김학준", title: "데이터 기반 마찰 모델을 이용한 디지털 트윈 시뮬레이션 정합향상시스템 및 정합향상방법", number: "10-2025-0180382" },
-  { year: "2025", status: "Application", inventors: "김상현, 장근우, 박이새", title: "샘플 보정 및 밀도기반 클러스터링을 활용한 장애물 회피 경로 생성 장치 및 방법", number: "10-2025-0119564" },
-  { year: "2024", status: "Application", inventors: "김상현, 이슬찬, 박이새, 박수환", title: "매니퓰레이터를 결합한 하이브리드 케이블 구동 로봇의 전신 제어시스템 및 제어방법", number: "10-2024-0090023" },
-  { year: "2024", status: "Program", inventors: "김상현, 양준열", title: "달 탐사용 자율 주행 시뮬레이션 프로그램", number: "C-2024-026248" },
-  { year: "2023", status: "Registration", inventors: "고두열, 신영식, 김창현, 김정중, 이종민, 한형석, 박도영, 임재원, 하창완, 박진성, 안병태, 정성호, 김상현, 김예린", title: "이동로봇용 궤도륜 및 이를 포함하는 이동로봇", number: "10-2603028", jurisdiction: "Korea" },
-  { year: "2022", status: "Registration", inventors: "고두열, 김정중, 박진성, 신영식, 김상현, 이종민, 한형석, 박도영, 김창현, 임재원, 하창완, 안병태, 정성호", title: "모듈 로봇 및 모듈 로봇의 제어 방법", number: "10-2459965", jurisdiction: "Korea" },
-  { year: "2019", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "US 20190029919A1 · CN 108697572A · EU 3409258A1", jurisdiction: "United States · China · European Union" },
-  { year: "2016", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "10-2016-0172286", jurisdiction: "Korea" },
-  { year: "2016", status: "Registration", inventors: "김상현, 박재흥, 김민곤, 이지민, 권정흠, 유범재", title: "파지자세 및 파지력을 추정하는 장치", number: "10-2016-0075150", jurisdiction: "Korea" },
+  { year: "2026", status: "Application", inventors: "김상현, 이슬찬", title: "제약 조건 보정을 이용한 로봇 시스템 제어 장치 및 방법", number: "10-2026-0132773", filed: "2026.07.20" },
+  { year: "2026", status: "Application", inventors: "김상현, 강민형", title: "리만 배리어 메트릭 기반 모션 플래닝 시스템 및 방법", number: "10-2026-0113538", filed: "2026.06.22" },
+  { year: "2026", status: "Application", inventors: "김상현, 강은애, 홍지호, 신영식", title: "인스턴스 수준 시맨틱 맵 기반 자연어 내비게이션 장치 및 방법", number: "10-2026-0075610", filed: "2026.04.27" },
+  { year: "2026", status: "Application", inventors: "김상현, 조현호, 박보형", title: "화학 실험 자율 수행 장치 및 방법", number: "10-2026-0025745", filed: "2026.02.09" },
+  { year: "2026", status: "Registration", inventors: "김상현, 양준열, 강민형", title: "라이다 기반 모바일 로봇의 도킹 시스템 및 도킹 방법", number: "10-2924819", jurisdiction: "Korea", filed: "2024.02.14", registered: "2026.02.04" },
+  { year: "2025", status: "Program", inventors: "김상현, 정태현, 송은혜, 설우진, 서영빈, 이승윤", title: "방사능 지도 작성을 위한 자율 주행 시뮬레이션 프로그램", number: "C-2025-041666", registered: "2025.10.15" },
+  { year: "2025", status: "Application", inventors: "김상현, 김정윤, 김학준", title: "데이터 기반 마찰 모델을 이용한 디지털 트윈 시뮬레이션 정합향상시스템 및 정합향상방법", number: "10-2025-0180382", filed: "2025.11.25" },
+  { year: "2025", status: "Application", inventors: "김상현, 장근우, 박이새", title: "샘플 보정 및 밀도기반 클러스터링을 활용한 장애물 회피 경로 생성 장치 및 방법", number: "10-2025-0119564", filed: "2025.08.26" },
+  { year: "2024", status: "Application", inventors: "김상현, 이슬찬, 박이새, 박수환", title: "매니퓰레이터를 결합한 하이브리드 케이블 구동 로봇의 전신 제어시스템 및 제어방법", number: "10-2024-0090023", filed: "2024.07.05" },
+  { year: "2024", status: "Program", inventors: "김상현, 양준열", title: "달 탐사용 자율 주행 시뮬레이션 프로그램", number: "C-2024-026248", registered: "2024.07.29" },
+  { year: "2023", status: "Registration", inventors: "고두열, 신영식, 김창현, 김정중, 이종민, 한형석, 박도영, 임재원, 하창완, 박진성, 안병태, 정성호, 김상현, 김예린", title: "이동로봇용 궤도륜 및 이를 포함하는 이동로봇", number: "10-2603028", jurisdiction: "Korea", filed: "2022.11.16", registered: "2023.11.13" },
+  { year: "2022", status: "Registration", inventors: "고두열, 김정중, 박진성, 신영식, 김상현, 이종민, 한형석, 박도영, 김창현, 임재원, 하창완, 안병태, 정성호", title: "모듈 로봇 및 모듈 로봇의 제어 방법", number: "10-2459965", jurisdiction: "Korea", filed: "2022.08.29", registered: "2022.10.24" },
+  { year: "2019", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "US 11071686B2 · CN 108697572B · EP 3409258B1", jurisdiction: "United States · China · European Union", filed: "2017.01.26", registered: "US 2021.07.27 · CN 2020.06.19 · EP 2020.12.23" },
+  { year: "2016", status: "Registration", inventors: "서길준, 권운용, 김경수, 나상훈, 박재흥, 이정찬, 정윤선, 유경민, 박민지, 김태균, 고정인, 김지섭, 정재석, 김상현, 유병욱, 이병탁, 조우상, 최진우", title: "자동 심폐소생 장치 및 제어 방법", number: "10-1956776", jurisdiction: "Korea", filed: "2016.12.16", registered: "2019.03.11" },
+  { year: "2016", status: "Registration", inventors: "김상현, 박재흥, 김민곤, 이지민, 권정흠, 유범재", title: "파지자세 및 파지력을 추정하는 장치", number: "10-1654294", jurisdiction: "Korea", filed: "2014.12.19", registered: "2016.09.06" },
 ];
 
 export type Award = {
