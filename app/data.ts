@@ -382,13 +382,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "Robotics and Computer-Integrated Manufacturing",
-    title: "Amortized Homotopy-Diverse Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
-    note: "In Preparation",
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "Aerospace Science and Technology",
     title: "From Orbital DEMs to Onboard Decisions: Belief-Triggered Replanning for Long-Range Lunar Rover Traverses",
     note: "In Preparation",
@@ -441,6 +434,13 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Social Navigation)",
     note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "Robotics and Computer-Integrated Manufacturing",
+    title: "Amortized Homotopy-Diverse Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
+    note: "Under Review",
   },
   {
     year: "2026",
