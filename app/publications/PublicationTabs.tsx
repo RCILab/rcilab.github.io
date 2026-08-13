@@ -32,10 +32,12 @@ function PublicationEntry({ paper, showYear = false }: { paper: Publication; sho
         <span>{paper.type}{showYear && ` · ${paper.year}`}</span>
         {paper.note && <strong>{paper.note}</strong>}
       </div>
-      <p className="publication-meta">
-        {paper.venue}
-        {paper.jcr && <span className="jcr-badge">JCR Top {paper.jcr}</span>}
-      </p>
+      {(paper.venue || paper.jcr) && (
+        <p className="publication-meta">
+          {paper.venue}
+          {paper.jcr && <span className="jcr-badge">JCR Top {paper.jcr}</span>}
+        </p>
+      )}
       <h3>{paper.title}</h3>
       {paper.authors && <p className="publication-authors"><AuthorNames names={paper.authors} /></p>}
       {paper.links && (

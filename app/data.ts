@@ -29,7 +29,7 @@ export type Member = {
 export type Publication = {
   year: string;
   type: "International Journal" | "Domestic Journal" | "International Conference" | "Domestic Conference";
-  venue: string;
+  venue?: string;
   title: string;
   authors?: string;
   note?: string;
@@ -438,9 +438,8 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "Robotics and Computer-Integrated Manufacturing",
     title: "Amortized Homotopy-Diverse Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
-    note: "Under Review",
+    note: "In Preparation",
   },
   {
     year: "2026",
