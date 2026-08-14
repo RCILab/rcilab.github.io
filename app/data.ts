@@ -438,8 +438,9 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    title: "Amortized Homotopy-Diverse Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
-    note: "In Preparation",
+    venue: "Advanced Engineering Informatics",
+    title: "Amortized Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
+    note: "Under Review",
   },
   {
     year: "2026",
@@ -607,7 +608,7 @@ export const publications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Object-Aware Impedance Control for Human-Robot Collaborative Task with Online Object Parameter Estimation",
-    authors: "Jinseong Park, Yong-Sik Shin†, Sanghyun Kim†",
+    authors: "Jinseong Park, Young-Sik Shin†, Sanghyun Kim†",
     jcr: "16.1%",
     links: [{ label: "DOI", href: "https://doi.org/10.1109/TASE.2024.3477471" }],
   },
@@ -795,7 +796,7 @@ export const publications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Symposium on Safety, Security, and Rescue Robotics",
     title: "Seek, Don’t Avoid: Radiation-Guided Exploration for Early Contamination Discovery",
-    authors: "Miryeong Park, Taehyung Jung, Sanghyun Kim†, Younggun Cho†",
+    authors: "Miryeong Park, Taehyun Jung, Sanghyun Kim†, Younggun Cho†",
   },
   {
     year: "2026",
