@@ -488,14 +488,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Transactions on Automation Science and Engineering",
-    title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
-    note: "Under Review",
-    links: [{ label: "Project", href: "https://rcilab.github.io/graft/" }],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "ISA Transactions",
     title: "Title Withheld (MPPI Review)",
     note: "Under Review",
@@ -529,6 +521,14 @@ export const inProgressPublications: Publication[] = [
     note: "In Revision",
     jcr: "9.4%",
     links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Transactions on Automation Science and Engineering",
+    title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
+    note: "In Revision",
+    links: [{ label: "Project", href: "https://rcilab.github.io/graft/" }],
   },
 ];
 
