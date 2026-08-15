@@ -518,7 +518,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Riemannian Barrier Metric RRT)",
-    authors: "Minhyeong Kim, Sanghyun Kim†",
+    authors: "Minhyeong Kang, Sanghyun Kim†",
     note: "In Revision",
     jcr: "9.4%",
     links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
