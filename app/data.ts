@@ -446,7 +446,7 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (Projection-Retraction MPPI)",
+    title: "Title Withheld (Constrained MPPI)",
     note: "Under Review",
     links: [
       { label: "Project", href: "https://rcilab.github.io/prmppi/" },
@@ -517,7 +517,7 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Transactions on Robotics",
-    title: "Title Withheld (Riemannian Barrier Metric RRT)",
+    title: "Title Withheld (Constrained Motion Planning)",
     authors: "Minhyeong Kang, Sanghyun Kim†",
     note: "In Revision",
     jcr: "9.4%",
