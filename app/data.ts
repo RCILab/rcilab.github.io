@@ -528,6 +528,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Title Withheld (Prescribed-Path Planning)",
     note: "In Revision",
+    jcr: "10.8%",
     links: [{ label: "Project", href: "https://rcilab.github.io/graft/" }],
   },
 ];
