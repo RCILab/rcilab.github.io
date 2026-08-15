@@ -25,12 +25,18 @@ function matchesSelection(
   return paper.type === `${scope} ${kind}`;
 }
 
+const NOTE_STATUS: Record<string, string> = {
+  "In Preparation": "preparation",
+  "Under Review": "review",
+  "In Revision": "revision",
+};
+
 function PublicationEntry({ paper, showYear = false }: { paper: Publication; showYear?: boolean }) {
   return (
     <article className="publication-entry">
       <div className="publication-entry-top">
         <span>{paper.type}{showYear && ` · ${paper.year}`}</span>
-        {paper.note && <strong>{paper.note}</strong>}
+        {paper.note && <strong data-status={NOTE_STATUS[paper.note]}>{paper.note}</strong>}
       </div>
       {(paper.venue || paper.jcr) && (
         <p className="publication-meta">

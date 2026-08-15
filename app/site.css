@@ -233,6 +233,9 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 .publication-entry-top { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 8px; }
 .publication-entry-top span { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
 .publication-entry-top strong { color: #147a45; font-size: 10px; text-transform: uppercase; }
+.publication-entry-top strong[data-status="preparation"] { color: var(--muted); }
+.publication-entry-top strong[data-status="review"] { color: #b45309; }
+.publication-entry-top strong[data-status="revision"] { color: var(--blue-600); }
 .publication-entry h3 { margin-bottom: 10px; color: var(--navy-900); font-size: 20px; line-height: 1.5; }
 .paper-links { display: flex; gap: 7px; margin-top: 14px; }
 .paper-links a { padding: 7px 10px; border: 1px solid var(--line); color: var(--blue-600); font-size: 10px; font-weight: 800; }
