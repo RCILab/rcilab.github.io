@@ -517,7 +517,7 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Transactions on Robotics",
-    title: "RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds",
+    title: "Title Withheld (Riemannian Barrier Metric RRT)",
     note: "In Revision",
     jcr: "9.4%",
     links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
