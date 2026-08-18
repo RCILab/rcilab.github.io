@@ -1165,6 +1165,7 @@ export const publications: Publication[] = [
 ];
 
 export const patents: Patent[] = [
+  { year: "2026", status: "Application", inventors: "김상현, 박다움", title: "타이밍 불변 제약의 정적 선별과 경로 가속도 폐구간 축약을 이용한 이종 리던던트 매니퓰레이터의 통합 규정경로 계획 및 오프라인 실행가능성 판정 방법 및 그 시스템", number: "TBD", filed: "2026.08.19" },
   { year: "2026", status: "Application", inventors: "김상현, 이슬찬", title: "제약 조건 보정을 이용한 로봇 시스템 제어 장치 및 방법", number: "10-2026-0132773", filed: "2026.07.20" },
   { year: "2026", status: "Application", inventors: "김상현, 강민형", title: "리만 배리어 메트릭 기반 모션 플래닝 시스템 및 방법", number: "10-2026-0113538", filed: "2026.06.22" },
   { year: "2026", status: "Application", inventors: "김상현, 강은애, 홍지호, 신영식", title: "인스턴스 수준 시맨틱 맵 기반 자연어 내비게이션 장치 및 방법", number: "10-2026-0075610", filed: "2026.04.27" },
