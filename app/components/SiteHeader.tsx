@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MobileNav } from "./MobileNav";
 
 const navigation = [
   { href: "/people", label: "People" },
@@ -49,13 +50,7 @@ export function SiteHeader() {
             Join us
           </Link>
         </nav>
-        <details className="mobile-nav">
-          <summary aria-label="Open navigation">Menu</summary>
-          <nav aria-label="Mobile navigation">
-            <NavigationLinks />
-            <Link href="/contact">Join us</Link>
-          </nav>
-        </details>
+        <MobileNav items={navigation} />
       </div>
     </header>
   );
