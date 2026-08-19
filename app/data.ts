@@ -467,7 +467,10 @@ export const inProgressPublications: Publication[] = [
     venue: "International Journal of Control, Automation, and Systems",
     title: "Linear or Bilinear: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
     note: "Under Review",
-    links: [{ label: "Project", href: "https://rcilab.github.io/koopman-mppi/" }],
+    links: [
+      { label: "Project", href: "https://rcilab.github.io/koopman-mppi/" },
+      { label: "Preprint", href: "https://doi.org/10.21203/rs.3.rs-10732691/v1" },
+    ],
   },
   {
     year: "2026",
