@@ -438,7 +438,7 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "Advanced Engineering Informatics",
+    venue: "Engineering Applications of Artificial Intelligence",
     title: "Amortized Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
     note: "Under Review",
   },
