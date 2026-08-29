@@ -483,17 +483,17 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Access",
-    title: "LLM-Guided Tool-Aware Task and Motion Planning for Chemistry Lab Automation",
+    venue: "ISA Transactions",
+    title: "Title Withheld (MPPI Review)",
     note: "Under Review",
-    links: [{ label: "Project", href: "https://rcilab.github.io/auto_chem/" }],
   },
   {
     year: "2026",
     type: "International Journal",
-    venue: "ISA Transactions",
-    title: "Title Withheld (MPPI Review)",
-    note: "Under Review",
+    venue: "IEEE Access",
+    title: "LLM-Guided Tool-Aware Task and Motion Planning for Chemistry Lab Automation",
+    note: "In Revision",
+    links: [{ label: "Project", href: "https://rcilab.github.io/auto_chem/" }],
   },
   {
     year: "2026",
