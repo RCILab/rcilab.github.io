@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { NavigationLink } from "./NavigationLink";
 
 export function SiteFooter() {
   return (
@@ -14,12 +14,12 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="footer-label">Explore</p>
-          <Link href="/people">People</Link>
-          <Link href="/research">Research</Link>
-          <Link href="/publications">Publications</Link>
-          <Link href="/grants">Grants</Link>
-          <Link href="/news">News</Link>
-          <Link href="/picture">Pictures</Link>
+          <NavigationLink href="/people">People</NavigationLink>
+          <NavigationLink href="/research">Research</NavigationLink>
+          <NavigationLink href="/publications">Publications</NavigationLink>
+          <NavigationLink href="/grants">Grants</NavigationLink>
+          <NavigationLink href="/news">News</NavigationLink>
+          <NavigationLink href="/picture">Pictures</NavigationLink>
         </div>
         <div>
           <p className="footer-label">Contact</p>

@@ -93,32 +93,11 @@ export function PublicationTabs({
 }) {
   useEffect(() => {
     const scrollToTop = () => window.scrollTo({ top: 0, left: 0 });
-    const handlePublicationsLinkClick = (event: MouseEvent) => {
-      if (
-        event.defaultPrevented
-        || event.button !== 0
-        || event.metaKey
-        || event.ctrlKey
-        || event.shiftKey
-        || event.altKey
-        || !(event.target instanceof Element)
-      ) return;
-
-      const publicationsLink = event.target.closest<HTMLAnchorElement>(
-        'a[href="/publications"], a[href="/publications/"]',
-      );
-
-      if (publicationsLink) scrollToTop();
-    };
 
     scrollToTop();
     window.addEventListener("pageshow", scrollToTop);
-    document.addEventListener("click", handlePublicationsLinkClick);
 
-    return () => {
-      window.removeEventListener("pageshow", scrollToTop);
-      document.removeEventListener("click", handlePublicationsLinkClick);
-    };
+    return () => window.removeEventListener("pageshow", scrollToTop);
   }, []);
 
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");

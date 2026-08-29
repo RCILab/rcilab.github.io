@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "./MobileNav";
+import { NavigationLink } from "./NavigationLink";
 
 const navigation = [
   { href: "/people", label: "People" },
@@ -15,9 +16,9 @@ function NavigationLinks() {
   return (
     <>
       {navigation.map((item) => (
-        <Link href={item.href} key={item.href}>
+        <NavigationLink href={item.href} key={item.href}>
           {item.label}
-        </Link>
+        </NavigationLink>
       ))}
     </>
   );

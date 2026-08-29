@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
+import { NavigationLink } from "./NavigationLink";
 
 type NavItem = { href: string; label: string };
 
@@ -24,13 +24,13 @@ export function MobileNav({ items }: { items: NavItem[] }) {
       <summary aria-label="Open navigation">Menu</summary>
       <nav aria-label="Mobile navigation">
         {items.map((item) => (
-          <Link href={item.href} key={item.href} onClick={close}>
+          <NavigationLink href={item.href} key={item.href} onClick={close}>
             {item.label}
-          </Link>
+          </NavigationLink>
         ))}
-        <Link href="/contact" onClick={close}>
+        <NavigationLink href="/contact" onClick={close}>
           Join us
-        </Link>
+        </NavigationLink>
       </nav>
     </details>
   );
