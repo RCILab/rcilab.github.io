@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Patent, Publication } from "../data";
 import { AuthorNames } from "../components/AuthorNames";
 
@@ -91,6 +91,36 @@ export function PublicationTabs({
   publications: Publication[];
   patents: Patent[];
 }) {
+  useEffect(() => {
+    const scrollToTop = () => window.scrollTo({ top: 0, left: 0 });
+    const handlePublicationsLinkClick = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented
+        || event.button !== 0
+        || event.metaKey
+        || event.ctrlKey
+        || event.shiftKey
+        || event.altKey
+        || !(event.target instanceof Element)
+      ) return;
+
+      const publicationsLink = event.target.closest<HTMLAnchorElement>(
+        'a[href="/publications"], a[href="/publications/"]',
+      );
+
+      if (publicationsLink) scrollToTop();
+    };
+
+    scrollToTop();
+    window.addEventListener("pageshow", scrollToTop);
+    document.addEventListener("click", handlePublicationsLinkClick);
+
+    return () => {
+      window.removeEventListener("pageshow", scrollToTop);
+      document.removeEventListener("click", handlePublicationsLinkClick);
+    };
+  }, []);
+
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");
   const [activeScope, setActiveScope] = useState<PublicationScope>("International");
   const [activePatentStatus, setActivePatentStatus] = useState<PatentStatus>("Application");
