@@ -492,8 +492,9 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Access",
     title: "LLM-Guided Tool-Aware Task and Motion Planning for Chemistry Lab Automation",
+    authors: "Bohyeong Pak*, Hyunho Cho*, Sanghyun Kim†",
     note: "In Revision",
-    links: [{ label: "Project", href: "https://rcilab.github.io/auto_chem/" }],
+    links: [{ label: "Project", href: "http://rcilab.khu.ac.kr/auto_chem" }],
   },
   {
     year: "2026",
