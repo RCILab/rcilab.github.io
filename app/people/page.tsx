@@ -69,7 +69,7 @@ export default function PeoplePage() {
       <section className="section interns-section">
         <div className="shell">
           <div className="people-heading"><p className="eyebrow">TEAM</p><h2>Research interns</h2></div>
-          <div className="member-grid compact-member-grid">
+          <div className="member-grid">
             {researchInterns.map((member) => (
               <article className="member-card" key={member.name}>
                 <div className="member-photo">
