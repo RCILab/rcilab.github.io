@@ -56,7 +56,7 @@ export const grants: Grant[] = [
   { year: "2026", period: "2026", category: "Industry", agency: "모빈", title: "시뮬레이션 상 모바일 로봇 탑재 매니퓰레이터 모션 및 제어 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "PIE 로보틱스", title: "자율 공정을 위한 모션 플래닝 기술 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "로보에 테크놀로지", title: "화물하역작업을 위한 모션플래닝 알고리즘의 개발", program: "산학협력", ongoing: true },
-  { year: "2026", period: "2026", category: "Industry", agency: "카이로스랩", title: "화학 실험 자동화를 위한 VLM 기반 제어 기술 개발", program: "산학협력", ongoing: true },
+  { year: "2026", period: "2026", category: "Industry", agency: "카이로스랩", title: "화학 실험 자동화를 위한 VLM 기반 제어 기술 개발", program: "산학협력" },
   { year: "2026", period: "2026", category: "Industry", agency: "이앤오즈", title: "휴머노이드 교육 자문 용역", program: "산학협력" },
   { year: "2026", period: "2026", category: "Industry", agency: "메타모션엑스", title: "자율주행 경로생성 소프트웨어 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "포니링크", title: "4족보행로봇의 자율주행 요소 기술 개발 (2차)", program: "산학협력" },
