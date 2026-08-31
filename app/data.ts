@@ -163,6 +163,12 @@ export const researchAreas: ResearchArea[] = [
 
 export const newsItems: NewsItem[] = [
   {
+    date: "2026.09",
+    category: "Grant",
+    title: "RCI Lab won a grant from Mobinn.",
+    detail: "과제명: 시뮬레이션 상 모바일 로봇 탑재 매니퓰레이터 모션 및 제어 개발 · 과제형태: 산학협력 · 지원기관: 모빈 · 수행기간: 2026",
+  },
+  {
     date: "2026.08",
     category: "Service",
     title: "Sanghyun Kim has been appointed to the organizing committee for IEEE ICRA 2027.",
@@ -171,12 +177,6 @@ export const newsItems: NewsItem[] = [
     date: "2026.08",
     category: "Service",
     title: "Sanghyun Kim will serve as an Associate Editor for IEEE-RAS Humanoids 2026.",
-  },
-  {
-    date: "2026.08",
-    category: "Grant",
-    title: "RCI Lab won a grant from Mobinn.",
-    detail: "과제명: 이동형 양팔 로봇의 제어시스템 개발 · 과제형태: 산학협력 · 지원기관: 모빈 · 수행기간: 2026",
   },
   {
     date: "2026.08",

@@ -53,7 +53,7 @@ export const grants: Grant[] = [
   { year: "2022", period: "2022–2023", category: "Government", agency: "산업통상자원부", title: "다품종 EV 폐배터리팩의 재활용을 위한 인간-로봇 협업 해체 작업 기술 개발", program: "로봇핵심기술개발사업 · 연구책임자" },
 
   // Industry collaboration and commissioned projects
-  { year: "2026", period: "2026", category: "Industry", agency: "모빈", title: "이동형 양팔 로봇의 제어시스템 개발", program: "산학협력", ongoing: true },
+  { year: "2026", period: "2026", category: "Industry", agency: "모빈", title: "시뮬레이션 상 모바일 로봇 탑재 매니퓰레이터 모션 및 제어 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "PIE 로보틱스", title: "자율 공정을 위한 모션 플래닝 기술 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "로보에 테크놀로지", title: "화물하역작업을 위한 모션플래닝 알고리즘의 개발", program: "산학협력", ongoing: true },
   { year: "2026", period: "2026", category: "Industry", agency: "카이로스랩", title: "화학 실험 자동화를 위한 VLM 기반 제어 기술 개발", program: "산학협력", ongoing: true },
