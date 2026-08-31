@@ -31,6 +31,8 @@ const NOTE_STATUS: Record<string, string> = {
   "In Revision": "revision",
 };
 
+const TAB_STATE_KEY = "rcilab-publication-tabs";
+
 function PublicationEntry({ paper, showYear = false }: { paper: Publication; showYear?: boolean }) {
   return (
     <article className="publication-entry">
@@ -91,18 +93,92 @@ export function PublicationTabs({
   publications: Publication[];
   patents: Patent[];
 }) {
-  useEffect(() => {
-    const scrollToTop = () => window.scrollTo({ top: 0, left: 0 });
-
-    scrollToTop();
-    window.addEventListener("pageshow", scrollToTop);
-
-    return () => window.removeEventListener("pageshow", scrollToTop);
-  }, []);
-
   const [activeKind, setActiveKind] = useState<PublicationKind>("Journal");
   const [activeScope, setActiveScope] = useState<PublicationScope>("International");
   const [activePatentStatus, setActivePatentStatus] = useState<PatentStatus>("Application");
+
+  // On refresh (F5), restore the previous tab selection and scroll position.
+  // Normal navigation to this page still starts at the top with default tabs.
+  useEffect(() => {
+    const scrollToTop = () => window.scrollTo({ top: 0, left: 0 });
+
+    let savedScrollY: number | null = null;
+    const navigation = performance.getEntriesByType("navigation")[0] as
+      | PerformanceNavigationTiming
+      | undefined;
+
+    if (navigation?.type === "reload") {
+      try {
+        const saved = JSON.parse(sessionStorage.getItem(TAB_STATE_KEY) ?? "null") as {
+          kind?: unknown;
+          scope?: unknown;
+          patentStatus?: unknown;
+          scrollY?: unknown;
+        } | null;
+
+        if (saved) {
+          if (saved.kind === "Journal" || saved.kind === "Conference" || saved.kind === "Patent") {
+            setActiveKind(saved.kind);
+          }
+          if (saved.scope === "International" || saved.scope === "Domestic") {
+            setActiveScope(saved.scope);
+          }
+          if (
+            saved.patentStatus === "Application" ||
+            saved.patentStatus === "Registration" ||
+            saved.patentStatus === "Program"
+          ) {
+            setActivePatentStatus(saved.patentStatus);
+          }
+          if (typeof saved.scrollY === "number" && Number.isFinite(saved.scrollY)) {
+            savedScrollY = saved.scrollY;
+          }
+        }
+      } catch {
+        // sessionStorage unavailable or corrupted; fall back to scrolling to the top
+      }
+    }
+
+    if (savedScrollY === null) {
+      scrollToTop();
+      window.addEventListener("pageshow", scrollToTop);
+      return () => window.removeEventListener("pageshow", scrollToTop);
+    }
+
+    // Wait two frames so the restored tab's content is rendered before scrolling.
+    const targetY = savedScrollY;
+    let innerFrame: number | null = null;
+    const outerFrame = requestAnimationFrame(() => {
+      innerFrame = requestAnimationFrame(() => window.scrollTo({ top: targetY, left: 0 }));
+    });
+    return () => {
+      cancelAnimationFrame(outerFrame);
+      if (innerFrame !== null) cancelAnimationFrame(innerFrame);
+    };
+  }, []);
+
+  // Keep the latest tab selection and scroll position saved for refresh restore.
+  useEffect(() => {
+    const save = () => {
+      try {
+        sessionStorage.setItem(
+          TAB_STATE_KEY,
+          JSON.stringify({
+            kind: activeKind,
+            scope: activeScope,
+            patentStatus: activePatentStatus,
+            scrollY: window.scrollY,
+          }),
+        );
+      } catch {
+        // sessionStorage unavailable; refresh restore simply won't apply
+      }
+    };
+
+    save();
+    window.addEventListener("pagehide", save);
+    return () => window.removeEventListener("pagehide", save);
+  }, [activeKind, activeScope, activePatentStatus]);
   const activeInProgress = inProgressPublications.filter((paper) =>
     matchesSelection(paper, activeKind, activeScope),
   );
