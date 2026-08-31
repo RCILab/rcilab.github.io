@@ -412,13 +412,6 @@ export const inProgressPublications: Publication[] = [
     year: "2027",
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
-    title: "Title Withheld (MBD)",
-    note: "In Preparation",
-  },
-  {
-    year: "2027",
-    type: "International Conference",
-    venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Force-Level MPPI)",
     note: "In Preparation",
   },
@@ -435,6 +428,13 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Social Navigation)",
     note: "In Preparation",
+  },
+  {
+    year: "2027",
+    type: "International Conference",
+    venue: "IEEE International Conference on Robotics and Automation",
+    title: "Title Withheld (MBD)",
+    note: "Under Review",
   },
   {
     year: "2026",
