@@ -833,6 +833,20 @@ export const publications: Publication[] = [
   {
     year: "2026",
     type: "Domestic Conference",
+    venue: "대한기계학회 2026년 종합학술대회",
+    title: "접촉 밀집 조작을 위한 비전-언어-행동 모델 기반 힘 인지 잔차 정책",
+    authors: "박보형, 조현호, 이해성, 김상현†",
+  },
+  {
+    year: "2026",
+    type: "Domestic Conference",
+    venue: "대한기계학회 2026년 종합학술대회",
+    title: "등식 제약 다양체에서 부등식 제약 인지형 탐색을 위한 리만 배리어 메트릭 RRT",
+    authors: "강민형, 김상현†",
+  },
+  {
+    year: "2026",
+    type: "Domestic Conference",
     venue: "제어로봇시스템학회 학술대회",
     title: "Nav2 전방향 주행 제어기의 미세 수렴 한계 분석과 기구학 기반 수렴 제어기의 성능 검증",
     authors: "손재락, 심재훈, 김상현†",
