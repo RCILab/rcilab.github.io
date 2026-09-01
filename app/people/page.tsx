@@ -22,14 +22,14 @@ export default function PeoplePage() {
           <div className="professor-copy">
             <p className="eyebrow">PRINCIPAL INVESTIGATOR</p>
             <h2>Sanghyun Kim <span>김상현</span></h2>
-            <p className="professor-role">Assistant Professor · Department of Mechanical Engineering</p>
+            <p className="professor-role">Assistant Professor · Department of Mechanical Engineering<br />Principal Investigator (PI), RCI Lab</p>
             <p>
               Prof. Kim leads RCI Lab at Kyung Hee University. His research focuses on robot
               control and intelligence, including redundant and whole-body control, optimal
               control, human–robot interaction, and Physical AI.
             </p>
             <div className="profile-links">
-              <span className="profile-email">kim87 at khu.ac.kr</span>
+              <a className="profile-email" href="mailto:kim87@khu.ac.kr">kim87@khu.ac.kr</a>
               <a href="https://scholar.google.com/citations?user=OAMAACIAAAAJ&hl=ko&oi=sra" target="_blank" rel="noreferrer">Google Scholar ↗</a>
               <a href="/sanghyun-kim-cv.pdf" target="_blank" rel="noreferrer">CV ↗</a>
               <Link href="/awards">Awards ↗</Link>
