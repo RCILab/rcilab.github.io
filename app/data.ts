@@ -164,6 +164,12 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.09",
+    category: "Lab",
+    title: "RCI Lab has been selected for Anthropic's Claude for Scientists program.",
+    detail: "Through the program, all lab members receive premium (Max) Claude access for research, coding, and writing.",
+  },
+  {
+    date: "2026.09",
     category: "Grant",
     title: "RCI Lab won a grant from Mobinn.",
     detail: "과제명: 시뮬레이션 상 모바일 로봇 탑재 매니퓰레이터 모션 및 제어 개발 · 과제형태: 산학협력 · 지원기관: 모빈 · 수행기간: 2026",
