@@ -487,6 +487,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (MPPI Review)",
     authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
     note: "In Revision",
+    jcr: "6.5%",
   },
   {
     year: "2026",
