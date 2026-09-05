@@ -485,7 +485,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "ISA Transactions",
     title: "Title Withheld (MPPI Review)",
-    note: "Under Review",
+    note: "In Revision",
   },
   {
     year: "2026",
