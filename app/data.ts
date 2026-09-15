@@ -164,6 +164,12 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.09",
+    category: "Grant",
+    title: "RCI Lab completed a technology transfer to MetaMotionX.",
+    detail: "기술명: MPPI 자율주행 알고리즘의 고도화 SW 개발 · 구분: 기술이전 · 이전기업: 메타모션엑스",
+  },
+  {
+    date: "2026.09",
     category: "Lab",
     title: "RCI Lab has been selected for Anthropic's Claude for Scientists program.",
     detail: "Through the program, all lab members receive premium (Max) Claude access for research, coding, and writing.",

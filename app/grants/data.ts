@@ -71,6 +71,7 @@ export const grants: Grant[] = [
   { year: "2024", period: "2024", category: "Industry", agency: "한화에어로스페이스", title: "과제명 미공개", program: "산학협력" },
 
   // Technology transfer
+  { year: "2026", period: "2026", category: "Technology Transfer", agency: "메타모션엑스", title: "MPPI 자율주행 알고리즘의 고도화 SW 개발" },
   { year: "2026", period: "2026", category: "Technology Transfer", agency: "피트인", title: "라이다 기반 모바일 로봇의 도킹 시스템 및 방법" },
   { year: "2025", period: "2025", category: "Technology Transfer", agency: "메타모션엑스", title: "야지 주행을 위한 MPPI, RPP 자율주행 알고리즘 SW 개발" },
   { year: "2025", period: "2025", category: "Technology Transfer", agency: "메타모션엑스", title: "RGB–LiDAR를 활용한 세그멘테이션 알고리즘 SW" },
