@@ -406,6 +406,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Vision with KIST)",
+    authors: "Chanyeong Kim, Seoa Kim, Dongyub Kang, Chanjin Park, Sanghyun Kim, Dongheon Lee, Kanghyun Ryu†",
     note: "Under Review",
   },
   {
@@ -420,6 +421,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Force-Level UMI with UCF and Ewha University)",
+    authors: "Jiho Hong, Daeun Song†, Sanghyun Kim†, Mingyo Seo†",
     note: "Under Review",
   },
   {
@@ -427,6 +429,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Social Navigation)",
+    authors: "Sungsan Park, Young-Sik Shin†, Sanghyun Kim†",
     note: "Under Review",
   },
   {
@@ -434,6 +437,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Force-Level MPPI)",
+    authors: "Minhyeong Kang, Leesai Park, Seulchan Lee, Sanghyun Kim†",
     note: "Under Review",
   },
   {
@@ -441,6 +445,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (MPPI with HQP)",
+    authors: "Leesai Park, Suhwan Park, Sanghyun Kim†",
     note: "Under Review",
   },
   {
@@ -448,6 +453,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (MBD)",
+    authors: "Bohyeong Pak, Kangmin Lee, Sanghyun Kim†",
     note: "Under Review",
   },
   {
@@ -455,6 +461,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "Engineering Applications of Artificial Intelligence",
     title: "Amortized Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
+    authors: "Dongjo Kim, Sanghyun Kim, Jeongsu Lee†",
     note: "Under Review",
   },
   {
@@ -462,6 +469,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Constrained MPPI)",
+    authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
     note: "Under Review",
     links: [
       { label: "Project", href: "https://rcilab.github.io/prmppi/" },
@@ -473,6 +481,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Force-Informed VLA Residual Policy)",
+    authors: "Bohyeong Pak, Hyunho Cho, Haeseong Lee†, Sanghyun Kim†",
     note: "Under Review",
     links: [{ label: "Project", href: "https://rcilab.github.io/FIRe/" }],
   },
@@ -481,6 +490,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "International Journal of Control, Automation, and Systems",
     title: "Linear or Bilinear: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
+    authors: "Kangmin Lee, Sanghyun Kim†",
     note: "Under Review",
     links: [
       { label: "Project", href: "https://rcilab.github.io/koopman-mppi/" },
@@ -492,6 +502,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Diffusion-MPPI Action Generation)",
+    authors: "Leesai Park, Jiho Hong, Sanghyun Kim†",
     note: "Under Review",
     links: [{ label: "Project", href: "https://rcilab.github.io/grace/" }],
   },
