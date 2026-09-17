@@ -420,6 +420,7 @@ export const inProgressPublications: Publication[] = [
     type: "International Conference",
     venue: "IEEE International Conference on Robotics and Automation",
     title: "Title Withheld (Navigation Benchmark with Inha University)",
+    authors: "Jiyun Lee, Hogyun Kim, Sanghyun Kim, Younggun Cho†",
     note: "Under Review",
   },
   {
