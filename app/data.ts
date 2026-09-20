@@ -422,6 +422,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (Navigation Benchmark with Inha University)",
     authors: "Jiyun Lee, Hogyun Kim, Sanghyun Kim, Younggun Cho†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://findlab-1.github.io/FINDLab/" }],
   },
   {
     year: "2027",
@@ -430,6 +431,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (Force-Level UMI with UCF and Ewha University)",
     authors: "Jiho Hong, Daeun Song†, Sanghyun Kim†, Mingyo Seo†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/face" }],
   },
   {
     year: "2027",
@@ -438,6 +440,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (Social Navigation)",
     authors: "Sungsan Park, Young-Sik Shin†, Sanghyun Kim†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/tacet/" }],
   },
   {
     year: "2027",
@@ -446,6 +449,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (Force-Level MPPI)",
     authors: "Minhyeong Kang, Leesai Park, Seulchan Lee, Sanghyun Kim†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/CAMP-MPPI/" }],
   },
   {
     year: "2027",
@@ -454,6 +458,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (MPPI with HQP)",
     authors: "Leesai Park, Suhwan Park, Sanghyun Kim†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/HiP-MPPI/" }],
   },
   {
     year: "2027",
@@ -462,6 +467,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (MBD)",
     authors: "Bohyeong Pak, Kangmin Lee, Sanghyun Kim†",
     note: "Under Review",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/bkmbd/" }],
   },
   {
     year: "2026",
