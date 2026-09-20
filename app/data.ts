@@ -516,7 +516,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Diffusion-MPPI Action Generation)",
     authors: "Leesai Park, Jiho Hong, Sanghyun Kim†",
-    note: "Under Review",
+    note: "In Revision",
     links: [{ label: "Project", href: "https://rcilab.github.io/grace/" }],
   },
   {
