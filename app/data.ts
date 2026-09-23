@@ -412,6 +412,7 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (Vision with KIST)",
     authors: "Chanyeong Kim, Seoa Kim, Dongyub Kang, Chanjin Park, Sanghyun Kim, Dongheon Lee, Kanghyun Ryu†",
     note: "Under Review",
+    links: [{ label: "Video", href: "/ICRA27_4386_VI_i.mp4" }],
   },
   {
     year: "2027",
