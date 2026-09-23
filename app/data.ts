@@ -164,6 +164,12 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.09",
+    category: "Publication",
+    title: "Our paper by Jaerak Son has been accepted to the Journal of Institute of Control, Robotics and Systems.",
+    detail: "손재락, 심재훈†, 김상현†, “유계 참조 보상과 조향률 제약을 통한 이중 조향 이동로봇의 정밀 도킹 성능 개선,” 제어·로봇·시스템학회 논문지, 2026.",
+  },
+  {
+    date: "2026.09",
     category: "Grant",
     title: "RCI Lab completed a technology transfer to MetaMotionX.",
     detail: "기술명: MPPI 자율주행 알고리즘의 고도화 SW 개발 · 구분: 기술이전 · 이전기업: 메타모션엑스",
@@ -386,14 +392,6 @@ export const alumni = [
 export const inProgressPublications: Publication[] = [
   {
     year: "2026",
-    type: "Domestic Journal",
-    venue: "제어·로봇·시스템학회 논문지",
-    title: "유계 참조 보상과 조향률 제약을 통한 이중 조향 이동로봇의 정밀 도킹 성능 개선",
-    authors: "손재락, 심재훈†, 김상현†",
-    note: "Under Review",
-  },
-  {
-    year: "2026",
     type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Multi-Robot Passage)",
@@ -581,6 +579,14 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "Domestic Journal",
+    venue: "제어·로봇·시스템학회 논문지",
+    title: "유계 참조 보상과 조향률 제약을 통한 이중 조향 이동로봇의 정밀 도킹 성능 개선",
+    authors: "손재락, 심재훈†, 김상현†",
+    note: "Accepted",
+  },
   {
     year: "2026",
     type: "International Journal",
