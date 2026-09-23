@@ -615,6 +615,7 @@ export const publications: Publication[] = [
     venue: "로봇학회 논문지",
     title: "VAE-MPPI: 양팔 로봇 조작을 위한 폐쇄 연쇄 제약 궤적 최적화",
     authors: "이슬찬, 김상현†",
+    links: [{ label: "DOI", href: "https://doi.org/10.7746/jkros.2026.21.3.363" }],
   },
   {
     year: "2026",
