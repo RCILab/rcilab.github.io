@@ -394,6 +394,15 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
+    venue: "Simulation Modelling Practice and Theory",
+    title: "Fidelity Is Not Identification: Structure-Aware Calibration of Robot Digital Twins",
+    authors: "Suhwan Park, Jihwan Lee, Jiyong Park, Sanghyun Kim†",
+    note: "In Preparation",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/sapc/" }],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Multi-Robot Passage)",
     note: "In Preparation",
