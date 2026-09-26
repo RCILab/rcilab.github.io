@@ -395,7 +395,7 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "Measurement",
-    title: "Title Withheld",
+    title: "Title Withheld (Contact Localization)",
     note: "In Preparation",
   },
   {
