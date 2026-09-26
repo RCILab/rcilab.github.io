@@ -397,6 +397,7 @@ export const inProgressPublications: Publication[] = [
     venue: "Measurement",
     title: "Title Withheld (Contact Localization)",
     note: "In Preparation",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/apcl/" }],
   },
   {
     year: "2026",
