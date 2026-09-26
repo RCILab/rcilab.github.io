@@ -394,6 +394,13 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
+    venue: "Measurement",
+    title: "Title Withheld",
+    note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
     venue: "Simulation Modelling Practice and Theory",
     title: "Fidelity Is Not Identification: Structure-Aware Calibration of Robot Digital Twins",
     authors: "Suhwan Park, Jihwan Lee, Jiyong Park, Sanghyun Kim†",
