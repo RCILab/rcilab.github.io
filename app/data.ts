@@ -484,7 +484,10 @@ export const inProgressPublications: Publication[] = [
     title: "Title Withheld (MBD)",
     authors: "Bohyeong Pak, Kangmin Lee, Sanghyun Kim†",
     note: "Under Review",
-    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/bkmbd/" }],
+    links: [
+      { label: "Project", href: "https://rcilab.khu.ac.kr/bkmbd/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2609.28920" },
+    ],
   },
   {
     year: "2026",
