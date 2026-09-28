@@ -166,7 +166,7 @@ export const newsItems: NewsItem[] = [
     date: "2026.09",
     category: "Publication",
     title: "Our MC-MPPI paper by Seulchan Lee has been accepted to International Journal of Control, Automation, and Systems.",
-    detail: "Seulchan Lee, Sanghyun Kim†, “Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints,” International Journal of Control, Automation, and Systems, 2026.",
+    detail: "Seulchan Lee, Sanghyun Kim†, “Manifold-Constrained MPPI: Real-Time Sampling-Based Control for Nonlinear Equality-Constrained Robotic Systems,” International Journal of Control, Automation, and Systems, 2026.",
     href: "https://rcilab.github.io/mcmppi/",
   },
   {
@@ -600,7 +600,7 @@ export const publications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "International Journal of Control, Automation, and Systems",
-    title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints",
+    title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control for Nonlinear Equality-Constrained Robotic Systems",
     authors: "Seulchan Lee, Sanghyun Kim†",
     note: "Accepted",
     links: [
