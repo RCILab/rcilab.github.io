@@ -165,6 +165,13 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.09",
     category: "Publication",
+    title: "Our MC-MPPI paper by Seulchan Lee has been accepted to International Journal of Control, Automation, and Systems.",
+    detail: "Seulchan Lee, Sanghyun Kim†, “Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints,” International Journal of Control, Automation, and Systems, 2026.",
+    href: "https://rcilab.github.io/mcmppi/",
+  },
+  {
+    date: "2026.09",
+    category: "Publication",
     title: "Our paper by Jaerak Son has been accepted to the Journal of Institute of Control, Robotics and Systems.",
     detail: "손재락, 심재훈†, 김상현†, “유계 참조 보상과 조향률 제약을 통한 이중 조향 이동로봇의 정밀 도킹 성능 개선,” 제어·로봇·시스템학회 논문지, 2026.",
   },
@@ -569,18 +576,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "International Journal of Control, Automation, and Systems",
-    title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints",
-    authors: "Seulchan Lee, Sanghyun Kim†",
-    note: "In Revision",
-    links: [
-      { label: "Project", href: "https://rcilab.github.io/mcmppi/" },
-      { label: "arXiv", href: "https://arxiv.org/abs/2605.24813" },
-    ],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Constrained Motion Planning)",
     authors: "Minhyeong Kang, Sanghyun Kim†",
@@ -601,6 +596,18 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "International Journal of Control, Automation, and Systems",
+    title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control Under Hard Constraints",
+    authors: "Seulchan Lee, Sanghyun Kim†",
+    note: "Accepted",
+    links: [
+      { label: "Project", href: "https://rcilab.github.io/mcmppi/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2605.24813" },
+    ],
+  },
   {
     year: "2026",
     type: "Domestic Journal",
