@@ -510,7 +510,7 @@ export const inProgressPublications: Publication[] = [
     venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Constrained MPPI)",
     authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
-    note: "Under Review",
+    note: "In Revision",
     links: [
       { label: "Project", href: "https://rcilab.github.io/prmppi/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
