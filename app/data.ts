@@ -508,18 +508,6 @@ export const inProgressPublications: Publication[] = [
     year: "2026",
     type: "International Journal",
     venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (Constrained MPPI)",
-    authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
-    note: "In Revision",
-    links: [
-      { label: "Project", href: "https://rcilab.github.io/prmppi/" },
-      { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
-    ],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
-    venue: "IEEE Robotics and Automation Letters",
     title: "Title Withheld (Force-Informed VLA Residual Policy)",
     authors: "Bohyeong Pak, Hyunho Cho, Haeseong Lee†, Sanghyun Kim†",
     note: "Under Review",
@@ -535,6 +523,18 @@ export const inProgressPublications: Publication[] = [
     links: [
       { label: "Project", href: "https://rcilab.github.io/koopman-mppi/" },
       { label: "Preprint", href: "https://doi.org/10.21203/rs.3.rs-10732691/v1" },
+    ],
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (Constrained MPPI)",
+    authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
+    note: "In Revision",
+    links: [
+      { label: "Project", href: "https://rcilab.github.io/prmppi/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
     ],
   },
   {
