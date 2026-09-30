@@ -499,6 +499,14 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
+    venue: "Robot Learning",
+    title: "Learning Visual Locomotion for a Tailed Quadruped with Self-Supervised World Models",
+    authors: "Haodong Huang, Shilong Sun, Hailin Huang, Jiayi Wang†, Jingwen Zhang, Sanghyun Kim, Wenfu Xu",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
     venue: "Engineering Applications of Artificial Intelligence",
     title: "Amortized Trajectory Operators for Environment-Aware Manipulator Collision Avoidance",
     authors: "Dongjo Kim, Sanghyun Kim, Jeongsu Lee†",
