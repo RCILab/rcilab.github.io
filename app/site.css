@@ -400,4 +400,4 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 .archive-toolbar nav a.active { background: var(--navy-900); border-color: var(--navy-900); color: white; }
 .picture-grid { columns: 3 300px; column-gap: 20px; }
 .picture-grid figure { margin: 0 0 20px; break-inside: avoid; border: 1px solid var(--line); background: var(--cloud); }
-.picture-grid img { display: block; width: 100%; height: auto; }
+.picture-grid img, .picture-grid video { display: block; width: 100%; height: auto; }

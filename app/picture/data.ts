@@ -1,9 +1,19 @@
 export type Photo = { src: string; width: number; height: number };
-export type PictureYear = { year: string; photos: Photo[] };
+export type PictureVideo = { src: string; poster: string; width: number; height: number; title: string };
+export type PictureYear = { year: string; photos: Photo[]; videos?: PictureVideo[] };
 
 export const pictureYears: PictureYear[] = [
   {
     year: "2026",
+    videos: [
+      {
+        src: "/pictures/2026/humanoid-demo-highlights.mp4",
+        poster: "/pictures/2026/humanoid-demo-highlights.jpg",
+        width: 1280,
+        height: 720,
+        title: "Humanoid robot demonstration highlights",
+      },
+    ],
     photos: [
       { src: "/pictures/2026/01.jpg", width: 1280, height: 1711 },
       { src: "/pictures/2026/02.jpg", width: 1280, height: 1107 },

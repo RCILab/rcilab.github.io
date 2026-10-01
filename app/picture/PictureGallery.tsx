@@ -37,9 +37,31 @@ export function PictureGallery({ year }: { year: string }) {
             <div className="archive-year-heading">
               <p className="eyebrow">YEAR</p>
               <h2>{active.year}</h2>
-              <span>{active.photos.length} photos</span>
+              <span>
+                {active.photos.length} photos
+                {!!active.videos?.length && ` · ${active.videos.length} ${active.videos.length === 1 ? "video" : "videos"}`}
+              </span>
             </div>
             <div className="picture-grid">
+              {active.videos?.map((video) => (
+                <figure key={video.src}>
+                  <video
+                    aria-label={video.title}
+                    width={video.width}
+                    height={video.height}
+                    poster={video.poster}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    controls
+                    preload="metadata"
+                  >
+                    <source src={video.src} type="video/mp4" />
+                    Your browser does not support embedded video.
+                  </video>
+                </figure>
+              ))}
               {active.photos.map((photo, index) => (
                 <figure key={photo.src}>
                   <Image
