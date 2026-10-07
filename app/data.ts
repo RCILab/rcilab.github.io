@@ -400,7 +400,7 @@ export const researchInterns: Member[] = [
   { name: "Jihwan Lee", program: "Research Intern", focus: "AI-based Control, Humanoid Robots", email: "dlwlghks02 at khu.ac.kr", image: "/members/jihwan-lee.jpg" },
   { name: "Juchan Lee", program: "Research Intern", focus: "AI-based Control, Optimal Control", email: "oryise12 at khu.ac.kr", image: "/members/juchan-lee.jpg" },
   { name: "Yoonhyuck Jung", program: "Research Intern", focus: "Optimal Control", email: "wjddbsgur501 at khu.ac.kr", image: "/members/yoonhyuck-jung.jpg" },
-  { name: "MinSeo Kim", program: "Research Intern", focus: "", email: "rlaalstj0123 at khu.ac.kr", image: "/members/minseo-kim.jpg" },
+  { name: "MinSeo Kim", program: "Research Intern", focus: "AI-based Control", email: "rlaalstj0123 at khu.ac.kr", image: "/members/minseo-kim.jpg" },
 ];
 
 export const alumni = [
