@@ -214,7 +214,7 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 .publication-type-tabs button:hover { color: var(--blue-600); }
 .publication-type-tabs button.active { background: var(--navy-900); color: white; }
 .publication-scope-tabs { display: grid; grid-template-columns: repeat(2, minmax(115px, 1fr)); border-bottom: 1px solid var(--line); }
-.publication-scope-tabs.patent-status-tabs { grid-template-columns: repeat(4, minmax(105px, 1fr)); }
+.publication-scope-tabs.patent-status-tabs { grid-template-columns: repeat(3, minmax(105px, 1fr)); }
 .publication-scope-tabs button { padding: 15px 16px 13px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--muted); font-size: 10px; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 .publication-scope-tabs button:hover { color: var(--blue-600); }
 .publication-scope-tabs button.active { border-bottom-color: var(--blue-600); color: var(--blue-600); }
@@ -345,7 +345,8 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 @media (max-width: 620px) {
   .publication-type-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .publication-type-tabs button { padding-inline: 10px; font-size: 10px; }
-  .publication-scope-tabs.patent-status-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .publication-scope-tabs.patent-status-tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .patent-status-tabs button { padding-inline: 8px; }
   .shell { width: min(calc(100% - 30px), var(--shell)); }
   .university-inner { gap: 14px; font-size: 9px; }
   .university-inner a { display: block; white-space: nowrap; }
