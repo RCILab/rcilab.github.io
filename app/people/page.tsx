@@ -73,7 +73,13 @@ export default function PeoplePage() {
             {researchInterns.map((member) => (
               <article className="member-card" key={member.name}>
                 <div className="member-photo">
-                  <Image src={member.image} alt={member.name} fill sizes="92px" />
+                  {member.image ? (
+                    <Image src={member.image} alt={member.name} fill sizes="92px" />
+                  ) : (
+                    <span className="member-photo-placeholder" role="img" aria-label={`Photo pending for ${member.name}`}>
+                      {member.name.split(" ").map((part) => part[0]).join("")}
+                    </span>
+                  )}
                 </div>
                 <div><h3>{member.name}</h3><p>{member.program}</p><strong>{member.focus}</strong><span className="member-email">{member.email}</span></div>
               </article>
