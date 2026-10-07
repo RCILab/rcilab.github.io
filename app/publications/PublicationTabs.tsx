@@ -66,12 +66,12 @@ function PatentEntry({ patent }: { patent: Patent }) {
     <article className="publication-entry patent-entry">
       <div className="publication-entry-top">
         <span>Patent</span>
-        <strong>{patent.status}</strong>
+        <strong>{patent.status === "Allowance" ? "Allowance · 등록결정" : patent.status}</strong>
       </div>
       {(patent.number || patent.jurisdiction || patent.filed || patent.registered) && (
         <p className="publication-meta">
           {[
-            patent.number,
+            patent.number && (patent.status === "Allowance" ? `출원번호 ${patent.number}` : patent.number),
             patent.jurisdiction,
             patent.filed && `출원 ${patent.filed}`,
             patent.registered && `등록 ${patent.registered}`,
@@ -125,6 +125,7 @@ export function PublicationTabs({
           }
           if (
             saved.patentStatus === "Application" ||
+            saved.patentStatus === "Allowance" ||
             saved.patentStatus === "Registration" ||
             saved.patentStatus === "Program"
           ) {
@@ -240,7 +241,7 @@ export function PublicationTabs({
         )}
         {activeKind === "Patent" && (
           <div className="publication-scope-tabs patent-status-tabs" role="tablist" aria-label="Patent status">
-            {(["Application", "Registration", "Program"] as const).map((status) => (
+            {(["Application", "Allowance", "Registration", "Program"] as const).map((status) => (
               <button
                 className={activePatentStatus === status ? "active" : undefined}
                 type="button"

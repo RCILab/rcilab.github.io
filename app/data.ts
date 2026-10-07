@@ -39,7 +39,7 @@ export type Publication = {
 
 export type Patent = {
   year: string;
-  status: "Application" | "Registration" | "Program";
+  status: "Application" | "Allowance" | "Registration" | "Program";
   title: string;
   inventors: string;
   number?: string;
@@ -162,6 +162,12 @@ export const researchAreas: ResearchArea[] = [
 ];
 
 export const newsItems: NewsItem[] = [
+  {
+    date: "2026.10",
+    category: "Patent",
+    title: "RCI Lab received a notice of allowance for a patent on autonomous chemical experiments.",
+    detail: "김상현, 박보형, 조현호, “화학 실험 자율 수행 장치 및 방법,” 대한민국 특허 등록결정 · 출원번호: 10-2026-0025745 · 출원일: 2026.02.09 · 출원인: 경희대학교 산학협력단.",
+  },
   {
     date: "2026.09",
     category: "Publication",
@@ -1272,7 +1278,7 @@ export const patents: Patent[] = [
   { year: "2026", status: "Application", inventors: "김상현, 이슬찬", title: "제약 조건 보정을 이용한 로봇 시스템 제어 장치 및 방법", number: "10-2026-0132773", filed: "2026.07.20" },
   { year: "2026", status: "Application", inventors: "김상현, 강민형", title: "리만 배리어 메트릭 기반 모션 플래닝 시스템 및 방법", number: "10-2026-0113538", filed: "2026.06.22" },
   { year: "2026", status: "Application", inventors: "김상현, 강은애, 홍지호, 신영식", title: "인스턴스 수준 시맨틱 맵 기반 자연어 내비게이션 장치 및 방법", number: "10-2026-0075610", filed: "2026.04.27" },
-  { year: "2026", status: "Application", inventors: "김상현, 조현호, 박보형", title: "화학 실험 자율 수행 장치 및 방법", number: "10-2026-0025745", filed: "2026.02.09" },
+  { year: "2026", status: "Allowance", inventors: "김상현, 박보형, 조현호", title: "화학 실험 자율 수행 장치 및 방법", number: "10-2026-0025745", jurisdiction: "Korea", filed: "2026.02.09" },
   { year: "2026", status: "Registration", inventors: "김상현, 양준열, 강민형", title: "라이다 기반 모바일 로봇의 도킹 시스템 및 도킹 방법", number: "10-2924819", jurisdiction: "Korea", filed: "2024.02.14", registered: "2026.02.04" },
   { year: "2025", status: "Program", inventors: "김상현, 정태현, 송은혜, 설우진, 서영빈, 이승윤", title: "방사능 지도 작성을 위한 자율 주행 시뮬레이션 프로그램", number: "C-2025-041666", registered: "2025.10.15" },
   { year: "2025", status: "Application", inventors: "김상현, 김정윤, 김학준", title: "데이터 기반 마찰 모델을 이용한 디지털 트윈 시뮬레이션 정합향상시스템 및 정합향상방법", number: "10-2025-0180382", filed: "2025.11.25" },
