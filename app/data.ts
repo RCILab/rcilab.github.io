@@ -164,6 +164,13 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.10",
+    category: "Media",
+    title: "RCI Lab provided technical consultation for the drama “연애박사,” featuring robots from our lab.",
+    detail: "RCI Lab이 드라마 「연애박사」의 자문에 참여했으며, 연구실의 여러 로봇이 작품에 출연합니다. 자문 참여: 김상현 교수, 강민형·박수환·박다움·조현호. 엔딩 크레딧은 Pictures에서 확인할 수 있습니다.",
+    href: "/picture/#drama-consultation",
+  },
+  {
+    date: "2026.10",
     category: "Patent",
     title: "RCI Lab received a notice of allowance for a patent on autonomous chemical experiments.",
     detail: "김상현, 박보형, 조현호, “화학 실험 자율 수행 장치 및 방법,” 대한민국 특허 등록결정 · 출원번호: 10-2026-0025745 · 출원일: 2026.02.09 · 출원인: 경희대학교 산학협력단.",

@@ -1,4 +1,11 @@
-export type Photo = { src: string; width: number; height: number };
+export type Photo = {
+  src: string;
+  width: number;
+  height: number;
+  id?: string;
+  alt?: string;
+  caption?: string;
+};
 export type PictureVideo = { src: string; poster: string; width: number; height: number; title: string };
 export type PictureYear = { year: string; photos: Photo[]; videos?: PictureVideo[] };
 
@@ -15,6 +22,14 @@ export const pictureYears: PictureYear[] = [
       },
     ],
     photos: [
+      {
+        src: "/pictures/2026/drama-consultation-credits.png",
+        width: 1142,
+        height: 674,
+        id: "drama-consultation",
+        alt: "End credits of the drama 연애박사 listing Prof. Sanghyun Kim and RCI Lab members as advisors",
+        caption: "드라마 「연애박사」 자문 참여 및 연구실 로봇 출연. 엔딩 크레딧에 김상현 교수와 강민형·박수환·박다움·조현호의 이름이 소개되었습니다.",
+      },
       { src: "/pictures/2026/01.jpg", width: 1280, height: 1711 },
       { src: "/pictures/2026/02.jpg", width: 1280, height: 1107 },
       { src: "/pictures/2026/03.jpg", width: 1280, height: 960 },

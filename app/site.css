@@ -402,5 +402,8 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 /* Picture gallery */
 .archive-toolbar nav a.active { background: var(--navy-900); border-color: var(--navy-900); color: white; }
 .picture-grid { columns: 3 300px; column-gap: 20px; }
-.picture-grid figure { margin: 0 0 20px; break-inside: avoid; border: 1px solid var(--line); background: var(--cloud); }
+.picture-grid figure { margin: 0 0 20px; break-inside: avoid; scroll-margin-top: 135px; border: 1px solid var(--line); background: var(--cloud); }
 .picture-grid img, .picture-grid video { display: block; width: 100%; height: auto; }
+.picture-grid figcaption { padding: 16px 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.picture-grid figcaption p { margin: 0 0 10px; }
+.picture-grid figcaption a { color: var(--blue-600); font-weight: 750; }

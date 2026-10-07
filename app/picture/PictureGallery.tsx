@@ -63,14 +63,20 @@ export function PictureGallery({ year }: { year: string }) {
                 </figure>
               ))}
               {active.photos.map((photo, index) => (
-                <figure key={photo.src}>
+                <figure id={photo.id} key={photo.src}>
                   <Image
                     src={photo.src}
-                    alt={`RCI Lab ${active.year} photo ${index + 1}`}
+                    alt={photo.alt ?? `RCI Lab ${active.year} photo ${index + 1}`}
                     width={photo.width}
                     height={photo.height}
                     sizes="(max-width: 700px) 100vw, 33vw"
                   />
+                  {photo.caption && (
+                    <figcaption>
+                      <p>{photo.caption}</p>
+                      <a href={photo.src} target="_blank" rel="noreferrer">View full image ↗</a>
+                    </figcaption>
+                  )}
                 </figure>
               ))}
             </div>
