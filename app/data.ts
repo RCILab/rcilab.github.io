@@ -513,6 +513,14 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
+    venue: "Artificial Intelligence Review",
+    title: "When Does Online Vision-Language Inference Help? A Survey of Socially Aware Robot Navigation",
+    authors: "Sungsan Park, Young-Sik Shin†, Sanghyun Kim†",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
     venue: "Robot Learning",
     title: "Learning Visual Locomotion for a Tailed Quadruped with Self-Supervised World Models",
     authors: "Haodong Huang, Shilong Sun, Hailin Huang, Jiayi Wang†, Jingwen Zhang, Sanghyun Kim, Wenfu Xu",
@@ -532,7 +540,7 @@ export const inProgressPublications: Publication[] = [
     venue: "International Journal of Control, Automation, and Systems",
     title: "Linear or Bilinear: A Criterion for Koopman Rollouts in Sampling-Based Predictive Control",
     authors: "Kangmin Lee, Sanghyun Kim†",
-    note: "Under Review",
+    note: "In Revision",
     links: [
       { label: "Project", href: "https://rcilab.github.io/koopman-mppi/" },
       { label: "Preprint", href: "https://doi.org/10.21203/rs.3.rs-10732691/v1" },
