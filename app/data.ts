@@ -415,6 +415,13 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (Humanoid Loco-Manipulation with BIGAI and Harbin Institute of Technology)",
+    note: "In Preparation",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
     venue: "Measurement",
     title: "Title Withheld (Contact Localization)",
     note: "In Preparation",
