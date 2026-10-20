@@ -170,6 +170,12 @@ export const newsItems: NewsItem[] = [
   },
   {
     date: "2026.10",
+    category: "Publication",
+    title: "A paper with Prof. Sanghyun Kim as a co-corresponding author has been accepted to Engineering Science and Technology, an International Journal.",
+    detail: "Dongjo Kim, Minhyeong Kang, Hojin Lee, Nakyoung Lee, Stephen Baek, Sanghyun Kim†, Sanga Lee†, Jeongsu Lee†, “Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion,” Engineering Science and Technology, an International Journal, 2026.",
+  },
+  {
+    date: "2026.10",
     category: "Grant",
     title: "RCI Lab won a grant from Konan Technology.",
     detail: "과제명: URDF 물리 파라미터 추정·보정 알고리즘 분석 및 프로토타입 적용·검증 · 과제형태: 산학협력 · 지원기관: 코난테크놀로지 · 수행기간: 2026",
@@ -616,15 +622,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "Engineering Science and Technology, an International Journal",
-    title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
-    authors: "Dongjo Kim, Minhyeong Kang, Hojin Lee, Nakyoung Lee, Stephen Baek, Sanghyun Kim†, Sanga Lee†, Jeongsu Lee†",
-    note: "In Revision",
-    jcr: "12.1%",
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "IEEE Transactions on Robotics",
     title: "Title Withheld (Constrained Motion Planning)",
     authors: "Minhyeong Kang, Sanghyun Kim†",
@@ -645,6 +642,15 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "Engineering Science and Technology, an International Journal",
+    title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
+    authors: "Dongjo Kim, Minhyeong Kang, Hojin Lee, Nakyoung Lee, Stephen Baek, Sanghyun Kim†, Sanga Lee†, Jeongsu Lee†",
+    note: "Accepted",
+    jcr: "12.1%",
+  },
   {
     year: "2026",
     type: "International Journal",
