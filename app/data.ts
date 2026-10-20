@@ -163,6 +163,18 @@ export const researchAreas: ResearchArea[] = [
 
 export const newsItems: NewsItem[] = [
   {
+    date: "2026.11",
+    category: "Grant",
+    title: "RCI Lab won a grant from Wonik Robotics.",
+    detail: "과제명: 시뮬레이션 상 AGV(QD·SD 타입) 자율주행 환경 구축 및 SLAM·주행계획 개발 · 과제형태: 산학협력 · 지원기관: 원익로보틱스 · 수행기간: 2026",
+  },
+  {
+    date: "2026.10",
+    category: "Grant",
+    title: "RCI Lab won a grant from Konan Technology.",
+    detail: "과제명: URDF 물리 파라미터 추정·보정 알고리즘 분석 및 프로토타입 적용·검증 · 과제형태: 산학협력 · 지원기관: 코난테크놀로지 · 수행기간: 2026",
+  },
+  {
     date: "2026.10",
     category: "Media",
     title: "RCI Lab provided technical consultation for the drama “연애박사,” featuring robots from our lab.",
