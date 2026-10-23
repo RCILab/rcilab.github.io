@@ -14,6 +14,13 @@ export const pictureYears: PictureYear[] = [
     year: "2026",
     videos: [
       {
+        src: "/pictures/2026/tomato-harvesting-robot-demo.mp4",
+        poster: "/pictures/2026/tomato-harvesting-robot-demo.jpg",
+        width: 1280,
+        height: 720,
+        title: "Tomato harvesting robot demonstration in a smart-farm greenhouse",
+      },
+      {
         src: "/pictures/2026/humanoid-demo-highlights.mp4",
         poster: "/pictures/2026/humanoid-demo-highlights.jpg",
         width: 1280,
