@@ -534,6 +534,14 @@ export const inProgressPublications: Publication[] = [
   },
   {
     year: "2026",
+    type: "International Conference",
+    venue: "14th International Conference on Robot Intelligence Technology and Applications",
+    title: "Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments",
+    authors: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
     type: "International Journal",
     venue: "Artificial Intelligence Review",
     title: "When Does Online Vision-Language Inference Help? A Survey of Socially Aware Robot Navigation",
