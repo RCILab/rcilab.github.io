@@ -433,13 +433,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (Humanoid Loco-Manipulation with BIGAI and Harbin Institute of Technology)",
-    note: "In Preparation",
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "Measurement",
     title: "Title Withheld (Contact Localization)",
     note: "In Preparation",
@@ -538,6 +531,14 @@ export const inProgressPublications: Publication[] = [
     venue: "14th International Conference on Robot Intelligence Technology and Applications",
     title: "Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments",
     authors: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†",
+    note: "Under Review",
+  },
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (Humanoid Loco-Manipulation with BIGAI and Harbin Institute of Technology)",
+    authors: "Shilong Sun†, Hongwei Liu, Jiayi Wang, Jingwen Zhang, Sanghyun Kim, Wenfu Xu",
     note: "Under Review",
   },
   {
