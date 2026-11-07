@@ -164,6 +164,13 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
+    category: "Publication",
+    title: "Our RMRRT paper by Minhyeong Kang has been accepted to IEEE Transactions on Robotics.",
+    detail: "Minhyeong Kang, Sanghyun Kim†, “RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds,” IEEE Transactions on Robotics, 2026.",
+    href: "https://rcilab.khu.ac.kr/rmrrt/",
+  },
+  {
+    date: "2026.11",
     category: "Grant",
     title: "RCI Lab won a grant from Wonik Robotics.",
     detail: "과제명: 시뮬레이션 상 AGV(QD·SD 타입) 자율주행 환경 구축 및 SLAM·주행계획 개발 · 과제형태: 산학협력 · 지원기관: 원익로보틱스 · 수행기간: 2026",
@@ -628,16 +635,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Transactions on Robotics",
-    title: "Title Withheld (Constrained Motion Planning)",
-    authors: "Minhyeong Kang, Sanghyun Kim†",
-    note: "In Revision",
-    jcr: "9.4%",
-    links: [{ label: "Project", href: "https://rmrrt-anonymous.github.io/" }],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Title Withheld (Prescribed-Path Planning)",
     authors: "Daum Park, Sanghyun Kim†",
@@ -648,6 +645,16 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Transactions on Robotics",
+    title: "RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds",
+    authors: "Minhyeong Kang, Sanghyun Kim†",
+    note: "Accepted",
+    jcr: "9.4%",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/rmrrt/" }],
+  },
   {
     year: "2026",
     type: "International Journal",
