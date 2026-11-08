@@ -12,6 +12,7 @@ export type Grant = {
 
 export const grants: Grant[] = [
   // Government / research-institute projects
+  { year: "2026", period: "2026–2027", category: "Government", agency: "경희대학교", title: "접촉 작업 자율화를 위한 힘 센싱 휴머노이드 상체 및 접촉 인지 모방학습 기술", program: "G-대학 창의적 자산 실용화 지원(BRIDGE) 사업 · Advanced Grant(기술이전형) · 연구책임자", ongoing: true },
   { year: "2026", period: "2026–2029", category: "Government", agency: "중소기업기술정보진흥원", title: "고하중 물체 이송을 위한 세미 휴머노이드 양팔로봇의 전신 제어기술", program: "스케일업 팁스 R&D · 위탁연구", ongoing: true },
   { year: "2026", period: "2026", category: "Government", agency: "경기 RISE 센터", title: "Behavior Tree 기반 고장 대응형 야지 자율주행 SW 개발", program: "지산학 협업 연구개발 · 연구책임자", ongoing: true },
   { year: "2026", period: "2026", category: "Government", agency: "선박해양플랜트연구소", title: "피지컬 AI 기반 해양 다자유도 로봇의 통합 제어 기법 연구", program: "학연공동연구사업", ongoing: true },

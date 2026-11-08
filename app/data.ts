@@ -164,6 +164,12 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
+    category: "Grant",
+    title: "RCI Lab won a grant from Kyung Hee University's BRIDGE program.",
+    detail: "과제명: 접촉 작업 자율화를 위한 힘 센싱 휴머노이드 상체 및 접촉 인지 모방학습 기술 · 과제형태: G-대학 창의적 자산 실용화 지원(BRIDGE) 사업 – Advanced Grant(기술이전형) · 지원기관: 경희대학교 · 수행기간: 2026–2027",
+  },
+  {
+    date: "2026.11",
     category: "Publication",
     title: "Our RMRRT paper by Minhyeong Kang has been accepted to IEEE Transactions on Robotics.",
     detail: "Minhyeong Kang, Sanghyun Kim†, “RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds,” IEEE Transactions on Robotics, 2026.",
