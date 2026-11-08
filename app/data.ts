@@ -653,7 +653,10 @@ export const publications: Publication[] = [
     authors: "Minhyeong Kang, Sanghyun Kim†",
     note: "Accepted",
     jcr: "9.4%",
-    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/rmrrt/" }],
+    links: [
+      { label: "Project", href: "https://rcilab.khu.ac.kr/rmrrt/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2610.06863" },
+    ],
   },
   {
     year: "2026",
