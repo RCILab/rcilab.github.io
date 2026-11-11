@@ -164,6 +164,13 @@ export const researchAreas: ResearchArea[] = [
 export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
+    category: "Publication",
+    title: "Our GRACE paper by Leesai Park and Jiho Hong has been accepted to IEEE Robotics and Automation Letters.",
+    detail: "Leesai Park*, Jiho Hong*, Sanghyun Kim†, “GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Mean Estimation,” IEEE Robotics and Automation Letters, 2026.",
+    href: "https://rcilab.khu.ac.kr/grace/",
+  },
+  {
+    date: "2026.11",
     category: "Grant",
     title: "RCI Lab won a grant from Kyung Hee University's BRIDGE program.",
     detail: "과제명: 접촉 작업 자율화를 위한 힘 센싱 휴머노이드 상체 및 접촉 인지 모방학습 기술 · 과제형태: G-대학 창의적 자산 실용화 지원(BRIDGE) 사업 – Advanced Grant(기술이전형) · 지원기관: 경희대학교 · 수행기간: 2026–2027",
@@ -614,15 +621,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (Diffusion-MPPI Action Generation)",
-    authors: "Leesai Park, Jiho Hong, Sanghyun Kim†",
-    note: "In Revision",
-    links: [{ label: "Project", href: "https://rcilab.github.io/grace/" }],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "ISA Transactions",
     title: "Title Withheld (MPPI Review)",
     authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
@@ -651,6 +649,15 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Mean Estimation",
+    authors: "Leesai Park*, Jiho Hong*, Sanghyun Kim†",
+    note: "Accepted",
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/grace/" }],
+  },
   {
     year: "2026",
     type: "International Journal",
