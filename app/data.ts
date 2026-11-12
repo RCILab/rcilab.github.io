@@ -656,7 +656,10 @@ export const publications: Publication[] = [
     title: "GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Mean Estimation",
     authors: "Leesai Park*, Jiho Hong*, Sanghyun Kim†",
     note: "Accepted",
-    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/grace/" }],
+    links: [
+      { label: "Project", href: "https://rcilab.khu.ac.kr/grace/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2607.21661" },
+    ],
   },
   {
     year: "2026",
