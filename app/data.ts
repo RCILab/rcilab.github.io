@@ -680,8 +680,8 @@ export const publications: Publication[] = [
     venue: "Engineering Science and Technology, an International Journal",
     title: "Task-Specific Acceleration-Domain Trajectory Optimization for Smooth and Energy-Efficient Industrial Manipulator Motion",
     authors: "Dongjo Kim, Minhyeong Kang, Hojin Lee, Nakyoung Lee, Stephen Baek, Sanghyun Kim†, Sanga Lee†, Jeongsu Lee†",
-    note: "Accepted",
     jcr: "12.1%",
+    links: [{ label: "DOI", href: "https://doi.org/10.1016/j.jestch.2026.102587" }],
   },
   {
     year: "2026",
