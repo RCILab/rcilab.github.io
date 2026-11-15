@@ -165,6 +165,13 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
     category: "Publication",
+    title: "Our GRAFT paper by Daum Park has been accepted to IEEE Transactions on Automation Science and Engineering.",
+    detail: "Daum Park, Sanghyun Kim†, “Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators,” IEEE Transactions on Automation Science and Engineering, 2026.",
+    href: "https://rcilab.khu.ac.kr/graft/",
+  },
+  {
+    date: "2026.11",
+    category: "Publication",
     title: "Our GRACE paper by Leesai Park and Jiho Hong has been accepted to IEEE Robotics and Automation Letters.",
     detail: "Leesai Park*, Jiho Hong*, Sanghyun Kim†, “GRACE: Gradient-Free Robot Action Generation via Combined Diffusion-MPPI Posterior Mean Estimation,” IEEE Robotics and Automation Letters, 2026.",
     href: "https://rcilab.khu.ac.kr/grace/",
@@ -636,19 +643,19 @@ export const inProgressPublications: Publication[] = [
     note: "In Revision",
     links: [{ label: "Project", href: "http://rcilab.khu.ac.kr/auto_chem" }],
   },
+];
+
+export const publications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
     venue: "IEEE Transactions on Automation Science and Engineering",
-    title: "Title Withheld (Prescribed-Path Planning)",
+    title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
     authors: "Daum Park, Sanghyun Kim†",
-    note: "In Revision",
+    note: "Accepted",
     jcr: "10.8%",
-    links: [{ label: "Project", href: "https://rcilab.github.io/graft/" }],
+    links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/graft/" }],
   },
-];
-
-export const publications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
