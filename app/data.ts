@@ -165,12 +165,6 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
     category: "Publication",
-    title: "Our strawberry harvesting VLA paper by Jinhwan Lim has been accepted to RiTA 2026 as a work-in-progress paper.",
-    detail: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†, “Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments,” 14th International Conference on Robot Intelligence Technology and Applications, 2026.",
-  },
-  {
-    date: "2026.11",
-    category: "Publication",
     title: "Our GRAFT paper by Daum Park has been accepted to IEEE Transactions on Automation Science and Engineering.",
     detail: "Daum Park, Sanghyun Kim†, “Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators,” IEEE Transactions on Automation Science and Engineering, 2026.",
     href: "https://rcilab.khu.ac.kr/graft/",
