@@ -165,6 +165,12 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
     category: "Publication",
+    title: "Our strawberry harvesting VLA paper by Jinhwan Lim has been accepted to RiTA 2026 as a work-in-progress paper.",
+    detail: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†, “Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments,” 14th International Conference on Robot Intelligence Technology and Applications, 2026.",
+  },
+  {
+    date: "2026.11",
+    category: "Publication",
     title: "Our GRAFT paper by Daum Park has been accepted to IEEE Transactions on Automation Science and Engineering.",
     detail: "Daum Park, Sanghyun Kim†, “Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators,” IEEE Transactions on Automation Science and Engineering, 2026.",
     href: "https://rcilab.khu.ac.kr/graft/",
@@ -551,14 +557,6 @@ export const inProgressPublications: Publication[] = [
       { label: "Project", href: "https://rcilab.khu.ac.kr/bkmbd/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2609.28920" },
     ],
-  },
-  {
-    year: "2026",
-    type: "International Conference",
-    venue: "14th International Conference on Robot Intelligence Technology and Applications",
-    title: "Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments",
-    authors: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†",
-    note: "Under Review",
   },
   {
     year: "2026",
@@ -969,6 +967,14 @@ export const publications: Publication[] = [
     links: [{ label: "DOI", href: "https://doi.org/10.3795/ksme-a.2011.35.8.883" }],
   },
 
+  {
+    year: "2026",
+    type: "International Conference",
+    venue: "14th International Conference on Robot Intelligence Technology and Applications",
+    title: "Toward Vision-Language-Action Based Strawberry Harvesting in Unstructured Environments",
+    authors: "Jinhwan Lim, Sanghyun Kim†, Taeyong Choi†",
+    note: "Work in Progress",
+  },
   {
     year: "2026",
     type: "International Conference",
