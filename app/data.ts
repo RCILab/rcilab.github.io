@@ -303,6 +303,7 @@ export const newsItems: NewsItem[] = [
     category: "Award",
     title: "Our paper by Daum Park and Bohyeong Pak received the Best Paper Award from the Dynamics, Control and Robotics Division of the Korean Society of Mechanical Engineers.",
     detail: "박다움, 박보형, 김상현†, “시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획,” 대한기계학회 2026년 춘계학술대회, 2026.",
+    href: "/certificates/2026-ksme-best-paper.pdf",
   },
   {
     date: "2026.07",
@@ -1042,6 +1043,7 @@ export const publications: Publication[] = [
     title: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획",
     authors: "박다움, 박보형, 김상현†",
     note: "Best Paper Award",
+    links: [{ label: "Award", href: "/certificates/2026-ksme-best-paper.pdf" }],
   },
   {
     year: "2026",
@@ -1377,6 +1379,7 @@ export type Award = {
   title: string;
   org: string;
   detail?: string;
+  certificate?: { image: string; pdf: string };
 };
 
 export const awards: Award[] = [
@@ -1385,6 +1388,10 @@ export const awards: Award[] = [
     title: "우수논문상",
     org: "대한기계학회 2026년 춘계학술대회",
     detail: "시간 계층 구조의 DAG 최적화 기법을 이용한 전방향 공중 작업 로봇의 렌치 가용 전신 경로 계획 (박다움, 박보형, 김상현†)",
+    certificate: {
+      image: "/certificates/2026-ksme-best-paper.jpg",
+      pdf: "/certificates/2026-ksme-best-paper.pdf",
+    },
   },
   {
     year: "2026",

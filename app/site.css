@@ -246,6 +246,11 @@ a.research-feature-media:hover img { transform: scale(1.035); opacity: .83; }
 .news-page-list h2 { margin-bottom: 6px; color: var(--navy-900); font-size: 19px; line-height: 1.5; }
 .news-page-list article div p { margin: 0; color: var(--muted); font-size: 13px; }
 .news-page-list article > a { color: var(--blue-600); font-weight: 900; }
+.award-certificate { display: flex; align-items: flex-end; gap: 16px; margin: 18px 0 0; }
+.award-certificate > a { flex: none; width: 120px; border: 1px solid var(--line); background: white; box-shadow: 0 8px 22px rgba(12, 31, 58, .08); transition: transform .2s ease, box-shadow .2s ease; }
+.award-certificate > a:hover, .award-certificate > a:focus-visible { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(12, 31, 58, .14); }
+.award-certificate img { width: 100%; height: auto; }
+.award-certificate figcaption { margin-top: 0; }
 .archive-note { margin: 40px 0 0; padding: 20px; background: var(--cloud); color: var(--muted); font-size: 13px; }
 .archive-note a { color: var(--blue-600); font-weight: 800; }
 .archive-page { display: grid; gap: 90px; }

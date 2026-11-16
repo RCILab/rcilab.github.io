@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageIntro } from "../components/PageIntro";
 import { awards } from "../data";
 
@@ -22,6 +23,18 @@ export default function AwardsPage() {
               <div>
                 <h2>{award.title}</h2>
                 <p>{award.detail ? `${award.org} · ${award.detail}` : award.org}</p>
+                {award.certificate && (
+                  <figure className="award-certificate">
+                    <a href={award.certificate.image} target="_blank" rel="noreferrer" aria-label={`View ${award.title} certificate`}>
+                      <Image src={award.certificate.image} alt={`${award.title} certificate`} width={1240} height={1753} sizes="120px" />
+                    </a>
+                    <figcaption className="paper-links">
+                      <a href={award.certificate.pdf} download>
+                        Certificate PDF ↓
+                      </a>
+                    </figcaption>
+                  </figure>
+                )}
               </div>
             </article>
           ))}
