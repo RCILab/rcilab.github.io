@@ -165,6 +165,13 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
     category: "Publication",
+    title: "Our PR-MPPI paper by Seulchan Lee has been accepted to IEEE Robotics and Automation Letters.",
+    detail: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†, “Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators,” IEEE Robotics and Automation Letters, 2026.",
+    href: "https://rcilab.khu.ac.kr/prmppi/",
+  },
+  {
+    date: "2026.11",
+    category: "Publication",
     title: "Our GRAFT paper by Daum Park has been accepted to IEEE Transactions on Automation Science and Engineering.",
     detail: "Daum Park, Sanghyun Kim†, “Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators,” IEEE Transactions on Automation Science and Engineering, 2026.",
     href: "https://rcilab.khu.ac.kr/graft/",
@@ -610,18 +617,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Robotics and Automation Letters",
-    title: "Title Withheld (Constrained MPPI)",
-    authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
-    note: "In Revision",
-    links: [
-      { label: "Project", href: "https://rcilab.github.io/prmppi/" },
-      { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
-    ],
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "ISA Transactions",
     title: "Title Withheld (MPPI Review)",
     authors: "Leesai Park, Keunwoo Jang†, Sanghyun Kim†",
@@ -640,6 +635,18 @@ export const inProgressPublications: Publication[] = [
 ];
 
 export const publications: Publication[] = [
+  {
+    year: "2026",
+    type: "International Journal",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Projection-Retraction MPPI: Exact Constraint-Manifold Control for Manipulators",
+    authors: "Seulchan Lee, Leesai Park, Minhyeong Kang, Sanghyun Kim†",
+    note: "Accepted",
+    links: [
+      { label: "Project", href: "https://rcilab.khu.ac.kr/prmppi/" },
+      { label: "arXiv", href: "https://arxiv.org/abs/2608.07573" },
+    ],
+  },
   {
     year: "2026",
     type: "International Journal",
