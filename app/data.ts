@@ -568,6 +568,7 @@ export const inProgressPublications: Publication[] = [
     title: "When Does Online Vision-Language Inference Help? A Survey of Socially Aware Robot Navigation",
     authors: "Sungsan Park, Young-Sik Shin†, Sanghyun Kim†",
     note: "Under Review",
+    jcr: "2.6%",
   },
   {
     year: "2026",
