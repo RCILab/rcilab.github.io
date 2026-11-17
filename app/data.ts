@@ -697,8 +697,8 @@ export const publications: Publication[] = [
     venue: "International Journal of Control, Automation, and Systems",
     title: "Manifold-Constrained MPPI: Real-Time Sampling-Based Control for Nonlinear Equality-Constrained Robotic Systems",
     authors: "Seulchan Lee, Sanghyun Kim†",
-    note: "Accepted",
     links: [
+      { label: "DOI", href: "https://doi.org/10.1007/s12555-026-00233-0" },
       { label: "Project", href: "https://rcilab.github.io/mcmppi/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2605.24813" },
     ],
