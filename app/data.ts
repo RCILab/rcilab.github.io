@@ -106,7 +106,7 @@ export const researchAreas: ResearchArea[] = [
     description:
       "We investigate DDP, MPPI, and constrained sampling-based control for fast, robust motion generation across robotic platforms.",
     topics: ["MPPI", "DDP", "Trajectory optimization"],
-    videoId: "nkt-hxeWGN4",
+    videoId: "Lxia2x2wSbg",
     image: "/research-prmppi.png",
   },
   {
