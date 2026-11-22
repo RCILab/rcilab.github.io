@@ -468,13 +468,6 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "Measurement",
-    title: "Title Withheld (Contact Localization)",
-    note: "In Preparation",
-  },
-  {
-    year: "2026",
-    type: "International Journal",
     venue: "Simulation Modelling Practice and Theory",
     title: "Fidelity Is Not Identification: Structure-Aware Calibration of Robot Digital Twins",
     authors: "Suhwan Park, Jihwan Lee, Jiyong Park, Sanghyun Kim†",
@@ -483,15 +476,16 @@ export const inProgressPublications: Publication[] = [
   {
     year: "2026",
     type: "International Journal",
-    venue: "IEEE Transactions on Robotics",
-    title: "Title Withheld (Multi-Robot Passage)",
+    venue: "Aerospace Science and Technology",
+    title: "From Orbital DEMs to Onboard Decisions: Belief-Triggered Replanning for Long-Range Lunar Rover Traverses",
     note: "In Preparation",
   },
   {
     year: "2026",
     type: "International Journal",
-    venue: "Aerospace Science and Technology",
-    title: "From Orbital DEMs to Onboard Decisions: Belief-Triggered Replanning for Long-Range Lunar Rover Traverses",
+    venue: "IEEE Robotics and Automation Letters",
+    title: "Title Withheld (Object Navigation)",
+    authors: "Sungsan Park, Young-Sik Shin†, Sanghyun Kim†",
     note: "In Preparation",
   },
   {
