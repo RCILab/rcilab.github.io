@@ -725,9 +725,9 @@ export const publications: Publication[] = [
     venue: "IEEE Transactions on Robotics",
     title: "RMRRT: Riemannian Barrier Metric RRT for Inequality-Aware Steering on Equality Manifolds",
     authors: "Minhyeong Kang, Sanghyun Kim†",
-    note: "Accepted",
     jcr: "9.4%",
     links: [
+      { label: "DOI", href: "https://doi.org/10.1109/TRO.2026.3758139" },
       { label: "Project", href: "https://rcilab.khu.ac.kr/rmrrt/" },
       { label: "arXiv", href: "https://arxiv.org/abs/2610.06863" },
     ],
