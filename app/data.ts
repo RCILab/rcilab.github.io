@@ -564,6 +564,14 @@ export const inProgressPublications: Publication[] = [
   },
   {
     year: "2027",
+    type: "International Conference",
+    venue: "Robotics: Science and Systems",
+    title: "Title Withheld (Finsler Motion Generation)",
+    authors: "Minhyeong Kang, Hyungjun You, Jiayi Wang, Shilong Sun, Sanghyun Kim†",
+    note: "In Preparation",
+  },
+  {
+    year: "2027",
     type: "Domestic Conference",
     venue: "제22회 한국로봇종합학술대회",
     title: "우선순위 제약 처리를 위한 계층적 투영 기반 모델 예측 경로 적분 제어",
