@@ -172,7 +172,7 @@ export const newsItems: NewsItem[] = [
   {
     date: "2026.11",
     category: "Publication",
-    title: "Our GRAFT paper by Daum Park has been accepted to IEEE Transactions on Automation Science and Engineering.",
+    title: "Our GRAFT paper by Daum Park has been conditionally accepted to IEEE Transactions on Automation Science and Engineering.",
     detail: "Daum Park, Sanghyun Kim†, “Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators,” IEEE Transactions on Automation Science and Engineering, 2026.",
     href: "https://rcilab.khu.ac.kr/graft/",
   },
@@ -727,7 +727,7 @@ export const publications: Publication[] = [
     venue: "IEEE Transactions on Automation Science and Engineering",
     title: "Unified Prescribed-Path Planning and Feasibility Checking Across Redundant Manipulators",
     authors: "Daum Park, Sanghyun Kim†",
-    note: "Accepted",
+    note: "Conditionally Accepted",
     jcr: "10.8%",
     links: [{ label: "Project", href: "https://rcilab.khu.ac.kr/graft/" }],
   },
